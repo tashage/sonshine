@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\AI\Agent.cs" />
      <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
+     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
      <Compile Include="Assets\Scripts\Tether.cs" />
      <Compile Include="Assets\SpaceTurnOnLight.cs" />
   </ItemGroup>
