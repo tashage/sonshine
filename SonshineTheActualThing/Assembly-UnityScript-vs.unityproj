@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{17AE2517-BB53-DD26-A1F0-E10DBDAE119C}</ProjectGuid>
+	<ProjectGuid>{96814F12-DF64-2038-E30A-DE5052E7AB6A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,29 +46,36 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRDevice.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRGUI.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRGamepadController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRGridCube.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRHmd.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRMainMenu.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRPlayerController.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRPresetManager.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
-     <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
-     <Compile Include="Assets\Scripts\AI\Agent.cs" />
-     <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
-     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
-     <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
-     <Compile Include="Assets\Scripts\HoldHands.cs" />
-     <Compile Include="Assets\SpaceTurnOnLight.cs" />
+     <Compile Include="Assets\Tuscany\Particles\Scripts\Light_Flicker.js" />
+     <Compile Include="Assets\Tuscany\Scripts\BoatBehavior.js" />
+     <Compile Include="Assets\Tuscany\Scripts\Butterfly.js" />
+     <Compile Include="Assets\Tuscany\Scripts\Character.js" />
+     <Compile Include="Assets\Tuscany\Scripts\CustomGrass.js" />
+     <Compile Include="Assets\Tuscany\Scripts\GrassController.js" />
+     <Compile Include="Assets\Tuscany\Scripts\KeyboardInput.js" />
+     <Compile Include="Assets\Tuscany\Scripts\RandomAnimationStart.js" />
+     <Compile Include="Assets\Tuscany\Scripts\Rotate.js" />
+     <Compile Include="Assets\Tuscany\Scripts\ScrollUVs.js" />
      <None Include="Assets\Plugins\donotdelete.txt" />
+     <None Include="Assets\Tuscany\Models\Materials\TransparentTerrain.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 3.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 1.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\Particle Alpha Blend_IgnoreFog.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 5.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 6.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\DoubleSided.shader" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
+     <None Include="Assets\Tuscany\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\DoubleSided ButterFly.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseDoublesided.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 4.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\AddSmooth_Layer.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 8.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 2.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\Vertex color unlit 7.shader" />
+     <None Include="Assets\Tuscany\Particles\Shaders\Add_Layer.shader" />
+     <None Include="Assets\Tuscany\Models\Materials\AlphaTest-DiffuseBack.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
