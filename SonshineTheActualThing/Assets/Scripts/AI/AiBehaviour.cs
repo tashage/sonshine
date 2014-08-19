@@ -19,7 +19,7 @@ namespace AiBehaviour_ns
     /// These behaviours are the basic nodes etc. 
     /// Fleshed out proper behaviours are underneath
     /// </summary>
-    public class AiBehaviour
+    public class AiBehaviour : MonoBehaviour
     {
 
         public AiBehaviour() { }
