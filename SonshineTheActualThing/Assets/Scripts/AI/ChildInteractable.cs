@@ -32,19 +32,5 @@ public class ChildInteractable : MonoBehaviour {
     }
 
     // the values of 'this" object
-    public   Distraction DistractionValues;
-}
-
-public class LightFruit : ChildInteractable
-{
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public  Distraction DistractionValues = new Distraction();
 }

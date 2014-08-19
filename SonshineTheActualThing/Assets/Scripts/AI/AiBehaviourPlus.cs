@@ -40,13 +40,13 @@ namespace AiBehaviourPlus_ns
 
         public CreateTarget() { }
 
-        public ChildInteractable CalculateBestOption()
+        public ChildInteractable CalculateBestOption(Vector3 a_pos)
         {
              // calculate what will be set
             ChildInteractable tempInteracatable = null;
             for (int i = 0; i < PossibleDistractions.Count; i++)
             {
-                float tempValue = Vector3.Distance(this.transform.position, PossibleDistractions[i].gameObject.transform.position);
+                float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
 
                 // is the distraction close enough to be considered?
                 if (tempValue > PossibleDistractions[i].DistractionValues.fVisibleDistance)
@@ -83,10 +83,10 @@ namespace AiBehaviourPlus_ns
 
         public override bool execute(Agent a_agent)
         {
-            float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
+          
 
             // calculate the target
-            ChildInteractable tempInteractable = CalculateBestOption();
+            ChildInteractable tempInteractable = CalculateBestOption(a_agent.getPosition());
             if (tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
             {
                 a_agent.setTarget(tempInteractable.gameObject.transform.position);
@@ -103,8 +103,8 @@ namespace AiBehaviourPlus_ns
          // if the distance is greater than the pre defined threshold move towards the parent
         public override bool execute(Agent a_agent)
         {
-            
-            this.transform.position = Vector3.MoveTowards(transform.position, a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime);
+
+            a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }
 

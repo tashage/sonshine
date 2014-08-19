@@ -19,7 +19,7 @@ namespace AiBehaviour_ns
     /// These behaviours are the basic nodes etc. 
     /// Fleshed out proper behaviours are underneath
     /// </summary>
-    public class AiBehaviour : MonoBehaviour
+    public class AiBehaviour 
     {
 
         public AiBehaviour() { }
@@ -29,16 +29,17 @@ namespace AiBehaviour_ns
     };
     public class Composite : AiBehaviour
     {
-        public Composite() { }
-
         protected List<AiBehaviour> m_children;
+        public Composite() { m_children = new List<AiBehaviour>(); }
 
-        void addChild(AiBehaviour a_behavior) { m_children.Add(a_behavior); }
+        
+
+        public void addChild(AiBehaviour a_behavior) { m_children.Add(a_behavior); }
 
     };
     public class Selector : Composite
     {
-        Selector() { }
+        public Selector() { }
 
         override public bool execute(Agent a_agent)
         {
@@ -54,7 +55,7 @@ namespace AiBehaviour_ns
 
     public class Sequence : Composite
     {
-        Sequence() { }
+       public Sequence() { }
 
        override public bool execute(Agent a_agent)
         {

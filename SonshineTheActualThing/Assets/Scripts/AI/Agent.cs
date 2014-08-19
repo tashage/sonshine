@@ -13,7 +13,7 @@ using AiBehaviour_ns;
 /// </summary>
 namespace Agent_ns
 {
-    public class Agent : MonoBehaviour
+    public class Agent 
     {
 
         // just the stored behavior tree that this agent will use
@@ -34,14 +34,14 @@ namespace Agent_ns
        public void      setTarget(Vector3 a_target) { m_target = a_target; }
        
 
-        void            setBehaviour(AiBehaviour a_behaviour) { m_behaviour = a_behaviour; }
+        public void     setBehaviour(AiBehaviour a_behaviour) { m_behaviour = a_behaviour; }
 
 
-        virtual public void update()
+        public void update()
         {
             if (m_behaviour != null)
             {
-                print(m_behaviour);
+               
                 m_behaviour.execute(this);
                 
             }
