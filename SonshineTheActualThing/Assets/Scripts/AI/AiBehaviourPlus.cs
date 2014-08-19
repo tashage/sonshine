@@ -85,16 +85,28 @@ namespace AiBehaviourPlus_ns
         {
             float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
 
-            //if (dist2 < m_range2)//
+            // calculate the target
+            ChildInteractable tempInteractable = CalculateBestOption();
+            if (tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
+            {
+                a_agent.setTarget(tempInteractable.gameObject.transform.position);
                 return true;
-            return false;
+            }
+            else
+                return false;
         }
     }
     
     // seek target : move towards current set target 
     public class SeekTarget : AiBehaviour
     {
-
+         // if the distance is greater than the pre defined threshold move towards the parent
+        public override bool execute(Agent a_agent)
+        {
+            
+            this.transform.position = Vector3.MoveTowards(transform.position, a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime);
+            return true;
+        }
 
     }
 }
