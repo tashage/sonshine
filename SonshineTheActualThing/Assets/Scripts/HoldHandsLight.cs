@@ -2,13 +2,13 @@
 using System.Collections;
 
 /// <summary>
-/// Author: Jacob Connelly
+/// Author: Tash
 /// Date Created: 18/8/14
-/// Last Updated: 19/8/14
+/// Last Updated: 20/8/14
 /// Description:
 /// class turns light on when player and Watson collide (will be when holding hands)
 /// </summary>
-public class HoldHands : MonoBehaviour {
+public class HoldHandsLight : MonoBehaviour {
 
     public Light kidLight;
     public Collider playerCollider;

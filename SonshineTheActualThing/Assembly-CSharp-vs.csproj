@@ -60,7 +60,12 @@
      <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
+     <Compile Include="Assets\Scripts\AI\Agent.cs" />
+     <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
+     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
+     <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\HoldHands.cs" />
+     <Compile Include="Assets\Scripts\HoldHandsLight.cs" />
      <Compile Include="Assets\SpaceTurnOnLight.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />

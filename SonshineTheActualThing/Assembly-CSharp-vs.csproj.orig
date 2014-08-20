@@ -60,22 +60,27 @@
      <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
+<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\HoldHands.cs" />
+=======
      <Compile Include="Assets\Scripts\AI\Agent.cs" />
      <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
      <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\HoldHands.cs" />
      <Compile Include="Assets\Scripts\HoldHandsLight.cs" />
+>>>>>>> tash
      <Compile Include="Assets\SpaceTurnOnLight.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{317B1BFE-128C-053C-709A-8502015CE6BF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{5FF1E303-FD9D-AFD0-9E95-A22BA2F1675A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{317B1BFE-128C-053C-709A-8502015CE6BF}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
