@@ -26,6 +26,7 @@ namespace Agent_ns
         public float fBoredem; // the decreasing value associated to the child boredem
         public float fBoredomRate;
         public float fBoredomMax;
+        public float fVisionRange;
 
        public Vector3   getPosition()  { return m_position;}
        public Vector3   getTarget() { return m_target; }

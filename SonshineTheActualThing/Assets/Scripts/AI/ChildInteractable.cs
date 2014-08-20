@@ -28,6 +28,7 @@ public class ChildInteractable : MonoBehaviour {
         public float    fBoredemCooldown;           // Total cooldown until the child will consider again
         public float    fCurrentBoredemCooldown;    // Current cooldown until the child will consider again
 
+        public bool     bProvidesLight;
       
     }
 

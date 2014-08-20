@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using AiBehaviour_ns;
 using Agent_ns;
 
+
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
@@ -25,11 +26,19 @@ namespace AiBehaviourPlus_ns
 
         public override bool execute(Agent a_agent)
         {
-            float dist2 = Vector3.Distance(a_agent.getPosition(),a_agent.getTarget());
-
-		    if(dist2 < m_range2)
-			    return true;
-		    return false;
+            
+            float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
+           
+            if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
+            {
+                Debug.Log("executing within range as true");
+                return true;
+            }
+            else
+            {
+                Debug.Log("executing within range as false");
+                return false;
+            }
         }
     }
 
@@ -56,24 +65,21 @@ namespace AiBehaviourPlus_ns
 
                     tempValue = tempValue * PossibleDistractions[i].DistractionValues.fDistanceWeightingFalloff
                     * PossibleDistractions[i].DistractionValues.fWeighting;
-
+                   
                     PossibleDistractions[i].DistractionValues.fPostCheckValue =tempValue;
                 }
-
-                // is the current checked a better value 
-                // CHECK AND FIX may have to revert to a different method if this does not work
-                // but this is possibly more efiicient
-                int CheckVal = 0;
-                for (int l = i; l > 0; l--)
+            }
+            // check the values of all other distractions
+            for (int d = 0; d < PossibleDistractions.Count; d++)
+            {
+                if (tempInteracatable == null)
                 {
-                    if (PossibleDistractions[i].DistractionValues.fPostCheckValue > PossibleDistractions[l].DistractionValues.fPostCheckValue)
-                    {
-                        CheckVal++;
-                    }
+                    tempInteracatable = PossibleDistractions[d];
                 }
-                if (CheckVal == i)
+                    // if the value is higher set that as the new distraction
+                else if (PossibleDistractions[d].DistractionValues.fPostCheckValue < tempInteracatable.DistractionValues.fPostCheckValue)
                 {
-                    tempInteracatable = PossibleDistractions[i];
+                    tempInteracatable = PossibleDistractions[d];
                 }
 
             }
@@ -83,17 +89,23 @@ namespace AiBehaviourPlus_ns
 
         public override bool execute(Agent a_agent)
         {
-          
 
+           
             // calculate the target
             ChildInteractable tempInteractable = CalculateBestOption(a_agent.getPosition());
             if (tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
             {
                 a_agent.setTarget(tempInteractable.gameObject.transform.position);
+                //Debug.Log(tempInteractable.gameObject.transform.position);
+              //  Debug.Log("executing create target as true");
                 return true;
             }
             else
+            {
+               // Debug.Log("executing create target as false");
+                a_agent.setTarget(a_agent.getPosition());
                 return false;
+            }
         }
     }
     
@@ -103,7 +115,7 @@ namespace AiBehaviourPlus_ns
          // if the distance is greater than the pre defined threshold move towards the parent
         public override bool execute(Agent a_agent)
         {
-
+           // Debug.Log("executing seek target");
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }
