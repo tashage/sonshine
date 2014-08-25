@@ -31,12 +31,12 @@ namespace AiBehaviourPlus_ns
            
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
-                Debug.Log("executing within range as true");
+                //Debug.Log("executing within range as true");
                 return true;
             }
             else
             {
-                Debug.Log("executing within range as false");
+               // Debug.Log("executing within range as false");
                 return false;
             }
         }
