@@ -116,8 +116,24 @@ namespace AiBehaviourPlus_ns
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
+
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
+        }
+
+    }
+
+    public class IsClose : AiBehaviour
+    {
+
+        public override bool execute(Agent a_agent)
+        {
+            // if the agent is within below amount of distance
+            if (Vector3.Distance(a_agent.getTarget(), a_agent.getPosition()) < 1.0f)
+            {
+                return true;
+            }
+            else return false;
         }
 
     }

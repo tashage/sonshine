@@ -22,6 +22,8 @@ namespace Agent_ns
         private Vector3 m_target;
 
         public float fMovementSpeed;
+        
+        public float fRotationSpeed;
 
         public float fBoredem; // the decreasing value associated to the child boredem
         public float fBoredomRate;
@@ -31,6 +33,7 @@ namespace Agent_ns
        public Vector3   getPosition()  { return m_position;}
        public Vector3   getTarget() { return m_target; }
 
+       
        public void      setPosition(Vector3 a_position) { m_position = a_position; }
        public void      setTarget(Vector3 a_target) { m_target = a_target; }
        
