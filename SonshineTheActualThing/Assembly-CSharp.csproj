@@ -66,6 +66,7 @@
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldHandsLight.cs" />
+     <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
      <Compile Include="Assets\Scripts\Tether.cs" />
      <Compile Include="Assets\Scripts\Watson.cs" />
      <Compile Include="Assets\Scripts\WatsonsLight.cs" />
