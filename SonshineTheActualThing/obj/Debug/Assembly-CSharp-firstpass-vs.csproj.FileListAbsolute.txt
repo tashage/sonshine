@@ -1,0 +1,11 @@
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\UnityEditor.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\UnityEngine.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\nunit.framework.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\natasha.cooper\Desktop\SonshineGit\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.pdb
