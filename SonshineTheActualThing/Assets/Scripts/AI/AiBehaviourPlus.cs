@@ -55,18 +55,25 @@ namespace AiBehaviourPlus_ns
             ChildInteractable tempInteracatable = null;
             for (int i = 0; i < PossibleDistractions.Count; i++)
             {
-                float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
-
-                // is the distraction close enough to be considered?
-                if (tempValue > PossibleDistractions[i].DistractionValues.fVisibleDistance)
+                if (PossibleDistractions[i] == null)
                 {
-                    // calculate weighting
-                    PossibleDistractions[i].DistractionValues.fPostCheckValue = 0;
+                    PossibleDistractions.Remove(PossibleDistractions[i]);
+                }
+                else
+                {
+                    float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
 
-                    tempValue = tempValue * PossibleDistractions[i].DistractionValues.fDistanceWeightingFalloff
-                    * PossibleDistractions[i].DistractionValues.fWeighting;
-                   
-                    PossibleDistractions[i].DistractionValues.fPostCheckValue =tempValue;
+                    // is the distraction close enough to be considered?
+                    if (tempValue > PossibleDistractions[i].DistractionValues.fVisibleDistance)
+                    {
+                        // calculate weighting
+                        PossibleDistractions[i].DistractionValues.fPostCheckValue = 0;
+
+                        tempValue = tempValue * PossibleDistractions[i].DistractionValues.fDistanceWeightingFalloff
+                        * PossibleDistractions[i].DistractionValues.fWeighting;
+
+                        PossibleDistractions[i].DistractionValues.fPostCheckValue = tempValue;
+                    }
                 }
             }
             // check the values of all other distractions
@@ -93,16 +100,13 @@ namespace AiBehaviourPlus_ns
            
             // calculate the target
             ChildInteractable tempInteractable = CalculateBestOption(a_agent.getPosition());
-            if (tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
+            if (tempInteractable!=null && tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
             {
                 a_agent.setTarget(tempInteractable.gameObject.transform.position);
-                //Debug.Log(tempInteractable.gameObject.transform.position);
-              //  Debug.Log("executing create target as true");
                 return true;
             }
             else
             {
-               // Debug.Log("executing create target as false");
                 a_agent.setTarget(a_agent.getPosition());
                 return false;
             }
@@ -116,7 +120,7 @@ namespace AiBehaviourPlus_ns
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
-
+            
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }
@@ -125,7 +129,6 @@ namespace AiBehaviourPlus_ns
 
     public class IsClose : AiBehaviour
     {
-
         public override bool execute(Agent a_agent)
         {
             // if the agent is within below amount of distance
@@ -137,4 +140,6 @@ namespace AiBehaviourPlus_ns
         }
 
     }
+
+    
 }
