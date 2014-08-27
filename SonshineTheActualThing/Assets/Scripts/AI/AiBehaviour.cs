@@ -7,7 +7,7 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 13/8/14
+/// Last Updated: 26/8/14
 /// Description: This class contains and uses the building blocks of
 /// the ai behaviour and behaviour trees.
 /// Fleshed out proper behaviours are past the basics
