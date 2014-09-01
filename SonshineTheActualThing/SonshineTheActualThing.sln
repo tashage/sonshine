@@ -9,8 +9,6 @@ Project("{1E46BD21-D3E4-0487-2D58-2FB3E89699A8}") = "SonshineTheActualThing", "A
 EndProject
 Project("{1E46BD21-D3E4-0487-2D58-2FB3E89699A8}") = "SonshineTheActualThing", "Assembly-UnityScript-firstpass.unityproj", "{5FF1E303-FD9D-AFD0-9E95-A22BA2F1675A}"
 EndProject
-Project("{1E46BD21-D3E4-0487-2D58-2FB3E89699A8}") = "SonshineTheActualThing", "Assembly-UnityScript-Editor.unityproj", "{D3B2066C-0DBE-9FDC-4914-8A3D2DA94263}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,15 +31,11 @@ Global
 		{5FF1E303-FD9D-AFD0-9E95-A22BA2F1675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF1E303-FD9D-AFD0-9E95-A22BA2F1675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF1E303-FD9D-AFD0-9E95-A22BA2F1675A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D3B2066C-0DBE-9FDC-4914-8A3D2DA94263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D3B2066C-0DBE-9FDC-4914-8A3D2DA94263}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D3B2066C-0DBE-9FDC-4914-8A3D2DA94263}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D3B2066C-0DBE-9FDC-4914-8A3D2DA94263}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																											GlobalSection(MonoDevelopProperties) = preSolution
+																																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
