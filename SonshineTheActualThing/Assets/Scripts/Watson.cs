@@ -19,6 +19,7 @@ public class Watson : MonoBehaviour
 
     // this is what "this" tethers to 
     public GameObject goParentTether;
+
     private Agent m_agent = new Agent();
     private AiBehaviour m_behaviour;
 
@@ -34,6 +35,8 @@ public class Watson : MonoBehaviour
     SeekTarget seek = new SeekTarget();
     CreateTarget target = new CreateTarget();
     WithinRange  within = new WithinRange(20.0f) ;// = new WithinRange(10.0f); // the range passed through is the overall visible range, like a first step in checking
+    IsBondStrong bond = new IsBondStrong(5);
+    Avoid avoid = new Avoid(goParentTether.transform.position);
 
     public List<ChildInteractable> Distractions;
 
@@ -73,7 +76,6 @@ public class Watson : MonoBehaviour
         //print(random.PossibleDistractions[0].DistractionValues.fWeighting);
        // print(random.PossibleDistractions[1].DistractionValues.fWeighting);
         m_agent.setBehaviour(m_behaviour);
-
        
         m_agent.setPosition(transform.position);
         m_agent.setTarget(transform.position);
@@ -164,7 +166,7 @@ public class Watson : MonoBehaviour
     }// update 
     void OnTriggerEnter(Collider other)
     {
-//        Debug.Log("coliding");
+        // Debug.Log("coliding");
         if (other.gameObject.tag == "LightFruit")
         {
             Destroy(other.gameObject);

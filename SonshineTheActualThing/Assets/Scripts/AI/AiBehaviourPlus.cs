@@ -143,7 +143,7 @@ namespace AiBehaviourPlus_ns
 
     public class IsBondStrong : AiBehaviour
     {
-        private float BondNeeded;
+        private float BondNeeded; // the bond needed to determine if its strong enough
 
         public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; }
 
@@ -156,6 +156,27 @@ namespace AiBehaviourPlus_ns
             }
             else return false;
         }
+    }
+    public class Avoid : AiBehaviour
+    {
+        private Vector3 WhatIsAvoided;
+
+        public Avoid() { }
+
+        public void SetAvoid(Vector3 a_WhatIsAvoided) { WhatIsAvoided = a_WhatIsAvoided; }
+
+        public override bool execute(Agent a_agent)
+        {
+            Vector3 heading = a_agent.getPosition() - WhatIsAvoided;
+            float distance = heading.magnitude;
+            Vector3 direction = heading / distance; // This is now the normalized direction.
+
+            a_agent.setPosition(direction * distance * 1.2f);
+
+            return true;
+        }
+
+
     }
 
     
