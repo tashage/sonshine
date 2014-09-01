@@ -26,10 +26,5 @@ public class LightFruitAI : ChildInteractable
             
         }
         
-        void OnTriggerEnter(Collider other)
-        {
-           
-            if (other.gameObject.tag == "Child")
-                Destroy(gameObject);
-        }
+       
 }

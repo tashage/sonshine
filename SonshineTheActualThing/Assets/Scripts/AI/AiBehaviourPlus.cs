@@ -141,5 +141,22 @@ namespace AiBehaviourPlus_ns
 
     }
 
+    public class IsBondStrong : AiBehaviour
+    {
+        private float BondNeeded;
+
+        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; }
+
+        public override bool execute(Agent a_agent)
+        {
+            //if the bond with the player is strong enough
+            if (a_agent.fPlayerBond > BondNeeded)
+            {
+                return true;
+            }
+            else return false;
+        }
+    }
+
     
 }

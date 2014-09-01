@@ -14,8 +14,11 @@ public class WatsonsLight : MonoBehaviour {
     float fRateOfLoss;              // must be less than 0, the lower the slower it decreases
     float fStartingStrength;
 
+    float fWorldLightRateOfLoss;
+
     //graphing stuff
     public List<Light> m_TheLights;
+    public Light m_WorldLight;          
     List<float> lightPoints;
 
     public void setIntensity(float a_intensity) { fCurrentStrength = a_intensity; fStartingStrength = a_intensity; }
@@ -35,8 +38,11 @@ public class WatsonsLight : MonoBehaviour {
         fRateOfLoss = 0.01f;
         fFlickerRange = 0.1f;
 
+        fWorldLightRateOfLoss = 0.2f;
+        m_WorldLight.intensity = 0;
         lightPoints = new List<float>();
        
+
         lightPoints.Add(Random.Range(fStartingStrength - fFlickerRange, fStartingStrength + fFlickerRange));
         lightPoints.Add(Random.Range(fStartingStrength - fFlickerRange, fStartingStrength + fFlickerRange));
       
@@ -76,6 +82,16 @@ public class WatsonsLight : MonoBehaviour {
 
         for (int l = 0; l < m_TheLights.Count; l++)
             m_TheLights[l].intensity = fCurrentStrength;
+
+        // Dim the world light
+        if (m_WorldLight.intensity > 0)
+            m_WorldLight.intensity -= fWorldLightRateOfLoss * Time.deltaTime;
        
 	}
+
+    // make the world light "explode"
+    public void StartWorldLight()
+    {
+        m_WorldLight.intensity = 1.6f;
+    }
 }

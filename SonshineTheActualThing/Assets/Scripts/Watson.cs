@@ -13,6 +13,7 @@ using Agent_ns;
 /// This script will be used as the overall actions of the child to the 
 /// player
 /// </summary>
+
 public class Watson : MonoBehaviour
 {
 
@@ -28,9 +29,10 @@ public class Watson : MonoBehaviour
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
 
     public WatsonsLight m_light;
+
     // behaviours 
     SeekTarget seek = new SeekTarget();
-    CreateTarget random = new CreateTarget();
+    CreateTarget target = new CreateTarget();
     WithinRange  within = new WithinRange(20.0f) ;// = new WithinRange(10.0f); // the range passed through is the overall visible range, like a first step in checking
 
     public List<ChildInteractable> Distractions;
@@ -49,18 +51,18 @@ public class Watson : MonoBehaviour
         fStepThreshold = 0.015f;
         
         m_agent.fRotationSpeed = 1.4f;
-
+        m_agent.fPlayerBond = 0;
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
         seek = new SeekTarget();
-        random = new CreateTarget();
+        target = new CreateTarget();
         within = new WithinRange(m_agent.fVisionRange);
 
-        random.PossibleDistractions = Distractions;
+        target.PossibleDistractions = Distractions;
 
         // build the behaviour tree
         seq.addChild(within);
-        seq.addChild(random);
+        seq.addChild(target);
 
         root.addChild(seq);
         root.addChild(seek);
@@ -80,6 +82,7 @@ public class Watson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
 
         // if they are tethered stay near them 
         if (bTethered)
@@ -87,16 +90,19 @@ public class Watson : MonoBehaviour
             // find the distance to the parent
             float distance = Vector3.Distance(transform.position, goParentTether.transform.position);
             m_light.turnOn();
-            // if the distance is greater than the pre defined threshold move towards the parent
-           // if (distance > fTetherThreshold)
-             //   transform.position = Vector3.MoveTowards(transform.position, goParentTether.transform.position, fMovementSpeed * Time.deltaTime);
 
+            // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
+            if (distance < 5)
+                GetComponent<NavMeshAgent>().speed = distance;
+            else
+                GetComponent<NavMeshAgent>().speed = 5;
+          
             // reset the agent position so there is no jitter
             m_agent.setPosition(transform.position);
             m_agent.setTarget(goParentTether.transform.position);
 
             // use nav mesh to move infront of the player
-            GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2;
+            GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2 ;
             // and rotate towards target
             Vector3 targetDir = goParentTether.transform.position - transform.position;
             float step = m_agent.fRotationSpeed * Time.deltaTime;
@@ -111,6 +117,19 @@ public class Watson : MonoBehaviour
                 Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
                 transform.rotation = Quaternion.LookRotation(newDir);
             }
+
+
+            // strengthen the player bond;
+            if (m_agent.fPlayerBond < m_agent.fPlayerBondMax)
+            {
+                m_agent.fPlayerBond += Time.deltaTime * m_agent.fPlayerBondIncreaseRate;
+                m_agent.fPlayerBondMinLine += Time.deltaTime * m_agent.fPlayerBondIncreaseRate * 0.25f; // a quarter so an actual strong bond develops
+            }
+            else
+            {
+
+            }
+
         }
         else
         {
@@ -146,7 +165,10 @@ public class Watson : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 //        Debug.Log("coliding");
-        if (other.gameObject.tag == "Child")
-            Destroy(gameObject);
+        if (other.gameObject.tag == "LightFruit")
+        {
+            Destroy(other.gameObject);
+            m_light.StartWorldLight();
+        }
     }
 }

@@ -30,6 +30,13 @@ namespace Agent_ns
         public float fBoredomMax;
         public float fVisionRange;
 
+        public float fPlayerBond;
+        public float fPlayerBondMax;
+        public float fPlayerBondMinLine;        // this is not a minimum but once the bond is below this line it lowers a lot slower
+        public float fPlayerBondMinLineFalloff; // this is the multiplier by how much it lowers below the line    
+        public float fPlayerBondIncreaseRate;
+        public float fPlayerBondDecreaseRate;
+
        public Vector3   getPosition()  { return m_position;}
        public Vector3   getTarget() { return m_target; }
 
