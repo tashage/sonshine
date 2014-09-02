@@ -78,7 +78,7 @@ public class OVRGridCube : MonoBehaviour
 	void UpdateCubeGrid()
 	{
 		// Toggle the grid cube display on 'G'
-		if(Input.GetKeyDown(GridKey))
+		if(false)//Input.GetKeyDown(GridKey))
 		{
 			if(CubeGridOn == false)
 			{
