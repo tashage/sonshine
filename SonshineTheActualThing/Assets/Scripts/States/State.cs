@@ -5,6 +5,7 @@ public class State : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Application.LoadLevel(SceneName);
 	
 	}
 	
@@ -12,4 +13,5 @@ public class State : MonoBehaviour {
 	void Update () {
 	
 	}
+    public string SceneName;
 }

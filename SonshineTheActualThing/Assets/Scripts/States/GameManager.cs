@@ -5,9 +5,12 @@ using System.Collections;
 public enum GameState { NullState, Splash, MainMenu, Level1 }//Fix this ass up with all the actual states
 public delegate void OnStateChangeHandler();
 
-public class GameManager/* : MonoBehaviour*/ {
+public class GameManager : MonoBehaviour {
 
-   
+    //public GameObject State;
+    //public int SceneCount;
+    //public State[] Scenes;
+    public string[] Scenes;
     private static GameManager Manager = null;
     public event OnStateChangeHandler OnStateChange;
     public GameState CurrentState { get; private set; } 
@@ -35,13 +38,15 @@ public class GameManager/* : MonoBehaviour*/ {
         }
     }
 
-	/*// Use this for initialization
-	void Start () {
-	
+	// Use this for initialization
+	void Start () 
+    {
+        Application.LoadLevel(Scenes[1]);
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
-	}*/
+	void Update () 
+    {
+	    //Constantly check for state changes. level completions / pauses etc.
+	}
 }
