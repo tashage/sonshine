@@ -36,7 +36,7 @@ public class Watson : MonoBehaviour
     CreateTarget target = new CreateTarget();
     WithinRange  within = new WithinRange(20.0f) ;// = new WithinRange(10.0f); // the range passed through is the overall visible range, like a first step in checking
     IsBondStrong bond = new IsBondStrong(5);
-    Avoid avoid = new Avoid(goParentTether.transform.position);
+    //Avoid avoid = new Avoid(goParentTether.transform.position);
 
     public List<ChildInteractable> Distractions;
 
