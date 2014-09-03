@@ -24,6 +24,7 @@ public class WatsonAnimation : MonoBehaviour {
         {
             LMBDown = false;
         }
+        //check if right button is pressed
         if (Input.GetMouseButtonDown(1))
         {
             RMBDown = true;
@@ -32,5 +33,9 @@ public class WatsonAnimation : MonoBehaviour {
         {
             RMBDown = false;
         }
+
+        //update the animator variables
+        WatsonAnimator.SetBool("LMBDown", LMBDown);
+        WatsonAnimator.SetBool("RMBDown", RMBDown);
 	}
 }
