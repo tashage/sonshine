@@ -92,11 +92,16 @@ namespace AiBehaviourPlus_ns
             }
 
             // now ensure that it is within the the range
-            float tempDistance = Vector3.Distance(a_pos, tempInteracatable.gameObject.transform.position);
-             if (tempDistance < tempInteracatable.DistractionValues.fVisibleDistance)
-                 return tempInteracatable;
-             else
-                 return null;
+            if (tempInteracatable != null)
+            {
+                float tempDistance = Vector3.Distance(a_pos, tempInteracatable.gameObject.transform.position);
+                if (tempDistance < tempInteracatable.DistractionValues.fVisibleDistance)
+                    return tempInteracatable;
+                else
+                    return null;
+            }
+            else
+                return null;
         }
 
         public override bool execute(Agent a_agent)
