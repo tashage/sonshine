@@ -36,12 +36,14 @@ public class Watson : MonoBehaviour
     CreateTarget target = new CreateTarget();
     WithinRange  within = new WithinRange(20.0f) ;// = new WithinRange(10.0f); // the range passed through is the overall visible range, like a first step in checking
     IsBondStrong bond = new IsBondStrong(5);
+    IsClose isclose = new IsClose();
     //Avoid avoid = new Avoid(goParentTether.transform.position);
 
     public List<ChildInteractable> Distractions;
 
     // remember sequence will 
     Sequence seq = new Sequence();
+    Selector ifCloseToPoint = new Selector();
     Selector root = new Selector();
     // Use this for initialization
     void Start()
@@ -51,7 +53,7 @@ public class Watson : MonoBehaviour
         fTetherThreshold = 1.0f;
         m_agent.fBoredem = -1.0f;
         m_agent.fVisionRange = 45.0f;
-        fStepThreshold = 0.015f;
+        fStepThreshold = 0.2f;
         
         m_agent.fRotationSpeed = 1.4f;
         m_agent.fPlayerBond = 0;
@@ -63,12 +65,16 @@ public class Watson : MonoBehaviour
 
         target.PossibleDistractions = Distractions;
 
+
         // build the behaviour tree
+        ifCloseToPoint.addChild(seek);
+        ifCloseToPoint.addChild(isclose);
+
         seq.addChild(within);
         seq.addChild(target);
 
         root.addChild(seq);
-        root.addChild(seek);
+        root.addChild(ifCloseToPoint);  
 
         m_behaviour = root;
 
@@ -97,7 +103,7 @@ public class Watson : MonoBehaviour
             if (distance < 5)
                 GetComponent<NavMeshAgent>().speed = distance;
             else
-                GetComponent<NavMeshAgent>().speed = 5;
+                GetComponent<NavMeshAgent>().speed = fMovementSpeed;
           
             // reset the agent position so there is no jitter
             m_agent.setPosition(transform.position);
@@ -105,20 +111,24 @@ public class Watson : MonoBehaviour
 
             // use nav mesh to move infront of the player
             GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2 ;
+
             // and rotate towards target
             Vector3 targetDir = goParentTether.transform.position - transform.position;
+           
             float step = m_agent.fRotationSpeed * Time.deltaTime;
-           // Debug.Log(targetDir.x);
-            if (targetDir.x > fStepThreshold)
-            {
-                Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
-                transform.rotation = Quaternion.LookRotation(newDir);
-            }
-            else if (targetDir.x < -fStepThreshold)
-            {
-                Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
-                transform.rotation = Quaternion.LookRotation(newDir);
-            }
+            Vector3 dif = transform.forward - targetDir;
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+            Quaternion q=  new Quaternion(Quaternion.LookRotation(newDir).x, Quaternion.LookRotation(newDir).y, 0, Quaternion.LookRotation(newDir).w);
+            //  transform.rotation = q;
+            // Quaternion difference = q - transform.rotation;
+            Debug.Log("current" + transform.forward);
+            Debug.Log("target" + targetDir);
+            Debug.Log("difference" + dif);
+
+            //Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
+           
+            
+            
 
 
             // strengthen the player bond;

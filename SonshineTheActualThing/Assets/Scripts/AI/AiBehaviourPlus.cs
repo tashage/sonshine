@@ -28,7 +28,7 @@ namespace AiBehaviourPlus_ns
         {
             
             float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
-           
+           // Debug.Log("within range");
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
                 //Debug.Log("executing within range as true");
@@ -62,9 +62,9 @@ namespace AiBehaviourPlus_ns
                 else
                 {
                     float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
-
+                    //Debug.Log(tempValue);
                     // is the distraction close enough to be considered?
-                    if (tempValue > PossibleDistractions[i].DistractionValues.fVisibleDistance)
+                    if (tempValue < PossibleDistractions[i].DistractionValues.fVisibleDistance)
                     {
                         // calculate weighting
                         PossibleDistractions[i].DistractionValues.fPostCheckValue = 0;
@@ -84,20 +84,30 @@ namespace AiBehaviourPlus_ns
                     tempInteracatable = PossibleDistractions[d];
                 }
                     // if the value is higher set that as the new distraction
-                else if (PossibleDistractions[d].DistractionValues.fPostCheckValue < tempInteracatable.DistractionValues.fPostCheckValue)
+                else if (PossibleDistractions[d].DistractionValues.fPostCheckValue > tempInteracatable.DistractionValues.fPostCheckValue)
                 {
                     tempInteracatable = PossibleDistractions[d];
                 }
 
             }
 
-            return tempInteracatable;
+            // now ensure that it is within the the range
+            if (tempInteracatable != null)
+            {
+                float tempDistance = Vector3.Distance(a_pos, tempInteracatable.gameObject.transform.position);
+                if (tempDistance < tempInteracatable.DistractionValues.fVisibleDistance)
+                    return tempInteracatable;
+                else
+                    return null;
+            }
+            else
+                return null;
         }
 
         public override bool execute(Agent a_agent)
         {
 
-           
+           // Debug.Log("create target");
             // calculate the target
             ChildInteractable tempInteractable = CalculateBestOption(a_agent.getPosition());
             if (tempInteractable!=null && tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
@@ -120,7 +130,7 @@ namespace AiBehaviourPlus_ns
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
-            
+           // Debug.Log("seek target");
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }

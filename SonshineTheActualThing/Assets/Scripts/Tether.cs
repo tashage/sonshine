@@ -7,7 +7,7 @@ public class Tether : MonoBehaviour {
    public Watson m_TheChild;
     float fMinDistanceToTether;
 	void Start () {
-        fMinDistanceToTether = 4.0f;
+        fMinDistanceToTether = 5.0f;
 	}
 	
 	// Update is called once per frame

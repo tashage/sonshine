@@ -39,7 +39,7 @@ public class WatsonsLight : MonoBehaviour {
         fFlickerRange = 0.1f;
 
         fWorldLightRateOfLoss = 0.2f;
-        m_WorldLight.intensity = 0;
+        m_WorldLight.intensity = 0.02f;
         lightPoints = new List<float>();
        
 
@@ -84,7 +84,7 @@ public class WatsonsLight : MonoBehaviour {
             m_TheLights[l].intensity = fCurrentStrength;
 
         // Dim the world light
-        if (m_WorldLight.intensity > 0)
+        if (m_WorldLight.intensity > 0.02)
             m_WorldLight.intensity -= fWorldLightRateOfLoss * Time.deltaTime;
        
 	}

@@ -8,7 +8,7 @@ public class LightFruitAI : ChildInteractable
         {
             DistractionValues.fDistanceWeightingFalloff = 0.5f;
             DistractionValues.fWeighting = 10.0f ;
-            DistractionValues.fVisibleDistance = 70.0f;
+            DistractionValues.fVisibleDistance = 40.0f;
             DistractionValues.fPostCheckValue =0f ;
 
             DistractionValues.bProvidesLight = true;
