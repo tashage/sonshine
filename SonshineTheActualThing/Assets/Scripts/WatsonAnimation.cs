@@ -16,7 +16,7 @@ public class WatsonAnimation : MonoBehaviour {
 	void Update () {
         //mouse buttons: left = 0, right = 1, middle = 2
         //check if left button is pressed
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             LMBDown = true;
         }
@@ -25,7 +25,7 @@ public class WatsonAnimation : MonoBehaviour {
             LMBDown = false;
         }
         //check if right button is pressed
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1))
         {
             RMBDown = true;
         }
