@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\HoldHandsLight.cs" />
      <Compile Include="Assets\Scripts\States\GameManager.cs" />
      <Compile Include="Assets\Scripts\States\Menu.cs" />
+     <Compile Include="Assets\Scripts\States\MouseOver.cs" />
      <Compile Include="Assets\Scripts\States\State.cs" />
      <Compile Include="Assets\SpaceTurnOnLight.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />

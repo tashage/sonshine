@@ -5,12 +5,14 @@ using System.Collections;
 public enum GameState { NullState, Splash, MainMenu, Level1 }//Fix this ass up with all the actual states
 public delegate void OnStateChangeHandler();
 
+//a Gamemanager resides in each scene and holds a list of states reachable from that state
+
 public class GameManager : MonoBehaviour {
 
     //public GameObject State;
     //public int SceneCount;
-    //public State[] Scenes;
-    public string[] Scenes;
+    public State[] Scenes;
+    //public string[] Scenes;
     private static GameManager Manager = null;
     public event OnStateChangeHandler OnStateChange;
     public GameState CurrentState { get; private set; } 
