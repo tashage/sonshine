@@ -1,4 +1,4 @@
-# this list came from  http://kleber-swf.com/the-definitive-gitignore-for-unity-projects/
+# got this git ignore list from http://kleber-swf.com/the-definitive-gitignore-for-unity-projects/
 
 # =============== #
 # Unity generated #
@@ -7,7 +7,7 @@ Temp/
 Obj/
 UnityGenerated/
 Library/
- 
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
@@ -21,7 +21,7 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
- 
+
 # ============ #
 # OS generated #
 # ============ #
