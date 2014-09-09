@@ -1,0 +1,2888 @@
+fileFormatVersion: 2
+guid: 3cc39c9d36fe73241983e2512451f736
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Ankle_Joint_Left
+    100002: Ankle_Joint_Right
+    100004: Arm_Control_Left
+    100006: Arm_Control_Right
+    100008: Ball_Joint_Left
+    100010: Ball_Joint_Right
+    100012: BottomTeeth
+    100014: Cheek_Bottom_Left
+    100016: Cheek_Bottom_Left_End
+    100018: Cheek_Bottom_Right
+    100020: Cheek_Bottom_Right_End
+    100022: Cheek_Top_Left
+    100024: Cheek_Top_Left_End
+    100026: Cheek_Top_Right
+    100028: Cheek_Top_Right_End
+    100030: CheeksUpperLip_Start
+    100032: Chin_Joint
+    100034: Chin_Joint_End
+    100036: Collar_Joint_Left
+    100038: Collar_Joint_Right
+    100040: Elbow_Control_Left
+    100042: Elbow_Control_Right
+    100044: Elbow_Joint_Left
+    100046: Elbow_Joint_Right
+    100048: Eye_Control
+    100050: Eye_Joint_Left
+    100052: Eye_Joint_Right
+    100054: Eye_Joint_Start_Left
+    100056: Eye_Joint_Start_Right
+    100058: Eyebrow_Inner_Left
+    100060: Eyebrow_Inner_Left_End
+    100062: Eyebrow_Inner_Right
+    100064: Eyebrow_Inner_Right_End
+    100066: Eyebrow_Middle_Left
+    100068: Eyebrow_Middle_Left_End
+    100070: Eyebrow_Middle_Right
+    100072: Eyebrow_Middle_Right_End
+    100074: Eyebrow_Outer_Left
+    100076: Eyebrow_Outer_Left_End
+    100078: Eyebrow_Outer_Right
+    100080: Eyebrow_Outer_Right_End
+    100082: EyeLeft
+    100084: Eyelid_Bottom_Left
+    100086: Eyelid_Bottom_Left_End
+    100088: Eyelid_Bottom_Right
+    100090: Eyelid_Bottom_Right_End
+    100092: Eyelid_Top_Left
+    100094: Eyelid_Top_left_End
+    100096: Eyelid_Top_Right
+    100098: Eyelid_Top_Right_End
+    100100: EyeRight
+    100102: Face_Control_Start_Left
+    100104: Face_Control_Start_Right
+    100106: Face_Start_Joint
+    100108: Foot_Control_Left
+    100110: Foot_Control_Right
+    100112: Ground_Control
+    100114: Group_Ankle_Left
+    100116: Group_Ankle_Right
+    100118: Group_Heel_Left
+    100120: Group_Heel_Right
+    100122: Group_Toe_Left
+    100124: Group_Toe_Right
+    100126: Group_ToePivot_Left
+    100128: Group_ToePivot_Right
+    100130: Hand_Middle_Joint_Left
+    100132: Hand_Middle_Joint_Right
+    100134: Hand_Start_Joint_Left
+    100136: Hand_Start_Joint_Right
+    100138: Head_Control
+    100140: Head_End
+    100142: Hip_Joint_Left
+    100144: Hip_Joint_Right
+    100146: Hip_Rotator_Control
+    100148: Hip_Rotator_Joint
+    100150: IK_Ball_Left
+    100152: IK_Ball_Right
+    100154: IK_Toe_Left
+    100156: IK_Toe_Right
+    100158: ikHandle1
+    100160: ikHandle2
+    100162: IKhandle_Ankle_Left
+    100164: IKhandle_Ankle_Right
+    100166: Index_Finger_Left_End
+    100168: Index_Finger_Left_Joint1
+    100170: Index_Finger_Left_Joint2
+    100172: Index_Finger_Left_Joint3
+    100174: Index_Finger_Right_End
+    100176: Index_Finger_Right_Joint1
+    100178: Index_Finger_Right_Joint2
+    100180: Index_Finger_Right_Joint3
+    100182: Jaw_Control
+    100184: Jaw_Joint
+    100186: Knee_Control_Left
+    100188: Knee_Control_Right
+    100190: Knee_Joint_Left
+    100192: Knee_Joint_Right
+    100194: Lip_Corner_Left
+    100196: Lip_Corner_Left_End
+    100198: Lip_Corner_Right
+    100200: Lip_Corner_Right_End
+    100202: Lip_Lower_Left
+    100204: Lip_Lower_Left_End
+    100206: Lip_Lower_Middle
+    100208: Lip_Lower_Middle_End
+    100210: Lip_Lower_Right
+    100212: Lip_Lower_Right_End
+    100214: Lip_Upper_Left
+    100216: Lip_Upper_Left_End
+    100218: Lip_Upper_Middle
+    100220: Lip_Upper_Middle_End
+    100222: Lip_Upper_Right
+    100224: Lip_Upper_Right_End
+    100226: Middle_Finger_Left_End
+    100228: Middle_Finger_Left_Joint1
+    100230: Middle_Finger_Left_Joint2
+    100232: Middle_Finger_Left_Joint3
+    100234: Middle_Finger_Right_End
+    100236: Middle_Finger_Right_Joint1
+    100238: Middle_Finger_Right_Joint2
+    100240: Middle_Finger_Right_Joint3
+    100242: Neck_Control
+    100244: Neck_Joint_Base
+    100246: Neck_Joint_Top
+    100248: Pelvis_End
+    100250: Pinky_Finger_Left_End
+    100252: Pinky_Finger_Left_Joint1
+    100254: Pinky_Finger_Left_Joint2
+    100256: Pinky_Finger_Left_Joint3
+    100258: Pinky_Finger_Right_End
+    100260: Pinky_Finger_Right_Joint1
+    100262: Pinky_Finger_Right_Joint2
+    100264: Pinky_Finger_Right_Joint3
+    100266: Pinky_Start_Left
+    100268: Pinky_Start_Right
+    100270: PolyGroups
+    100272: Ring_Finger_Left_End
+    100274: Ring_Finger_Left_Joint1
+    100276: Ring_Finger_Left_Joint2
+    100278: Ring_Finger_Left_Joint3
+    100280: Ring_Finger_Right_End
+    100282: Ring_Finger_Right_Joint1
+    100284: Ring_Finger_Right_Joint2
+    100286: Ring_Finger_Right_Joint3
+    100288: Root_Control
+    100290: Root_Joint
+    100292: Shoulder_Control_Left
+    100294: Shoulder_Control_Right
+    100296: Shoulder_Joint_Left
+    100298: Shoulder_Joint_Right
+    100300: Spine_Control1
+    100302: Spine_Control2
+    100304: Spine_Control3
+    100306: Spine_Joint1
+    100308: Spine_Joint2
+    100310: Spine_Joint3
+    100312: Thumb_Left_End
+    100314: Thumb_Left_Joint1
+    100316: Thumb_Left_Joint2
+    100318: Thumb_Left_Start
+    100320: Thumb_Right_End
+    100322: Thumb_Right_Joint1
+    100324: Thumb_Right_Joint2
+    100326: Thumb_Right_Start
+    100328: Toe_Joint_Left
+    100330: Toe_Joint_Right
+    100332: TopTeeth
+    100334: Toungue
+    100336: Toungue_End
+    100338: Toungue_Joint1
+    100340: Toungue_Joint2
+    100342: Toungue_Joint3
+    100344: Toungue_Joint4
+    100346: transform10
+    100348: transform11
+    100350: transform12
+    100352: transform9
+    100354: Watson
+    100356: //RootNode
+    100358: Wrist_Joint_Left
+    100360: Wrist_Joint_Right
+    400000: Ankle_Joint_Left
+    400002: Ankle_Joint_Right
+    400004: Arm_Control_Left
+    400006: Arm_Control_Right
+    400008: Ball_Joint_Left
+    400010: Ball_Joint_Right
+    400012: BottomTeeth
+    400014: Cheek_Bottom_Left
+    400016: Cheek_Bottom_Left_End
+    400018: Cheek_Bottom_Right
+    400020: Cheek_Bottom_Right_End
+    400022: Cheek_Top_Left
+    400024: Cheek_Top_Left_End
+    400026: Cheek_Top_Right
+    400028: Cheek_Top_Right_End
+    400030: CheeksUpperLip_Start
+    400032: Chin_Joint
+    400034: Chin_Joint_End
+    400036: Collar_Joint_Left
+    400038: Collar_Joint_Right
+    400040: Elbow_Control_Left
+    400042: Elbow_Control_Right
+    400044: Elbow_Joint_Left
+    400046: Elbow_Joint_Right
+    400048: Eye_Control
+    400050: Eye_Joint_Left
+    400052: Eye_Joint_Right
+    400054: Eye_Joint_Start_Left
+    400056: Eye_Joint_Start_Right
+    400058: Eyebrow_Inner_Left
+    400060: Eyebrow_Inner_Left_End
+    400062: Eyebrow_Inner_Right
+    400064: Eyebrow_Inner_Right_End
+    400066: Eyebrow_Middle_Left
+    400068: Eyebrow_Middle_Left_End
+    400070: Eyebrow_Middle_Right
+    400072: Eyebrow_Middle_Right_End
+    400074: Eyebrow_Outer_Left
+    400076: Eyebrow_Outer_Left_End
+    400078: Eyebrow_Outer_Right
+    400080: Eyebrow_Outer_Right_End
+    400082: EyeLeft
+    400084: Eyelid_Bottom_Left
+    400086: Eyelid_Bottom_Left_End
+    400088: Eyelid_Bottom_Right
+    400090: Eyelid_Bottom_Right_End
+    400092: Eyelid_Top_Left
+    400094: Eyelid_Top_left_End
+    400096: Eyelid_Top_Right
+    400098: Eyelid_Top_Right_End
+    400100: EyeRight
+    400102: Face_Control_Start_Left
+    400104: Face_Control_Start_Right
+    400106: Face_Start_Joint
+    400108: Foot_Control_Left
+    400110: Foot_Control_Right
+    400112: Ground_Control
+    400114: Group_Ankle_Left
+    400116: Group_Ankle_Right
+    400118: Group_Heel_Left
+    400120: Group_Heel_Right
+    400122: Group_Toe_Left
+    400124: Group_Toe_Right
+    400126: Group_ToePivot_Left
+    400128: Group_ToePivot_Right
+    400130: Hand_Middle_Joint_Left
+    400132: Hand_Middle_Joint_Right
+    400134: Hand_Start_Joint_Left
+    400136: Hand_Start_Joint_Right
+    400138: Head_Control
+    400140: Head_End
+    400142: Hip_Joint_Left
+    400144: Hip_Joint_Right
+    400146: Hip_Rotator_Control
+    400148: Hip_Rotator_Joint
+    400150: IK_Ball_Left
+    400152: IK_Ball_Right
+    400154: IK_Toe_Left
+    400156: IK_Toe_Right
+    400158: ikHandle1
+    400160: ikHandle2
+    400162: IKhandle_Ankle_Left
+    400164: IKhandle_Ankle_Right
+    400166: Index_Finger_Left_End
+    400168: Index_Finger_Left_Joint1
+    400170: Index_Finger_Left_Joint2
+    400172: Index_Finger_Left_Joint3
+    400174: Index_Finger_Right_End
+    400176: Index_Finger_Right_Joint1
+    400178: Index_Finger_Right_Joint2
+    400180: Index_Finger_Right_Joint3
+    400182: Jaw_Control
+    400184: Jaw_Joint
+    400186: Knee_Control_Left
+    400188: Knee_Control_Right
+    400190: Knee_Joint_Left
+    400192: Knee_Joint_Right
+    400194: Lip_Corner_Left
+    400196: Lip_Corner_Left_End
+    400198: Lip_Corner_Right
+    400200: Lip_Corner_Right_End
+    400202: Lip_Lower_Left
+    400204: Lip_Lower_Left_End
+    400206: Lip_Lower_Middle
+    400208: Lip_Lower_Middle_End
+    400210: Lip_Lower_Right
+    400212: Lip_Lower_Right_End
+    400214: Lip_Upper_Left
+    400216: Lip_Upper_Left_End
+    400218: Lip_Upper_Middle
+    400220: Lip_Upper_Middle_End
+    400222: Lip_Upper_Right
+    400224: Lip_Upper_Right_End
+    400226: Middle_Finger_Left_End
+    400228: Middle_Finger_Left_Joint1
+    400230: Middle_Finger_Left_Joint2
+    400232: Middle_Finger_Left_Joint3
+    400234: Middle_Finger_Right_End
+    400236: Middle_Finger_Right_Joint1
+    400238: Middle_Finger_Right_Joint2
+    400240: Middle_Finger_Right_Joint3
+    400242: Neck_Control
+    400244: Neck_Joint_Base
+    400246: Neck_Joint_Top
+    400248: Pelvis_End
+    400250: Pinky_Finger_Left_End
+    400252: Pinky_Finger_Left_Joint1
+    400254: Pinky_Finger_Left_Joint2
+    400256: Pinky_Finger_Left_Joint3
+    400258: Pinky_Finger_Right_End
+    400260: Pinky_Finger_Right_Joint1
+    400262: Pinky_Finger_Right_Joint2
+    400264: Pinky_Finger_Right_Joint3
+    400266: Pinky_Start_Left
+    400268: Pinky_Start_Right
+    400270: PolyGroups
+    400272: Ring_Finger_Left_End
+    400274: Ring_Finger_Left_Joint1
+    400276: Ring_Finger_Left_Joint2
+    400278: Ring_Finger_Left_Joint3
+    400280: Ring_Finger_Right_End
+    400282: Ring_Finger_Right_Joint1
+    400284: Ring_Finger_Right_Joint2
+    400286: Ring_Finger_Right_Joint3
+    400288: Root_Control
+    400290: Root_Joint
+    400292: Shoulder_Control_Left
+    400294: Shoulder_Control_Right
+    400296: Shoulder_Joint_Left
+    400298: Shoulder_Joint_Right
+    400300: Spine_Control1
+    400302: Spine_Control2
+    400304: Spine_Control3
+    400306: Spine_Joint1
+    400308: Spine_Joint2
+    400310: Spine_Joint3
+    400312: Thumb_Left_End
+    400314: Thumb_Left_Joint1
+    400316: Thumb_Left_Joint2
+    400318: Thumb_Left_Start
+    400320: Thumb_Right_End
+    400322: Thumb_Right_Joint1
+    400324: Thumb_Right_Joint2
+    400326: Thumb_Right_Start
+    400328: Toe_Joint_Left
+    400330: Toe_Joint_Right
+    400332: TopTeeth
+    400334: Toungue
+    400336: Toungue_End
+    400338: Toungue_Joint1
+    400340: Toungue_Joint2
+    400342: Toungue_Joint3
+    400344: Toungue_Joint4
+    400346: transform10
+    400348: transform11
+    400350: transform12
+    400352: transform9
+    400354: Watson
+    400356: //RootNode
+    400358: Wrist_Joint_Left
+    400360: Wrist_Joint_Right
+    4300000: Watson
+    4300002: TopTeeth
+    4300004: BottomTeeth
+    4300006: EyeLeft
+    4300008: EyeRight
+    4300010: Toungue
+    7400000: Smile
+    7400002: Frown
+    7400004: Sick
+    9500000: //RootNode
+    13700000: BottomTeeth
+    13700002: EyeLeft
+    13700004: EyeRight
+    13700006: TopTeeth
+    13700008: Toungue
+    13700010: Watson
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Smile
+      takeName: Take 001
+      firstFrame: 246
+      lastFrame: 256
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ground_Control
+        weight: 1
+      - path: Ground_Control/Foot_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left/IKhandle_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left/IK_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/IK_Ball_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Knee_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right/IKhandle_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right/IK_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/IK_Ball_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Knee_Control_Right
+        weight: 0
+      - path: Ground_Control/ikHandle1
+        weight: 0
+      - path: Ground_Control/ikHandle2
+        weight: 0
+      - path: Ground_Control/Root_Control
+        weight: 1
+      - path: Ground_Control/Root_Control/Hip_Rotator_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left/Toe_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right/Toe_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Pelvis_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3/Index_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3/Middle_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3/Ring_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3/Pinky_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2/Thumb_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3/Index_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3/Middle_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3/Ring_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3/Pinky_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2/Thumb_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left/Cheek_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right/Cheek_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left/Cheek_Top_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right/Cheek_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left/Lip_Corner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right/Lip_Corner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left/Lip_Upper_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle/Lip_Upper_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right/Lip_Upper_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eye_Joint_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left/Eyebrow_Inner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left/Eyebrow_Middle_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left/Eyebrow_Outer_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left/Eyelid_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left/Eyelid_Top_left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eye_Joint_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right/Eyebrow_Inner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right/Eyebrow_Middle_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right/Eyebrow_Outer_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right/Eyelid_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right/Eyelid_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Head_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint/Chin_Joint_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4/Toungue_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right/Lip_Lower_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle/Lip_Lower_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left/Lip_Lower_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Eye_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Jaw_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left/Elbow_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right/Elbow_Control_Right
+        weight: 0
+      - path: PolyGroups
+        weight: 0
+      - path: PolyGroups/BottomTeeth
+        weight: 0
+      - path: PolyGroups/EyeLeft
+        weight: 0
+      - path: PolyGroups/EyeRight
+        weight: 0
+      - path: PolyGroups/TopTeeth
+        weight: 0
+      - path: PolyGroups/Toungue
+        weight: 0
+      - path: PolyGroups/Watson
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Frown
+      takeName: Take 001
+      firstFrame: 269
+      lastFrame: 279
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ground_Control
+        weight: 1
+      - path: Ground_Control/Foot_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left/IKhandle_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left/IK_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/IK_Ball_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Knee_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right/IKhandle_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right/IK_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/IK_Ball_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Knee_Control_Right
+        weight: 0
+      - path: Ground_Control/ikHandle1
+        weight: 0
+      - path: Ground_Control/ikHandle2
+        weight: 0
+      - path: Ground_Control/Root_Control
+        weight: 1
+      - path: Ground_Control/Root_Control/Hip_Rotator_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left/Toe_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right/Toe_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Pelvis_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3/Index_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3/Middle_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3/Ring_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3/Pinky_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2/Thumb_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3/Index_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3/Middle_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3/Ring_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3/Pinky_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2/Thumb_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left/Cheek_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right/Cheek_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left/Cheek_Top_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right/Cheek_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left/Lip_Corner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right/Lip_Corner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left/Lip_Upper_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle/Lip_Upper_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right/Lip_Upper_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eye_Joint_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left/Eyebrow_Inner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left/Eyebrow_Middle_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left/Eyebrow_Outer_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left/Eyelid_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left/Eyelid_Top_left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eye_Joint_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right/Eyebrow_Inner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right/Eyebrow_Middle_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right/Eyebrow_Outer_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right/Eyelid_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right/Eyelid_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Head_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint/Chin_Joint_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4/Toungue_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right/Lip_Lower_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle/Lip_Lower_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left/Lip_Lower_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Eye_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Jaw_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left/Elbow_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right/Elbow_Control_Right
+        weight: 0
+      - path: PolyGroups
+        weight: 0
+      - path: PolyGroups/BottomTeeth
+        weight: 0
+      - path: PolyGroups/EyeLeft
+        weight: 0
+      - path: PolyGroups/EyeRight
+        weight: 0
+      - path: PolyGroups/TopTeeth
+        weight: 0
+      - path: PolyGroups/Toungue
+        weight: 0
+      - path: PolyGroups/Watson
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Sick
+      takeName: Take 001
+      firstFrame: 294
+      lastFrame: 304
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Ground_Control
+        weight: 1
+      - path: Ground_Control/Foot_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Ankle_Left/IKhandle_Ankle_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/Group_Toe_Left/IK_Toe_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Group_ToePivot_Left/Group_Heel_Left/IK_Ball_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Left/Knee_Control_Left
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Ankle_Right/IKhandle_Ankle_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/Group_Toe_Right/IK_Toe_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Group_ToePivot_Right/Group_Heel_Right/IK_Ball_Right
+        weight: 0
+      - path: Ground_Control/Foot_Control_Right/Knee_Control_Right
+        weight: 0
+      - path: Ground_Control/ikHandle1
+        weight: 0
+      - path: Ground_Control/ikHandle2
+        weight: 0
+      - path: Ground_Control/Root_Control
+        weight: 1
+      - path: Ground_Control/Root_Control/Hip_Rotator_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Left/Knee_Joint_Left/Ankle_Joint_Left/Ball_Joint_Left/Toe_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Hip_Joint_Right/Knee_Joint_Right/Ankle_Joint_Right/Ball_Joint_Right/Toe_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Hip_Rotator_Joint/Pelvis_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Index_Finger_Left_Joint1/Index_Finger_Left_Joint2/Index_Finger_Left_Joint3/Index_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Middle_Finger_Left_Joint1/Middle_Finger_Left_Joint2/Middle_Finger_Left_Joint3/Middle_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Hand_Middle_Joint_Left/Ring_Finger_Left_Joint1/Ring_Finger_Left_Joint2/Ring_Finger_Left_Joint3/Ring_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Pinky_Start_Left/Pinky_Finger_Left_Joint1/Pinky_Finger_Left_Joint2/Pinky_Finger_Left_Joint3/Pinky_Finger_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Left/Shoulder_Joint_Left/Elbow_Joint_Left/Wrist_Joint_Left/Hand_Start_Joint_Left/Thumb_Left_Start/Thumb_Left_Joint1/Thumb_Left_Joint2/Thumb_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Index_Finger_Right_Joint1/Index_Finger_Right_Joint2/Index_Finger_Right_Joint3/Index_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Middle_Finger_Right_Joint1/Middle_Finger_Right_Joint2/Middle_Finger_Right_Joint3/Middle_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Hand_Middle_Joint_Right/Ring_Finger_Right_Joint1/Ring_Finger_Right_Joint2/Ring_Finger_Right_Joint3/Ring_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Pinky_Start_Right/Pinky_Finger_Right_Joint1/Pinky_Finger_Right_Joint2/Pinky_Finger_Right_Joint3/Pinky_Finger_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Collar_Joint_Right/Shoulder_Joint_Right/Elbow_Joint_Right/Wrist_Joint_Right/Hand_Start_Joint_Right/Thumb_Right_Start/Thumb_Right_Joint1/Thumb_Right_Joint2/Thumb_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Left/Cheek_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Bottom_Right/Cheek_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Left/Cheek_Top_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Cheek_Top_Right/Cheek_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Left/Lip_Corner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Corner_Right/Lip_Corner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Left/Lip_Upper_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Middle/Lip_Upper_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/CheeksUpperLip_Start/Lip_Upper_Right/Lip_Upper_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eye_Joint_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Inner_Left/Eyebrow_Inner_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Middle_Left/Eyebrow_Middle_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyebrow_Outer_Left/Eyebrow_Outer_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Bottom_Left/Eyelid_Bottom_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Left/Eye_Joint_Start_Left/Eyelid_Top_Left/Eyelid_Top_left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eye_Joint_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Inner_Right/Eyebrow_Inner_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Middle_Right/Eyebrow_Middle_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyebrow_Outer_Right/Eyebrow_Outer_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Bottom_Right/Eyelid_Bottom_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Face_Control_Start_Right/Eye_Joint_Start_Right/Eyelid_Top_Right/Eyelid_Top_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Head_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint
+        weight: 1
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/Chin_Joint/Chin_Joint_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform9/Toungue_Joint1/Toungue_Joint2/Toungue_Joint3/Toungue_Joint4/Toungue_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform10/Lip_Lower_Right/Lip_Lower_Right_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform11/Lip_Lower_Middle/Lip_Lower_Middle_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Root_Joint/Spine_Joint1/Spine_Joint2/Spine_Joint3/Neck_Joint_Base/Neck_Joint_Top/Face_Start_Joint/Jaw_Joint/transform12/Lip_Lower_Left/Lip_Lower_Left_End
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Eye_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Neck_Control/Head_Control/Jaw_Control
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Left/Arm_Control_Left/Elbow_Control_Left
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right
+        weight: 0
+      - path: Ground_Control/Root_Control/Spine_Control1/Spine_Control2/Spine_Control3/Shoulder_Control_Right/Arm_Control_Right/Elbow_Control_Right
+        weight: 0
+      - path: PolyGroups
+        weight: 0
+      - path: PolyGroups/BottomTeeth
+        weight: 0
+      - path: PolyGroups/EyeLeft
+        weight: 0
+      - path: PolyGroups/EyeRight
+        weight: 0
+      - path: PolyGroups/TopTeeth
+        weight: 0
+      - path: PolyGroups/Toungue
+        weight: 0
+      - path: PolyGroups/Watson
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Root_Joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hip_Joint_Left
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hip_Joint_Right
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Knee_Joint_Left
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Knee_Joint_Right
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ankle_Joint_Left
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ankle_Joint_Right
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_Joint1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_Joint2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_Joint_Base
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_Joint_Top
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Collar_Joint_Left
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Collar_Joint_Right
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Joint_Left
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Joint_Right
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elbow_Joint_Left
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Elbow_Joint_Right
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Wrist_Joint_Left
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Wrist_Joint_Right
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Joint_Left
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Joint_Right
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye_Joint_Start_Left
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Eye_Joint_Start_Right
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Jaw_Joint
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Left_Start
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Left_Joint1
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Left_Joint2
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Left_Joint1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Left_Joint2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Left_Joint3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Left_Joint1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Left_Joint2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Left_Joint3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Start_Left
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Finger_Left_Joint1
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Finger_Left_Joint2
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Right_Start
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Right_Joint1
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Thumb_Right_Joint2
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Right_Joint1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Right_Joint2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Index_Finger_Right_Joint3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Right_Joint1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Right_Joint2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Ring_Finger_Right_Joint3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Start_Right
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Finger_Right_Joint1
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pinky_Finger_Right_Joint2
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: WatsonFacials(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ground_Control
+      position: {x: .0232307799, y: -7.73880005, z: .474103004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Foot_Control_Left
+      position: {x: -.923801303, y: 1.10326052, z: -.85371381}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_ToePivot_Left
+      position: {x: 1.88737914e-15, y: -1.09888232, z: 1.88254738}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Heel_Left
+      position: {x: -7.77156117e-16, y: -.00353894476, z: -2.07657456}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Ankle_Left
+      position: {x: -0, y: -.000839072454, z: 1.04774046}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IKhandle_Ankle_Left
+      position: {x: -2.33146835e-15, y: 1.10326028, z: -.853713334}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Toe_Left
+      position: {x: -0, y: -.000839072454, z: 1.04774046}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_Toe_Left
+      position: {x: 7.77156117e-16, y: .00437801704, z: 1.02883399}
+      rotation: {x: -.00150447246, y: .707105219, z: -.00150447246, w: .707105219}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_Ball_Left
+      position: {x: -0, y: -.000839072454, z: 1.04774046}
+      rotation: {x: .311454952, y: .634819508, z: .311454952, w: .634819508}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Knee_Control_Left
+      position: {x: -4.4408921e-16, y: 1.6716212, z: 4.92987394}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .170410678, y: .170410678, z: .170410678}
+      transformModified: 1
+    - name: Foot_Control_Right
+      position: {x: .877340198, y: 1.10326004, z: -.853713989}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_ToePivot_Right
+      position: {x: 2.22044605e-15, y: -1.09888005, z: 1.88255095}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Heel_Right
+      position: {x: -2.22044605e-16, y: -.00437999982, z: -2.06077695}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Ankle_Right
+      position: {x: -0, y: 0, z: 1.03193998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IKhandle_Ankle_Right
+      position: {x: -3.21964677e-15, y: 1.10326004, z: -.853713989}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Group_Toe_Right
+      position: {x: -0, y: 0, z: 1.03193998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_Toe_Right
+      position: {x: 2.22044605e-16, y: .00437999982, z: 1.02883697}
+      rotation: {x: .707105219, y: .00150447246, z: .707105219, w: .00150447246}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: IK_Ball_Right
+      position: {x: -0, y: 0, z: 1.03193998}
+      rotation: {x: .634819508, y: -.311454952, z: .634819508, w: -.311454952}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Knee_Control_Right
+      position: {x: -4.4408921e-16, y: 1.59607649, z: 4.85097313}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .170410678, y: .170410678, z: .170410678}
+      transformModified: 1
+    - name: ikHandle1
+      position: {x: -3.14236331, y: 6.01287794, z: -.347529709}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ikHandle2
+      position: {x: 3.09583831, y: 6.01291418, z: -.34753409}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Root_Control
+      position: {x: -.0232307799, y: 4.12584639, z: -.477111578}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip_Rotator_Control
+      position: {x: 1.88550368e-16, y: -.839196146, z: .019426005}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Root_Joint
+      position: {x: 0, y: 7.84794092, z: 0}
+      rotation: {x: .498116821, y: -.501876116, z: -.498116821, w: .501876116}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip_Rotator_Joint
+      position: {x: .839318454, y: .0131158875, z: -1.84181901e-16}
+      rotation: {x: .886584342, y: -.462567002, z: 1.80841045e-16, w: 1.6341755e-16}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip_Joint_Left
+      position: {x: -.255944431, y: .433533788, z: -.900570512}
+      rotation: {x: -3.43918982e-09, y: -1.04910356e-08, z: .874530494, w: .48497057}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Knee_Joint_Left
+      position: {x: -1.58033562, y: -2.08166817e-16, z: 1.75452499e-16}
+      rotation: {x: .975725114, y: .218999073, z: 1.34098253e-17, w: 5.97459388e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ankle_Joint_Left
+      position: {x: -1.1940428, y: -2.22044605e-16, z: -6.54174753e-18}
+      rotation: {x: .867386043, y: .497635841, z: -3.04714015e-17, w: -5.31120826e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ball_Joint_Left
+      position: {x: -1.39499462, y: -1.33226763e-15, z: 4.50232052e-16}
+      rotation: {x: -1.08345821e-09, y: 5.34429001e-10, z: -.442372948, w: .896831214}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toe_Joint_Left
+      position: {x: -1.0288434, y: -3.76434994e-16, z: 4.50929001e-16}
+      rotation: {x: .00150447246, y: -.707105219, z: .00150447246, w: .707105219}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip_Joint_Right
+      position: {x: -.255941629, y: .433529824, z: .900570989}
+      rotation: {x: 3.41117512e-09, y: -1.11825638e-09, z: -.48497057, w: .874530494}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Knee_Joint_Right
+      position: {x: 1.58033419, y: -8.81256383e-08, z: 3.33066907e-16}
+      rotation: {x: .975725114, y: .218999073, z: -1.34098253e-17, w: -5.97459388e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ankle_Joint_Right
+      position: {x: 1.19404006, y: -1.29995863e-06, z: -2.22044605e-16}
+      rotation: {x: .867386043, y: .497635841, z: -8.29052608e-16, w: 4.05049117e-16}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ball_Joint_Right
+      position: {x: 1.39499474, y: -7.15549675e-07, z: 3.33066907e-16}
+      rotation: {x: 1.60972913e-09, y: -7.94022403e-10, z: -.442372948, w: .896831214}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toe_Joint_Right
+      position: {x: 1.02884626, y: -1.97019494e-06, z: -2.22044605e-16}
+      rotation: {x: .00150447246, y: -.707105219, z: .00150447246, w: .707105219}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Pelvis_End
+      position: {x: -1.44389808, y: 2.22044605e-16, z: 0}
+      rotation: {x: .214543104, y: -.673773885, z: .214543104, w: .673773885}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Joint1
+      position: {x: -.844857574, y: 2.23779328e-16, z: 1.87596066e-16}
+      rotation: {x: -8.33130159e-17, y: -1.9426919e-16, z: -.00023825909, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Joint2
+      position: {x: -.902025223, y: -2.02884584e-14, z: 2.00361395e-16}
+      rotation: {x: -1.66599416e-16, y: -1.66467478e-16, z: -.000396109244, w: .99999994}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Joint3
+      position: {x: -1.01636112, y: 7.95370714e-16, z: 2.25892067e-16}
+      rotation: {x: .998206735, y: -.0598614551, z: 2.17980964e-16, w: 7.44144517e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Collar_Joint_Left
+      position: {x: -.387922406, y: .0220287982, z: -.600686371}
+      rotation: {x: -.382469505, y: .594741166, z: -.547577381, w: -.447391361}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Shoulder_Joint_Left
+      position: {x: -.665818572, y: -1.66533454e-16, z: 0}
+      rotation: {x: .768703282, y: -.0990337729, z: -.0776328892, w: .627105057}
+      scale: {x: 1.19525516, y: 1, z: 1}
+      transformModified: 1
+    - name: Elbow_Joint_Left
+      position: {x: -1.04493105, y: 1.11022302e-16, z: 0}
+      rotation: {x: -.00152487785, y: -.0195527431, z: -.0510278977, w: .998504639}
+      scale: {x: .756576478, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_Joint_Left
+      position: {x: -1.22996795, y: 2.99760217e-15, z: 0}
+      rotation: {x: -.114959151, y: .0482742414, z: -.256958127, w: .958345711}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Start_Joint_Left
+      position: {x: -.174951479, y: -.199843004, z: -.0726892576}
+      rotation: {x: -.580879688, y: -.332927495, z: .149549156, w: .727580309}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Middle_Joint_Left
+      position: {x: -.94622016, y: 0, z: 3.50414142e-16}
+      rotation: {x: 0, y: .0694888532, z: -0, w: .997582734}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Left_Joint1
+      position: {x: -.410019606, y: 0, z: .312781721}
+      rotation: {x: -.0065423511, y: -.100360908, z: .0647203475, w: .992822349}
+      scale: {x: 1.32261145, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Left_Joint2
+      position: {x: -.309141845, y: 0, z: -3.12250226e-17}
+      rotation: {x: .00372014614, y: -.000647562149, z: .0636656582, w: .997964144}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Left_Joint3
+      position: {x: -.309141845, y: 0, z: -3.05311332e-16}
+      rotation: {x: .00678807078, y: .0132521885, z: .057434205, w: .998238266}
+      scale: {x: 1.4377172, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Left_End
+      position: {x: -.211704269, y: 0, z: 2.25514052e-17}
+      rotation: {x: 0, y: .0151463011, z: -0, w: .999885321}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Left_Joint1
+      position: {x: -.409111351, y: 0, z: 6.9388939e-17}
+      rotation: {x: -.00612658868, y: -.108944647, z: .0558118299, w: .992460907}
+      scale: {x: 1.19928849, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Left_Joint2
+      position: {x: -.310620487, y: 0, z: -1.17961196e-16}
+      rotation: {x: 0, y: 0, z: .135378033, w: .990794063}
+      scale: {x: 1.18151152, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Left_Joint3
+      position: {x: -.310620487, y: 0, z: -1.31838984e-16}
+      rotation: {x: .00482767774, y: .0229525901, z: .205772355, w: .97831881}
+      scale: {x: 1.39419341, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Left_End
+      position: {x: -.230784103, y: 0, z: 3.05311332e-16}
+      rotation: {x: 0, y: .0318662599, z: -0, w: .999492168}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Left_Joint1
+      position: {x: -.339374751, y: 0, z: -.296255231}
+      rotation: {x: -.00813886337, y: -.127839074, z: .0630128309, w: .989757717}
+      scale: {x: 1.29071105, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Left_Joint2
+      position: {x: -.268580019, y: 0, z: -9.71445147e-17}
+      rotation: {x: .00555590959, y: .0233296491, z: .0495681874, w: .998482764}
+      scale: {x: 1.12746584, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Left_Joint3
+      position: {x: -.270615309, y: 0, z: 4.51028104e-17}
+      rotation: {x: .00843608659, y: -.00024272177, z: .0851079002, w: .996336043}
+      scale: {x: 1.2682817, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Left_End
+      position: {x: -.248256788, y: 0, z: 1.47104551e-15}
+      rotation: {x: 0, y: .0267569404, z: -0, w: .999641955}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Start_Left
+      position: {x: -.364062726, y: 0, z: -.462420076}
+      rotation: {x: 0, y: .0155384112, z: -0, w: .999879301}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Left_Joint1
+      position: {x: -.806213856, y: 0, z: -.0838715658}
+      rotation: {x: -.00228463742, y: -.0641238391, z: .0272214934, w: .997568071}
+      scale: {x: 1.1389395, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Left_Joint2
+      position: {x: -.26568231, y: 0, z: -9.71445147e-17}
+      rotation: {x: .00568572013, y: .025210835, z: .0353255644, w: .999041677}
+      scale: {x: 1.36172783, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Left_Joint3
+      position: {x: -.226460606, y: 0, z: 2.0469737e-16}
+      rotation: {x: .00455799745, y: .0193842892, z: .228850648, w: .973257899}
+      scale: {x: 1.25782204, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Left_End
+      position: {x: -.230364278, y: 0, z: 1.12757026e-16}
+      rotation: {x: 0, y: .01922011, z: -0, w: .999815285}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Left_Start
+      position: {x: -.0815426856, y: -.27316466, z: .354945868}
+      rotation: {x: .0483172722, y: .241575196, z: .0295238625, w: .968728721}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Left_Joint1
+      position: {x: -.532343209, y: 0, z: -5.55111512e-17}
+      rotation: {x: -.0768266916, y: .000403458369, z: .0100324396, w: .996993959}
+      scale: {x: 1.72878289, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Left_Joint2
+      position: {x: -.190395102, y: 0, z: 1.4484941e-16}
+      rotation: {x: -.00638878532, y: -.0829784721, z: .0639053732, w: .994479716}
+      scale: {x: 1.71795905, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Left_End
+      position: {x: -.247883648, y: 0, z: -1.04083409e-16}
+      rotation: {x: 0, y: .0948513374, z: -0, w: .995491445}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Collar_Joint_Right
+      position: {x: -.387922674, y: .0220288299, z: .600686014}
+      rotation: {x: -.594741225, y: -.382469475, z: -.447391301, w: .547577441}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Shoulder_Joint_Right
+      position: {x: .665820777, y: -5.63223693e-07, z: -3.64845757e-16}
+      rotation: {x: .704174399, y: -.0913881585, z: -.0872160643, w: .698698938}
+      scale: {x: 1.19525516, y: 1, z: 1}
+      transformModified: 1
+    - name: Elbow_Joint_Right
+      position: {x: 1.04492652, y: 4.1147855e-06, z: 7.05751617e-08}
+      rotation: {x: .00148223131, y: -.0187707078, z: -.0580670312, w: .998135149}
+      scale: {x: .756576478, y: 1, z: 1}
+      transformModified: 1
+    - name: Wrist_Joint_Right
+      position: {x: 1.22996664, y: .00169250497, z: -1.40715292e-05}
+      rotation: {x: .100410871, y: .0396595448, z: -.20270519, w: .973270476}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Start_Joint_Right
+      position: {x: .192992061, y: .195181832, z: .0223599914}
+      rotation: {x: -.703958929, y: -.295577347, z: .144798487, w: .62937212}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hand_Middle_Joint_Right
+      position: {x: .946222425, y: 2.03299365e-07, z: 2.84836439e-08}
+      rotation: {x: 1.05112417e-08, y: .0694888532, z: -7.32184036e-10, w: .997582734}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Right_Joint1
+      position: {x: .410011262, y: 4.89840602e-07, z: -.312782228}
+      rotation: {x: -.0065423511, y: -.100360908, z: .0647203475, w: .992822349}
+      scale: {x: 1.32261145, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Right_Joint2
+      position: {x: .309147865, y: 6.36024743e-06, z: -1.17750574e-06}
+      rotation: {x: .00397470919, y: -.000607479364, z: .0638111085, w: .997953951}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Right_Joint3
+      position: {x: .309137493, y: -2.24376345e-06, z: 8.28886016e-07}
+      rotation: {x: .00698597403, y: .0133223291, z: .0575206503, w: .998230994}
+      scale: {x: 1.4377172, y: 1, z: 1}
+      transformModified: 1
+    - name: Index_Finger_Right_End
+      position: {x: .211702406, y: -1.8205368e-06, z: -7.36054233e-07}
+      rotation: {x: 0, y: .0217681117, z: -0, w: .999763072}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Right_Joint1
+      position: {x: .40910697, y: 4.64562709e-06, z: -5.17005049e-07}
+      rotation: {x: -.0061265761, y: -.108944647, z: .0558118299, w: .992460907}
+      scale: {x: 1.19928849, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Right_Joint2
+      position: {x: .310622782, y: -6.18791887e-07, z: -2.76247761e-07}
+      rotation: {x: 0, y: 0, z: .135378033, w: .990794063}
+      scale: {x: 1.18151152, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Right_Joint3
+      position: {x: .310617924, y: -1.11831639e-06, z: 2.35990967e-07}
+      rotation: {x: .00570214633, y: .0271099042, z: .205749959, w: .978212416}
+      scale: {x: 1.39419341, y: 1, z: 1}
+      transformModified: 1
+    - name: Middle_Finger_Right_End
+      position: {x: .230775148, y: 6.30540217e-06, z: .00250311941}
+      rotation: {x: .00171072152, y: .0389637053, z: -.000209384685, w: .999239147}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Right_Joint1
+      position: {x: .339373589, y: -8.60544617e-07, z: .29625541}
+      rotation: {x: -.00813885033, y: -.127839074, z: .0630128309, w: .989757717}
+      scale: {x: 1.29071105, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Right_Joint2
+      position: {x: .268574774, y: 4.00751742e-06, z: 8.03662999e-07}
+      rotation: {x: .0071744509, y: .0354122184, z: .0497533903, w: .998107791}
+      scale: {x: 1.12746584, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Right_Joint3
+      position: {x: .270546287, y: 1.66517675e-05, z: .00723078568}
+      rotation: {x: .0091977166, y: -.0149404705, z: .0852951109, w: .996201277}
+      scale: {x: 1.2682817, y: 1, z: 1}
+      transformModified: 1
+    - name: Ring_Finger_Right_End
+      position: {x: .248246327, y: -3.66368749e-06, z: -.00160432654}
+      rotation: {x: .00349573349, y: .0371346846, z: -.000378395751, w: .999304116}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Start_Right
+      position: {x: .364056885, y: 3.26907934e-06, z: .462419897}
+      rotation: {x: 0, y: .0155384112, z: -0, w: .999879301}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Right_Joint1
+      position: {x: .806214809, y: -3.13430007e-07, z: .0838719383}
+      rotation: {x: -.00211456814, y: -.0642089099, z: .0273542311, w: .997559309}
+      scale: {x: 1.1389395, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Right_Joint2
+      position: {x: .265681207, y: 1.45952038e-06, z: 7.08783148e-07}
+      rotation: {x: .00660194689, y: .0326787382, z: .0355458036, w: .998811841}
+      scale: {x: 1.36172783, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Right_Joint3
+      position: {x: .226443276, y: 6.72486465e-07, z: .00444999291}
+      rotation: {x: .00502257608, y: .0165753439, z: .228795931, w: .973320365}
+      scale: {x: 1.25782204, y: 1, z: 1}
+      transformModified: 1
+    - name: Pinky_Finger_Right_End
+      position: {x: .230361804, y: 1.81953747e-05, z: .00181535562}
+      rotation: {x: .00400548521, y: .0202301275, z: -.000242699782, w: .999787331}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Right_Start
+      position: {x: .0815411657, y: .273169756, z: -.354945838}
+      rotation: {x: .053867802, y: .235035807, z: .0505952723, w: .969173133}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Right_Joint1
+      position: {x: .532344937, y: 6.15728823e-07, z: 9.14535349e-07}
+      rotation: {x: -.0758562759, y: .00043127063, z: .0103535745, w: .997064888}
+      scale: {x: 1.72878289, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Right_Joint2
+      position: {x: .190393388, y: 1.32846924e-06, z: -1.66558107e-06}
+      rotation: {x: -.0193381477, y: -.151559547, z: .064877145, w: .986127198}
+      scale: {x: 1.71795905, y: 1, z: 1}
+      transformModified: 1
+    - name: Thumb_Right_End
+      position: {x: .245577157, y: -.000825351803, z: -.0579706803}
+      rotation: {x: .0164780635, y: .260372877, z: -.000652949617, w: .965367317}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck_Joint_Base
+      position: {x: -.728836298, y: 9.71445147e-17, z: -1.75307934e-16}
+      rotation: {x: .997926533, y: -.0643638298, z: -1.70129307e-16, w: 5.03866482e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck_Joint_Top
+      position: {x: -.938243747, y: 1.6479873e-16, z: 1.9235389e-16}
+      rotation: {x: .999435246, y: -.033604037, z: -5.75374526e-17, w: 5.93323617e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Face_Start_Joint
+      position: {x: -1.47154856, y: 1.40165657e-15, z: -3.41747963e-16}
+      rotation: {x: 0, y: 0, z: .0365254208, w: .999332726}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: CheeksUpperLip_Start
+      position: {x: -.0406322926, y: -1.04537094, z: 5.49927829e-16}
+      rotation: {x: .467789918, y: -.530257106, z: .467789918, w: .530257106}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Bottom_Left
+      position: {x: -.907105505, y: -.178148508, z: 1.20426035}
+      rotation: {x: .0727567822, y: .760968506, z: .0866652057, w: .638844669}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Bottom_Left_End
+      position: {x: -.796859145, y: -1.11022302e-16, z: 0}
+      rotation: {x: -.0800137594, y: -.702565193, z: -.0800137594, w: .702565193}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Bottom_Right
+      position: {x: .922825694, y: -.178148508, z: 1.20426035}
+      rotation: {x: .0848079026, y: .657781422, z: .0749134496, w: .744660437}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Bottom_Right_End
+      position: {x: -.796859145, y: -1.11022302e-16, z: 0}
+      rotation: {x: -.0800137594, y: -.702565193, z: -.0800137594, w: .702565193}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Top_Left
+      position: {x: -1.182675, y: .247407228, z: 1.15225589}
+      rotation: {x: -.0129283955, y: .706988573, z: -.0129283955, w: .706988573}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Top_Left_End
+      position: {x: -.612612545, y: -2.77555756e-17, z: -1.36027311e-16}
+      rotation: {x: .0129283927, y: -.706988573, z: .0129283927, w: .706988573}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Top_Right
+      position: {x: 1.19802499, y: .247407228, z: 1.15225589}
+      rotation: {x: -.0129283955, y: .706988573, z: -.0129283955, w: .706988573}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Cheek_Top_Right_End
+      position: {x: -.612612545, y: -2.77555756e-17, z: -1.36027311e-16}
+      rotation: {x: .0129283927, y: -.706988573, z: .0129283927, w: .706988573}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Corner_Left
+      position: {x: -.685480773, y: -.921297133, z: 1.19134545}
+      rotation: {x: .00233858009, y: .789826155, z: .003011578, w: .61331892}
+      scale: {x: 1.31028557, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Corner_Left_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Corner_Right
+      position: {x: .674421966, y: -.921297133, z: 1.19134545}
+      rotation: {x: .00299916184, y: .617494583, z: .00235449662, w: .7865659}
+      scale: {x: 1.31028557, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Corner_Right_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Left
+      position: {x: -.254486442, y: -.676834822, z: 1.36931372}
+      rotation: {x: .0861649662, y: .701837301, z: .0861649662, w: .701837301}
+      scale: {x: 1.19482827, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Left_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Middle
+      position: {x: -0, y: -.676834822, z: 1.3846848}
+      rotation: {x: .0861649662, y: .701837301, z: .0861649662, w: .701837301}
+      scale: {x: 1.19482827, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Middle_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Right
+      position: {x: .271475732, y: -.676834822, z: 1.36931372}
+      rotation: {x: .0861649662, y: .701837301, z: .0861649662, w: .701837301}
+      scale: {x: 1.19482827, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Upper_Right_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Face_Control_Start_Left
+      position: {x: -.459816843, y: -.341642797, z: -1.23010635}
+      rotation: {x: 0, y: 0, z: .261633664, w: .965167284}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eye_Joint_Start_Left
+      position: {x: -.959416687, y: 1.11022302e-16, z: -6.16297582e-33}
+      rotation: {x: 0, y: 0, z: .40110445, w: .916032374}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eye_Joint_Left
+      position: {x: -1.12866116, y: -5.55111512e-17, z: 4.60407174e-17}
+      rotation: {x: .0321295559, y: -.706376493, z: .0321295559, w: .706376493}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Inner_Left
+      position: {x: -1.26118731, y: .993998051, z: .77035141}
+      rotation: {x: 0, y: -0, z: -.168881208, w: .985636413}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Inner_Left_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Middle_Left
+      position: {x: -1.21516514, y: 1.25786674, z: -.0947632641}
+      rotation: {x: 0, y: -0, z: -.0124255894, w: .999922812}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Middle_Left_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Outer_Left
+      position: {x: -.662332654, y: 1.05616689, z: -.915903509}
+      rotation: {x: 0, y: -0, z: -.0124255894, w: .999922812}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Outer_Left_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Bottom_Left
+      position: {x: -1.04052258, y: -.0408085585, z: -.0038604096}
+      rotation: {x: 0, y: 0, z: .35773921, w: .933821559}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Bottom_Left_End
+      position: {x: -.92188412, y: -2.22044605e-16, z: -3.69778549e-32}
+      rotation: {x: -.334049493, y: -.623226285, z: -.334049493, w: .623226285}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Top_Left
+      position: {x: -1.05734849, y: .0508415662, z: -.0038604096}
+      rotation: {x: 0, y: -0, z: -.199581265, w: .979881287}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Top_left_End
+      position: {x: -.951479137, y: 1.66533454e-16, z: 9.24446373e-33}
+      rotation: {x: .269573748, y: -.653704822, z: .269573748, w: .653704822}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Face_Control_Start_Right
+      position: {x: -.459812939, y: -.341643095, z: 1.23011005}
+      rotation: {x: -0, y: 0, z: .965167284, w: -.261633664}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eye_Joint_Start_Right
+      position: {x: .95941782, y: -1.95610733e-06, z: -4.4408921e-16}
+      rotation: {x: 0, y: 0, z: .40110445, w: .916032374}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eye_Joint_Right
+      position: {x: 1.12866032, y: 2.31733247e-06, z: 0}
+      rotation: {x: .0321295559, y: -.706376493, z: .0321295559, w: .706376493}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Inner_Right
+      position: {x: 1.26118851, y: -.993999779, z: -.752364516}
+      rotation: {x: 0, y: 0, z: .985411406, w: .170189351}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Inner_Right_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Middle_Right
+      position: {x: 1.21516633, y: -1.25786853, z: .0235008318}
+      rotation: {x: 0, y: 0, z: .999922812, w: .0124255903}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Middle_Right_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Outer_Right
+      position: {x: .662333846, y: -1.05616868, z: .869206965}
+      rotation: {x: 0, y: 0, z: .999922812, w: .0124255903}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyebrow_Outer_Right_End
+      position: {x: -1.02808976, y: 9.71445147e-17, z: 6.16297582e-33}
+      rotation: {x: .0409042202, y: -.705922723, z: .0409042202, w: .705922723}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Bottom_Right
+      position: {x: 1.04052377, y: .0408068374, z: -.00608876161}
+      rotation: {x: 0, y: 0, z: .937748075, w: -.347316355}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Bottom_Right_End
+      position: {x: -.92188412, y: -2.22044605e-16, z: -3.69778549e-32}
+      rotation: {x: -.334049493, y: -.623226285, z: -.334049493, w: .623226285}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Top_Right
+      position: {x: 1.05734968, y: -.050843291, z: -.00608876161}
+      rotation: {x: 0, y: 0, z: .978893578, w: .204370856}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eyelid_Top_Right_End
+      position: {x: -.951479137, y: 1.66533454e-16, z: 9.24446373e-33}
+      rotation: {x: .269573748, y: -.653704822, z: .269573748, w: .653704822}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Head_End
+      position: {x: -5.3257122, y: -1.44328993e-15, z: -1.43566886e-15}
+      rotation: {x: .467789918, y: -.530257106, z: .467789918, w: .530257106}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Jaw_Joint
+      position: {x: 1.04072571, y: -.708537459, z: -7.48412107e-17}
+      rotation: {x: -1.62141826e-16, y: -2.79531891e-17, z: .804249763, w: .594291449}
+      scale: {x: .803618073, y: 1, z: 1}
+      transformModified: 1
+    - name: Chin_Joint
+      position: {x: -1.99442196, y: 0, z: 4.42850636e-16}
+      rotation: {x: 0, y: 0, z: -.577970564, w: .816057622}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Chin_Joint_End
+      position: {x: -.712437332, y: 2.22044605e-16, z: -5.61676865e-16}
+      rotation: {x: .189261317, y: -.681307673, z: .189261317, w: .681307673}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: transform9
+      position: {x: .196376309, y: -1.34442031, z: 1.40481357e-15}
+      rotation: {x: -.178596839, y: -.684180677, z: -.178596839, w: .684180677}
+      scale: {x: 1, y: 1.04519773, z: 1.19056153}
+      transformModified: 1
+    - name: Toungue_Joint1
+      position: {x: -0, y: 1.26831901, z: 1.07353723}
+      rotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+      scale: {x: 1.45548344, y: 1, z: 1}
+      transformModified: 1
+    - name: Toungue_Joint2
+      position: {x: -.36312452, y: 0, z: 8.06298405e-17}
+      rotation: {x: 0, y: 0, z: .0033556479, w: .999994397}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toungue_Joint3
+      position: {x: -.394939929, y: 3.12120121e-15, z: 8.76923086e-17}
+      rotation: {x: 0, y: -0, z: -.0145473015, w: .999894202}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toungue_Joint4
+      position: {x: -.355261892, y: 8.01442246e-16, z: 7.88642268e-17}
+      rotation: {x: 0, y: 0, z: .00731620379, w: .999973238}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toungue_End
+      position: {x: -.341930449, y: 3.15719673e-16, z: 7.59215284e-17}
+      rotation: {x: .00274066208, y: -.707101464, z: .00274066208, w: .707101464}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: transform10
+      position: {x: .196376309, y: -1.34442031, z: 1.40481357e-15}
+      rotation: {x: -.178596839, y: -.684180677, z: -.178596839, w: .684180677}
+      scale: {x: 1, y: 1.04519773, z: 1.19056153}
+      transformModified: 1
+    - name: Lip_Lower_Right
+      position: {x: .273446381, y: 1.11456883, z: 2.55000186}
+      rotation: {x: -.0851630941, y: .70195961, z: -.0851630941, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Lower_Right_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: transform11
+      position: {x: .196376309, y: -1.34442031, z: 1.40481357e-15}
+      rotation: {x: -.178596839, y: -.684180677, z: -.178596839, w: .684180677}
+      scale: {x: 1, y: 1.04519773, z: 1.19056153}
+      transformModified: 1
+    - name: Lip_Lower_Middle
+      position: {x: -0, y: 1.11933672, z: 2.54955864}
+      rotation: {x: -.0851630941, y: .70195961, z: -.0851630941, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Lower_Middle_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: transform12
+      position: {x: .196376309, y: -1.34442031, z: 1.40481357e-15}
+      rotation: {x: -.178596839, y: -.684180677, z: -.178596839, w: .684180677}
+      scale: {x: 1, y: 1.04519773, z: 1.19056153}
+      transformModified: 1
+    - name: Lip_Lower_Left
+      position: {x: -.263380975, y: 1.11456883, z: 2.55000186}
+      rotation: {x: -.0851630941, y: .70195961, z: -.0851630941, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Lip_Lower_Left_End
+      position: {x: -.446344048, y: 1.38777878e-17, z: 0}
+      rotation: {x: .0851630867, y: -.70195961, z: .0851630867, w: .70195961}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Control1
+      position: {x: -1.87596066e-16, y: .844833672, z: -.00635213265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Control2
+      position: {x: -2.00218233e-16, y: .902002871, z: -.00635213265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_Control3
+      position: {x: -2.25462568e-16, y: 1.01634121, z: -.00635213265}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Neck_Control
+      position: {x: -1.45991409e-16, y: .724143147, z: .0825777277}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Head_Control
+      position: {x: -2.09537158e-16, y: .938134313, z: -.0143283885}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Eye_Control
+      position: {x: 9.68805474e-16, y: 2.59433866, z: 5.59622622}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Jaw_Control
+      position: {x: 3.23012342e-17, y: .348611951, z: .649649918}
+      rotation: {x: -.00195061602, y: 0, z: -0, w: .999998093}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Shoulder_Control_Left
+      position: {x: -.600686371, y: .38792035, z: .0220649652}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arm_Control_Left
+      position: {x: -2.51844621, y: -1.26406658, z: .126573309}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Elbow_Control_Left
+      position: {x: -.0191087797, y: .790116608, z: -3.5852077}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .164871752, y: .164871752, z: .164871752}
+      transformModified: 1
+    - name: Shoulder_Control_Right
+      position: {x: .600686014, y: .387920618, z: .0220649652}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Arm_Control_Right
+      position: {x: 2.51837444, y: -1.26402593, z: .126568332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Elbow_Control_Right
+      position: {x: -.799573123, y: .442580044, z: -3.85094547}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: .164871752, y: .164871752, z: .164871752}
+      transformModified: 1
+    - name: PolyGroups
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: BottomTeeth
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: EyeLeft
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: EyeRight
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: TopTeeth
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Toungue
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Watson
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  userData: 
