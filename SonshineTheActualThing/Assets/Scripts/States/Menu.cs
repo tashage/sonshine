@@ -1,16 +1,27 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Menu : MonoBehaviour {
+public class Menu : State {
 
+    public string Level1;
 
-	// Use this for initialization
-	void Start () {
-	
+    /*Menu(string _onSpace)//Add a state to change to with the space button
+    {
+        Level1 = _onSpace;
+    }*/
+
+	void Start () 
+    {
+	   
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void Update () 
+    {
+	    //test here for change state
+        ChangeState(Level1, "Space");
+        if (Input.GetKeyDown("escape"))
+        {
+            Application.Quit();
+        }
 	}
 }
