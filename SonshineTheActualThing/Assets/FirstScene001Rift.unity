@@ -3428,7 +3428,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 567337009}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
@@ -3438,7 +3438,7 @@ MonoBehaviour:
   globalDensity: 1
   heightScale: 2
   height: 60
-  globalFogColor: {r: .0862745121, g: .0862745121, b: .0862745121, a: .125490203}
+  globalFogColor: {r: .13333334, g: .13333334, b: .13333334, a: 1}
   fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!114 &567337011
 MonoBehaviour:
@@ -3452,7 +3452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Radius: .400000006
-  m_SampleCount: 2
+  m_SampleCount: 1
   m_OcclusionIntensity: 1.5
   m_Blur: 2
   m_Downsampling: 2
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   radialBlurIterations: 2
   sunColor: {r: 1, g: 1, b: 1, a: 1}
   sunShaftBlurRadius: 7.92000008
-  sunShaftIntensity: 1.14999998
+  sunShaftIntensity: .800000012
   useSkyBoxAlpha: .75
   maxRadius: .863000035
   useDepthTexture: 1
@@ -4341,7 +4341,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bd164e17c6b406499be168da58da13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goParentTether: {fileID: 0}
+  goParentTether: {fileID: 956890665}
   bTethered: 0
   m_light: {fileID: 56081203}
   Distractions:
@@ -5015,6 +5015,8 @@ GameObject:
   - 114: {fileID: 956890669}
   - 114: {fileID: 956890668}
   - 20: {fileID: 956890667}
+  - 208: {fileID: 956890673}
+  - 114: {fileID: 956890674}
   m_Layer: 0
   m_Name: OVRPlayerController
   m_TagString: Untagged
@@ -5150,6 +5152,29 @@ CharacterController:
   m_SkinWidth: .0799999982
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &956890673
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956890665}
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 2
+  m_MoveThreshold: 0
+  m_Carve: 0
+--- !u!114 &956890674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 956890665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e8810cb457b8004bb58d889adac903f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TheChild: {fileID: 814503582}
 --- !u!1 &979458603
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,7 +5253,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 988648681}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .925045013, z: 0}
+  m_LocalPosition: {x: 0, y: .0232810974, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 814503581}
@@ -6141,7 +6166,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1229648154}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
@@ -6151,7 +6176,7 @@ MonoBehaviour:
   globalDensity: 1
   heightScale: 2
   height: 60
-  globalFogColor: {r: .0862745121, g: .0862745121, b: .0862745121, a: .125490203}
+  globalFogColor: {r: .13333334, g: .13333334, b: .13333334, a: 1}
   fogShader: {fileID: 4800000, guid: 70d8568987ac0499f952b54c7c13e265, type: 3}
 --- !u!114 &1229648157
 MonoBehaviour:
@@ -6190,7 +6215,7 @@ MonoBehaviour:
   radialBlurIterations: 2
   sunColor: {r: 1, g: 1, b: 1, a: 1}
   sunShaftBlurRadius: 7.92000008
-  sunShaftIntensity: 1.14999998
+  sunShaftIntensity: .800000012
   useSkyBoxAlpha: .75
   maxRadius: .863000035
   useDepthTexture: 1
