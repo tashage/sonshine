@@ -72,6 +72,7 @@
      <Compile Include="Assets\Scripts\WatsonAnimation.cs" />
      <Compile Include="Assets\Scripts\WatsonsLight.cs" />
      <Compile Include="Assets\SpaceTurnOnLight.cs" />
+     <Compile Include="Assets\WatsonIK.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
