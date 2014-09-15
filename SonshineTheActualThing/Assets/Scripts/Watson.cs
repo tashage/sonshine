@@ -28,6 +28,7 @@ public class Watson : MonoBehaviour
     private float fMovementSpeed;     //double check this
     private float fTetherThreshold;
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
+    private float fRotationalTwitchThreshold;
 
     public WatsonsLight m_light;
 
@@ -45,6 +46,8 @@ public class Watson : MonoBehaviour
     Sequence seq = new Sequence();
     Selector ifCloseToPoint = new Selector();
     Selector root = new Selector();
+
+
     // Use this for initialization
     void Start()
     {
@@ -57,6 +60,7 @@ public class Watson : MonoBehaviour
         
         m_agent.fRotationSpeed = 1.4f;
         m_agent.fPlayerBond = 0;
+        fRotationalTwitchThreshold = 0.5f;
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
         seek = new SeekTarget();
@@ -64,7 +68,6 @@ public class Watson : MonoBehaviour
         within = new WithinRange(m_agent.fVisionRange);
 
         target.PossibleDistractions = Distractions;
-
 
         // build the behaviour tree
         ifCloseToPoint.addChild(seek);
@@ -76,6 +79,8 @@ public class Watson : MonoBehaviour
         root.addChild(seq);
         root.addChild(ifCloseToPoint);  
 
+
+        
         m_behaviour = root;
 
         // check
@@ -90,8 +95,7 @@ public class Watson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
+        m_agent.update();
         // if they are tethered stay near them 
         if (bTethered)
         {
@@ -112,25 +116,16 @@ public class Watson : MonoBehaviour
             // use nav mesh to move infront of the player
             GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2 ;
 
-            // and rotate towards target
+            // and rotate towards target/player
             Vector3 targetDir = goParentTether.transform.position - transform.position;
            
             float step = m_agent.fRotationSpeed * Time.deltaTime;
-            Vector3 dif = transform.forward - targetDir;
-            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
-            Quaternion q=  new Quaternion(Quaternion.LookRotation(newDir).x, Quaternion.LookRotation(newDir).y, 0, Quaternion.LookRotation(newDir).w);
-            //  transform.rotation = q;
-            // Quaternion difference = q - transform.rotation;
-            Debug.Log("current" + transform.forward);
-            Debug.Log("target" + targetDir);
-            Debug.Log("difference" + dif);
-
-            //Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
            
-            
-            
-
-
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+            // we only need to rotate on the y axis
+            Quaternion q = new Quaternion(0, Quaternion.LookRotation(newDir).y, 0, Quaternion.LookRotation(newDir).w);
+            transform.rotation = q;
+           
             // strengthen the player bond;
             if (m_agent.fPlayerBond < m_agent.fPlayerBondMax)
             {
@@ -145,32 +140,23 @@ public class Watson : MonoBehaviour
         }
         else
         {
-            // idle / execute the behaviour tree
-            m_agent.update();
             m_light.turnOff();
-            //print(m_agent.getPosition());
-
+            
             //calculate Position
             Vector3 tempPos = new Vector3() ;
             tempPos.x = m_agent.getPosition().x;
           
             GetComponent<NavMeshAgent>().destination = m_agent.getPosition();
-
-            //transform.position = tempPos;
-
+            
             // and rotate towards target
             Vector3 targetDir = m_agent.getTarget() - transform.position;
            
             float step = m_agent.fRotationSpeed * Time.deltaTime;
 
-            if (step > fStepThreshold)
-            {
-                Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0F);
-               
-                Quaternion tempquat = Quaternion.LookRotation(newDir);
-                tempquat.x = transform.rotation.x;
-                transform.rotation = tempquat;
-            }
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+            // we only need to rotate on the y axis
+            Quaternion q = new Quaternion(0, Quaternion.LookRotation(newDir).y, 0, Quaternion.LookRotation(newDir).w);
+            transform.rotation = q;
             
         }
     }// update 
