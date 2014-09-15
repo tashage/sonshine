@@ -1079,7 +1079,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.88957691
+      value: 1.54228592
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3026,6 +3026,7 @@ GameObject:
   - 4: {fileID: 398679521}
   - 95: {fileID: 398679523}
   - 114: {fileID: 398679522}
+  - 114: {fileID: 398679524}
   m_Layer: 0
   m_Name: WatsonAnimations
   m_TagString: Untagged
@@ -3073,6 +3074,21 @@ Animator:
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &398679524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 398679520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c33b72ba8c5b3e4a8ac651501a7237e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 398679523}
+  ikActive: 0
+  rightHandObj: {fileID: 695658414}
+  leftHandObj: {fileID: 930069647}
 --- !u!1 &409181138
 GameObject:
   m_ObjectHideFlags: 0
@@ -5063,8 +5079,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695658413}
   m_LocalRotation: {x: 0, y: -.952511609, z: 0, w: .304502457}
-  m_LocalPosition: {x: 2.00568008, y: -.700992346, z: 2.99722743}
-  m_LocalScale: {x: .5, y: .5, z: .5}
+  m_LocalPosition: {x: 1.5, y: -.719677687, z: 2}
+  m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 1354466214}
 --- !u!23 &695658415
@@ -5073,7 +5089,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 695658413}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -6760,8 +6776,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 930069646}
   m_LocalRotation: {x: 0, y: -.952511609, z: 0, w: .304502457}
-  m_LocalPosition: {x: -2.0056808, y: -.700992346, z: 2.99722624}
-  m_LocalScale: {x: .499999821, y: .5, z: .499999821}
+  m_LocalPosition: {x: -1.5, y: -.719677687, z: 2}
+  m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 1354466214}
 --- !u!23 &930069648
@@ -6770,7 +6786,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 930069646}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -9227,7 +9243,6 @@ GameObject:
   - 136: {fileID: 1256479778}
   - 195: {fileID: 1256479776}
   - 54: {fileID: 1256479777}
-  - 114: {fileID: 1256479780}
   m_Layer: 0
   m_Name: Child
   m_TagString: Child
@@ -9315,20 +9330,6 @@ MonoBehaviour:
   Distractions:
   - {fileID: 1499944756}
   - {fileID: 1008626439}
---- !u!114 &1256479780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1256479774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c33b72ba8c5b3e4a8ac651501a7237e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 398679523}
-  ikActive: 0
-  rightHandObj: {fileID: 695658414}
 --- !u!1 &1258516646
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,7 +9996,7 @@ Transform:
   m_PrefabInternal: {fileID: 183663113}
   m_GameObject: {fileID: 1354466213}
   m_LocalRotation: {x: 0, y: .952511609, z: 0, w: .304502457}
-  m_LocalPosition: {x: 104.212234, y: 1.88957691, z: 94.1729126}
+  m_LocalPosition: {x: 104.212234, y: 1.54228592, z: 94.1729126}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 771731068}
