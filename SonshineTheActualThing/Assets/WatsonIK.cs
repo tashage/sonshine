@@ -34,12 +34,12 @@ public class WatsonIK : MonoBehaviour {
                 animator.SetIKRotationWeight(AvatarIKGoal.RightHand, 1.0f);
 
                 //set the position and teh rotation of the right hand where the external object is
-                if (rightHandObj != null)
+                if (Input.GetMouseButton(1) && rightHandObj != null)
                 {
                     animator.SetIKPosition(AvatarIKGoal.LeftHand, rightHandObj.position);
                     animator.SetIKRotation(AvatarIKGoal.LeftHand, rightHandObj.rotation);
                 }
-                if (leftHandObj != null)
+                if (Input.GetMouseButton(0) && leftHandObj != null)
                 {
                     animator.SetIKPosition(AvatarIKGoal.RightHand, leftHandObj.position);
                     animator.SetIKRotation(AvatarIKGoal.RightHand, leftHandObj.rotation);
