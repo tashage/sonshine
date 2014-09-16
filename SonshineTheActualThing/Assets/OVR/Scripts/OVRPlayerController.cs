@@ -292,7 +292,10 @@ public class OVRPlayerController : MonoBehaviour
 		// Rotate
 			
 		// D-Pad rachet
-
+        /******************************************
+         * TASH DISABLED THIS
+         * why on earth would anyone want to "ratchet" their rotation in the rift? (blergh)
+         * 
 		bool curHatLeft = false;
 		if(OVRGamepadController.GPC_GetButton((int)OVRGamepadController.Button.Left) == true)
 			curHatLeft = true;
@@ -311,11 +314,13 @@ public class OVRPlayerController : MonoBehaviour
 		
 		prevHatRight = curHatRight;
 
+
 		//Use keys to ratchet rotation
 		if (Input.GetKeyDown(KeyCode.Q)) 
 			YRotation -= RotationRatchet; 
 		if (Input.GetKeyDown(KeyCode.E)) 
 			YRotation += RotationRatchet;
+         *********************************** */
 		
 		// * * * * * * * * * * *
 		// Mouse input

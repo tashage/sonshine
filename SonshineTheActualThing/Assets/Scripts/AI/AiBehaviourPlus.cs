@@ -8,7 +8,7 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 19/8/14
+/// Last Updated: 26/8/14
 /// Description:
 /// These classes will serve as the individual actions the ai may use.
 /// </summary>
@@ -28,7 +28,7 @@ namespace AiBehaviourPlus_ns
         {
             
             float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
-           
+           // Debug.Log("within range");
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
                 //Debug.Log("executing within range as true");
@@ -55,18 +55,25 @@ namespace AiBehaviourPlus_ns
             ChildInteractable tempInteracatable = null;
             for (int i = 0; i < PossibleDistractions.Count; i++)
             {
-                float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
-
-                // is the distraction close enough to be considered?
-                if (tempValue > PossibleDistractions[i].DistractionValues.fVisibleDistance)
+                if (PossibleDistractions[i] == null)
                 {
-                    // calculate weighting
-                    PossibleDistractions[i].DistractionValues.fPostCheckValue = 0;
+                    PossibleDistractions.Remove(PossibleDistractions[i]);
+                }
+                else
+                {
+                    float tempValue = Vector3.Distance(a_pos, PossibleDistractions[i].gameObject.transform.position);
+                    //Debug.Log(tempValue);
+                    // is the distraction close enough to be considered?
+                    if (tempValue < PossibleDistractions[i].DistractionValues.fVisibleDistance)
+                    {
+                        // calculate weighting
+                        PossibleDistractions[i].DistractionValues.fPostCheckValue = 0;
 
-                    tempValue = tempValue * PossibleDistractions[i].DistractionValues.fDistanceWeightingFalloff
-                    * PossibleDistractions[i].DistractionValues.fWeighting;
-                   
-                    PossibleDistractions[i].DistractionValues.fPostCheckValue =tempValue;
+                        tempValue = tempValue * PossibleDistractions[i].DistractionValues.fDistanceWeightingFalloff
+                        * PossibleDistractions[i].DistractionValues.fWeighting;
+
+                        PossibleDistractions[i].DistractionValues.fPostCheckValue = tempValue;
+                    }
                 }
             }
             // check the values of all other distractions
@@ -77,32 +84,39 @@ namespace AiBehaviourPlus_ns
                     tempInteracatable = PossibleDistractions[d];
                 }
                     // if the value is higher set that as the new distraction
-                else if (PossibleDistractions[d].DistractionValues.fPostCheckValue < tempInteracatable.DistractionValues.fPostCheckValue)
+                else if (PossibleDistractions[d].DistractionValues.fPostCheckValue > tempInteracatable.DistractionValues.fPostCheckValue)
                 {
                     tempInteracatable = PossibleDistractions[d];
                 }
 
             }
 
-            return tempInteracatable;
+            // now ensure that it is within the the range
+            if (tempInteracatable != null)
+            {
+                float tempDistance = Vector3.Distance(a_pos, tempInteracatable.gameObject.transform.position);
+                if (tempDistance < tempInteracatable.DistractionValues.fVisibleDistance)
+                    return tempInteracatable;
+                else
+                    return null;
+            }
+            else
+                return null;
         }
 
         public override bool execute(Agent a_agent)
         {
 
-           
+           // Debug.Log("create target");
             // calculate the target
             ChildInteractable tempInteractable = CalculateBestOption(a_agent.getPosition());
-            if (tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
+            if (tempInteractable!=null && tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
             {
                 a_agent.setTarget(tempInteractable.gameObject.transform.position);
-                //Debug.Log(tempInteractable.gameObject.transform.position);
-              //  Debug.Log("executing create target as true");
                 return true;
             }
             else
             {
-               // Debug.Log("executing create target as false");
                 a_agent.setTarget(a_agent.getPosition());
                 return false;
             }
@@ -116,7 +130,7 @@ namespace AiBehaviourPlus_ns
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
-
+           // Debug.Log("seek target");
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }
@@ -125,7 +139,6 @@ namespace AiBehaviourPlus_ns
 
     public class IsClose : AiBehaviour
     {
-
         public override bool execute(Agent a_agent)
         {
             // if the agent is within below amount of distance
@@ -137,4 +150,44 @@ namespace AiBehaviourPlus_ns
         }
 
     }
+
+    public class IsBondStrong : AiBehaviour
+    {
+        private float BondNeeded; // the bond needed to determine if its strong enough
+
+        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; }
+
+        public override bool execute(Agent a_agent)
+        {
+            //if the bond with the player is strong enough
+            if (a_agent.fPlayerBond > BondNeeded)
+            {
+                return true;
+            }
+            else return false;
+        }
+    }
+    public class Avoid : AiBehaviour
+    {
+        private Vector3 WhatIsAvoided;
+
+        public Avoid() { }
+
+        public void SetAvoid(Vector3 a_WhatIsAvoided) { WhatIsAvoided = a_WhatIsAvoided; }
+
+        public override bool execute(Agent a_agent)
+        {
+            Vector3 heading = a_agent.getPosition() - WhatIsAvoided;
+            float distance = heading.magnitude;
+            Vector3 direction = heading / distance; // This is now the normalized direction.
+
+            a_agent.setPosition(direction * distance * 1.2f);
+
+            return true;
+        }
+
+
+    }
+
+    
 }

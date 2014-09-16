@@ -4,7 +4,7 @@ using System.Collections;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 19/8/14
-/// Last Updated: 19/8/14
+/// Last Updated: 26/8/14
 /// Description:
 /// These classes will serve as the individual distraction the child
 /// will interact with.
@@ -14,6 +14,8 @@ public class ChildInteractable : MonoBehaviour {
 	// Use this for initialization
 
     // This class is the individual objects in the world that can distract the child.
+
+    //FIX why the fuck does this exist
     public class Distraction
     {
         public float    fDistanceWeightingFalloff;  // this is the multiplier applied to the distance to affect the weighting.

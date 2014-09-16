@@ -1,21 +1,22 @@
 ﻿using UnityEngine;
-using System.Collections;
 
+public enum GameState
+{
+    NULL = 0,
+    MAIN_MENU = 1,
+    LEVEL_ONE = MAIN_MENU << 1,
+    PAUSE_MENU = LEVEL_ONE << 1,
+    QUIT_GAME = PAUSE_MENU << 1
+}
 
 public delegate void OnStateChangeHandler();
 
-//a Gamemanager resides in each state and holds a list of states reachable from that state
-
-public class GameManager : MonoBehaviour 
+public class GameManager :MonoBehaviour
 {
-
-    //public string[] Scenes;
+    public Transform ManagerObject;
     private static GameManager Manager = null;
     public event OnStateChangeHandler OnStateChange;
-    State CurrentState;
-    public GameObject StateScript;
-    public string StartState;
-    public MonoBehaviour scriptss;
+    public GameState gameState { get; private set; }
     protected GameManager() { }
 
     // Singleton pattern implementation
@@ -31,22 +32,21 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void SetGameState(string NewState)
+    public void SetGameState(GameState newState)
     {
-        this.CurrentState.SceneName = NewState;//change state. duh.
+        
+        this.gameState = newState;
+        if (OnStateChange != null)
+        {
+            OnStateChange();
+        }
+        if (newState != this.gameState)
+        {
+            Application.LoadLevel((int)Manager.gameState);
+        }
     }
-
-	// Use this for initialization
-	void Start () 
+    void Awake()
     {
-        StateScript.GetComponent(StartState);
-        SetGameState(CurrentState.SceneName);
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-	    //Constantly check for state changes. level completions / pauses etc.
-        CurrentState.Update();
-	}
+        Object.DontDestroyOnLoad(ManagerObject);
+    }
 }
