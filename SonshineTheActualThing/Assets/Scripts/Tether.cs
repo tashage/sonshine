@@ -20,12 +20,15 @@ public class Tether : MonoBehaviour {
                 if (Vector3.Distance(m_TheChild.transform.position, transform.position) < fMinDistanceToTether)
                 {
                     m_TheChild.bTethered = true;
-
+                    m_TheChild.m_light.setIntensity(0.4f);
+                    m_TheChild.m_light.SetRange(75.0f);
                 }
             }
             else
             {
+                m_TheChild.m_light.setIntensity(0.1f);
                 m_TheChild.bTethered = false;
+                m_TheChild.m_light.SetRange(35.0f);
             }
                 
         }
