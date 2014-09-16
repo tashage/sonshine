@@ -121,6 +121,10 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 13600000, guid: 0e209471a7eeb2142b0990246573b8ae, type: 2}
+      propertyPath: m_Center.y
+      value: 300
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0e209471a7eeb2142b0990246573b8ae, type: 2}
   m_RootGameObject: {fileID: 409181138}
@@ -1190,15 +1194,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 104.212234
+      value: 48.8725243
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.24372005
+      value: 1.75753689
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 94.1729126
+      value: 153.876053
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1246,11 +1250,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxForwardSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxSidewaysSpeed
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxBackwardsSpeed
@@ -3217,6 +3221,7 @@ GameObject:
   - 23: {fileID: 409181141}
   - 95: {fileID: 409181140}
   - 136: {fileID: 409181139}
+  - 208: {fileID: 409181144}
   m_Layer: 0
   m_Name: PF_LightTree
   m_TagString: Untagged
@@ -3237,7 +3242,7 @@ CapsuleCollider:
   m_Radius: 110
   m_Height: 751.748596
   m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
+  m_Center: {x: 0, y: 300, z: 0}
 --- !u!95 &409181140
 Animator:
   serializedVersion: 2
@@ -3295,6 +3300,17 @@ Transform:
   m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
   m_Children: []
   m_Father: {fileID: 180182167}
+--- !u!208 &409181144
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 409181138}
+  m_Enabled: 1
+  m_Radius: 80
+  m_Height: 300
+  m_MoveThreshold: 0
+  m_Carve: 0
 --- !u!1 &409302338
 GameObject:
   m_ObjectHideFlags: 0
@@ -9501,7 +9517,7 @@ MonoBehaviour:
   radialBlurIterations: 2
   sunColor: {r: 1, g: 1, b: 1, a: 1}
   sunShaftBlurRadius: 7.78000021
-  sunShaftIntensity: .600000024
+  sunShaftIntensity: .800000012
   useSkyBoxAlpha: .75
   maxRadius: .863000035
   useDepthTexture: 1
@@ -9625,7 +9641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256479774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 105.588409, y: 1.20394421, z: 88.5167999}
+  m_LocalPosition: {x: 105.588409, y: 1, z: 88.5167999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494080173}
@@ -9641,16 +9657,16 @@ NavMeshAgent:
   m_GameObject: {fileID: 1256479774}
   m_Enabled: 1
   m_Radius: .699999988
-  m_Speed: 5
-  m_Acceleration: 8
+  m_Speed: 2
+  m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2.5
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 1.10000002
+  m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &1256479777
@@ -10364,7 +10380,7 @@ Transform:
   m_PrefabInternal: {fileID: 183663113}
   m_GameObject: {fileID: 1354466213}
   m_LocalRotation: {x: 0, y: .952511609, z: 0, w: .304502457}
-  m_LocalPosition: {x: 104.212234, y: 1.24372005, z: 94.1729126}
+  m_LocalPosition: {x: 48.8725243, y: 1.75753689, z: 153.876053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 771731068}
@@ -10452,8 +10468,8 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 5
-    maxSidewaysSpeed: 5
+    maxForwardSpeed: 3
+    maxSidewaysSpeed: 3
     maxBackwardsSpeed: 4
     slopeSpeedMultiplier:
       serializedVersion: 2
@@ -14502,7 +14518,7 @@ TerrainCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973286713}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: bba5434d0ccdc764cbf2bac67f07c8e8, type: 2}
   m_CreateTreeColliders: 1

@@ -159,7 +159,15 @@ public class Watson : MonoBehaviour
             transform.rotation = q;
             
         }
-    }// update 
+
+
+        /// this area handles animations 
+        if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE)
+        {
+             //GetComponent<WatsonAnimation>()
+        }
+
+      }// update 
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log("coliding");

@@ -22,6 +22,18 @@ namespace AiBehaviour_ns
     public class AiBehaviour 
     {
 
+
+        public enum BehaviourType
+        {
+            NONE,
+            WITHINRANGE,
+            CREATETARGET,
+            SEEK,
+            ISCLOSE,
+            ISBONDSTRONG,
+            AVOID
+        } public BehaviourType m_BehaviourType;
+
         public AiBehaviour() { }
 
         virtual public bool execute(Agent a_agent) { return false; }
