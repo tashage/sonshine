@@ -51,7 +51,7 @@ public class Watson : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        fMovementSpeed = 5.0f;
+        fMovementSpeed = GetComponent<NavMeshAgent>().speed;
         m_agent.fMovementSpeed = fMovementSpeed;
         fTetherThreshold = 1.0f;
         m_agent.fBoredem = -1.0f;
@@ -104,7 +104,7 @@ public class Watson : MonoBehaviour
             m_light.turnOn();
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
-            if (distance < 5)
+            if (distance < 2)
                 GetComponent<NavMeshAgent>().speed = distance;
             else
                 GetComponent<NavMeshAgent>().speed = fMovementSpeed;
