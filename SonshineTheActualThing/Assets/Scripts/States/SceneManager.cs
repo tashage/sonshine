@@ -10,34 +10,32 @@ public class SceneManager : MonoBehaviour {
         Manager = GameManager.Instance;
         Manager.OnStateChange += HandleOnStateChange;
 
-        Debug.Log("Current game state when Awakes: " + Manager.gameState);
+        Debug.Log("Current game state when Awakes: " + Manager.currentState);
 
-        Manager.SetGameState(GameState.MAIN_MENU);
+        Manager.SetGameState(GameState.NULL);
+        Debug.Log("State has been set");
     }
 
 	void Start () 
     {
-        Debug.Log("Current game state when Starts: " + Manager.gameState);
+        Debug.Log("Current game state when Starts: " + Manager.currentState);
 	}
 
     public void HandleOnStateChange() 
     {
-        Debug.Log("Handling state change to: " + Manager.gameState);
-        
-        /*switch (Manager.gameState)
-        {
-                case GameState.MAIN_MENU:
-                Application.LoadLevel(0);
-                break;
-                case GameState.LEVEL_ONE:
-                Application.LoadLevel(1);
-                break;
-                case GameState.PAUSE_MENU:
-
-                break;
-                case GameState.QUIT_GAME:
-
-                break;
-        }*/
+        Debug.Log("Handling state change to: " + Manager.currentState);
 	}
+
+    void LateUpdate()//check for state changes here
+    {
+        if (Manager.currentState == GameState.NULL)
+        {
+            Manager.SetGameState(GameState.MAIN_MENU);
+        }
+
+        else if (Input.GetButtonDown("space"))
+        {
+            Manager.SetGameState(GameState.LEVEL_ONE);
+        }
+    }
 }

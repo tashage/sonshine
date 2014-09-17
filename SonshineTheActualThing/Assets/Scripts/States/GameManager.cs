@@ -16,7 +16,7 @@ public class GameManager :MonoBehaviour
     public Transform ManagerObject;
     private static GameManager Manager = null;
     public event OnStateChangeHandler OnStateChange;
-    public GameState gameState { get; private set; }
+    public GameState currentState { get; private set; }
     protected GameManager() { }
 
     // Singleton pattern implementation
@@ -34,15 +34,19 @@ public class GameManager :MonoBehaviour
 
     public void SetGameState(GameState newState)
     {
+        Debug.Log("     Current ->   " + currentState);
+
+        Debug.Log("     New ->   " + newState);
+
+        if (this.currentState != newState)
+        {
+            this.currentState = newState;
+            if (OnStateChange != null)
+            {
+                OnStateChange();
+            }
         
-        this.gameState = newState;
-        if (OnStateChange != null)
-        {
-            OnStateChange();
-        }
-        if (newState != this.gameState)
-        {
-            Application.LoadLevel((int)Manager.gameState);
+            Application.LoadLevel((int)Manager.currentState);
         }
     }
     void Awake()
