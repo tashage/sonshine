@@ -1,6 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Author: Jacob Connelly
+/// Date Created: 14/8/14
+/// Last Updated: 17/9/14
+/// Description: 
+/// This script will be used to tether the child to the parent
+/// </summary>
+
 public class Tether : MonoBehaviour {
 
 	// Use this for initialization
@@ -12,8 +20,11 @@ public class Tether : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        // if the space key is pressed tether or un tether the child
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            // if the child is NOT tethered 
             if(m_TheChild !=null)
             if (m_TheChild.bTethered == false)
             {
@@ -24,7 +35,7 @@ public class Tether : MonoBehaviour {
                     m_TheChild.m_light.SetRange(75.0f);
                 }
             }
-            else
+            else // if the child is tethered
             {
                 m_TheChild.m_light.setIntensity(0.1f);
                 m_TheChild.bTethered = false;

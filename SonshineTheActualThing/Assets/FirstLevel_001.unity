@@ -1198,7 +1198,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 54.2072411
+      value: 51.615097
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1206,7 +1206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 153.444458
+      value: 152.828751
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1254,11 +1254,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxForwardSpeed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxSidewaysSpeed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.maxBackwardsSpeed
@@ -5077,7 +5077,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 668704624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.31285858, y: .587234497, z: .684928894}
+  m_LocalPosition: {x: 1.31285858, y: 1.51403904, z: .684928894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 494080173}
@@ -10376,7 +10376,7 @@ Transform:
   m_PrefabInternal: {fileID: 183663113}
   m_GameObject: {fileID: 1354466213}
   m_LocalRotation: {x: 0, y: .952511609, z: 0, w: .304502457}
-  m_LocalPosition: {x: 54.2072411, y: 1.9462595, z: 153.444458}
+  m_LocalPosition: {x: 51.615097, y: 1.9462595, z: 152.828751}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 771731068}
@@ -10464,8 +10464,8 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 3
-    maxSidewaysSpeed: 3
+    maxForwardSpeed: 4
+    maxSidewaysSpeed: 4
     maxBackwardsSpeed: 4
     slopeSpeedMultiplier:
       serializedVersion: 2
@@ -11481,7 +11481,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1555466209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.32391357, y: .587234497, z: .482498169}
+  m_LocalPosition: {x: -1.32391357, y: 1.50033903, z: .482498169}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 494080173}
@@ -14690,7 +14690,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1859216886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .587234497, z: -1.5}
+  m_LocalPosition: {x: 0, y: 1.82816124, z: -1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 494080173}

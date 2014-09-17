@@ -8,10 +8,9 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 17/9/14
 /// Description: 
-/// This script will be used as the overall actions of the child to the 
-/// player
+/// This script will be used as the controlling and interaction of the child
 /// </summary>
 
 public class Watson : MonoBehaviour

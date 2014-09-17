@@ -2,6 +2,15 @@
 using System.Collections;
 using System.Collections.Generic;
 
+
+/// <summary>
+/// Author: Jacob Connelly
+/// Date Created: 13/8/14
+/// Last Updated: 16/9/14
+/// Description: 
+/// This script controls the feel and effects of the childs lights
+/// </summary>
+/// 
 public class WatsonsLight : MonoBehaviour {
 
 	// Use this for initialization
@@ -25,6 +34,7 @@ public class WatsonsLight : MonoBehaviour {
     public Light m_WorldLight;          
     List<float> lightPoints;
 
+    // these functions change the lights values which will effect its glow in the update
     public void setIntensity(float a_intensity) {  fStartingStrength = a_intensity; }
     public void setRateOfLoss(float a_rateOfLoss) { fRateOfLoss = a_rateOfLoss; }
     public void SetRange(float a_range)  { fSetRange = a_range; }
@@ -98,7 +108,7 @@ public class WatsonsLight : MonoBehaviour {
             m_WorldLight.intensity -= fWorldLightRateOfLoss * Time.deltaTime;
 
 
-        // associated to the increase and loss of range
+        // associated to the increase and loss of range when it changes
         if (fCurrentRange < fSetRange)
             fCurrentRange += fRateOfRangeChange * Time.deltaTime;
 
