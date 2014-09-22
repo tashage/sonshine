@@ -29,6 +29,9 @@ public class Watson : MonoBehaviour
     private float fTetherThreshold;
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
 
+
+    public Animator anim;
+
     public WatsonsLight m_light;
 
     // behaviours 
@@ -173,7 +176,14 @@ public class Watson : MonoBehaviour
             }
             
         }
+
+        //send the animation booleans to the animation controller
+        Debug.Log("speed = " + fMovementSpeed);
+        anim.SetBool("IsWalking", (GetComponent<NavMeshAgent>().speed > 0));
+        anim.SetBool("IsHoldingHands", bTethered);
     }// update 
+
+
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log("coliding");

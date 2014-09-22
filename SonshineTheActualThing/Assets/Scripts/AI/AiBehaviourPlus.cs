@@ -14,21 +14,20 @@ using Agent_ns;
 /// </summary>
 namespace AiBehaviourPlus_ns
 {
-
     /// <summary>
     /// if the agent is within range of the target that was set
     /// </summary>
     public class WithinRange : AiBehaviour
     {
         private float m_range2;
+        public Animator anim;
 
         public WithinRange(float a_range) { m_range2 = a_range * a_range; }
 
         public override bool execute(Agent a_agent)
         {
-            
             float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
-           // Debug.Log("within range");
+            // Debug.Log("within range");
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
                 //Debug.Log("executing within range as true");

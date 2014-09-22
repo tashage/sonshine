@@ -9326,6 +9326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goParentTether: {fileID: 1354466213}
   bTethered: 0
+  anim: {fileID: 398679523}
   m_light: {fileID: 494080174}
   Distractions:
   - {fileID: 1499944756}
