@@ -20,7 +20,6 @@ namespace AiBehaviourPlus_ns
     public class WithinRange : AiBehaviour
     {
         private float m_range2;
-        public Animator anim;
 
         public WithinRange(float a_range) { m_range2 = a_range * a_range; }
 
@@ -125,12 +124,16 @@ namespace AiBehaviourPlus_ns
     // seek target : move towards current set target 
     public class SeekTarget : AiBehaviour
     {
-         // if the distance is greater than the pre defined threshold move towards the parent
+
+        //public Animator anim;
+        // if the distance is greater than the pre defined threshold move towards the parent
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
            // Debug.Log("seek target");
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
+            //HERE send the walk bool to the animator controller
+            //anim.SetBool("IsWalking", true);
             return true;
         }
 
