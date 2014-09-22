@@ -14,15 +14,14 @@ using Agent_ns;
 /// </summary>
 namespace AiBehaviourPlus_ns
 {
-
     /// <summary>
     /// if the agent is within range of the target that was set
     /// </summary>
     public class WithinRange : AiBehaviour
     {
         private float m_range2;
-
-        public WithinRange(float a_range) { m_range2 = a_range * a_range; }
+        
+        public WithinRange(float a_range) { m_range2 = a_range * a_range; m_BehaviourType = BehaviourType.WITHINRANGE; }
 
         public override bool execute(Agent a_agent)
         {
@@ -46,8 +45,8 @@ namespace AiBehaviourPlus_ns
     public class CreateTarget : AiBehaviour
     {
         public List<ChildInteractable> PossibleDistractions;
-
-        public CreateTarget() { }
+        
+        public CreateTarget() { m_BehaviourType = BehaviourType.CREATETARGET; }
 
         public ChildInteractable CalculateBestOption(Vector3 a_pos)
         {
@@ -126,6 +125,8 @@ namespace AiBehaviourPlus_ns
     // seek target : move towards current set target 
     public class SeekTarget : AiBehaviour
     {
+       
+        public SeekTarget() { m_BehaviourType = BehaviourType.SEEK; }
          // if the distance is greater than the pre defined threshold move towards the parent
         public override bool execute(Agent a_agent)
         {
@@ -139,6 +140,10 @@ namespace AiBehaviourPlus_ns
 
     public class IsClose : AiBehaviour
     {
+       
+
+        public IsClose() { m_BehaviourType = BehaviourType.ISCLOSE;}
+
         public override bool execute(Agent a_agent)
         {
             // if the agent is within below amount of distance
@@ -153,9 +158,10 @@ namespace AiBehaviourPlus_ns
 
     public class IsBondStrong : AiBehaviour
     {
+       
         private float BondNeeded; // the bond needed to determine if its strong enough
 
-        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; }
+        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; m_BehaviourType = BehaviourType.ISBONDSTRONG; }
 
         public override bool execute(Agent a_agent)
         {
@@ -170,8 +176,8 @@ namespace AiBehaviourPlus_ns
     public class Avoid : AiBehaviour
     {
         private Vector3 WhatIsAvoided;
-
-        public Avoid() { }
+       
+        public Avoid() { m_BehaviourType = BehaviourType.AVOID; }
 
         public void SetAvoid(Vector3 a_WhatIsAvoided) { WhatIsAvoided = a_WhatIsAvoided; }
 
@@ -188,6 +194,8 @@ namespace AiBehaviourPlus_ns
 
 
     }
+
+    
 
     
 }

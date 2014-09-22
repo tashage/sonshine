@@ -2,9 +2,9 @@
 
 public enum GameState
 {
-    NULL = 0,
-    MAIN_MENU = 1,
-    LEVEL_ONE = MAIN_MENU << 1,
+    //NULL = 0,
+    MAIN_MENU = 0,
+    LEVEL_ONE = 1,
     PAUSE_MENU = LEVEL_ONE << 1,
     QUIT_GAME = PAUSE_MENU << 1
 }
@@ -33,11 +33,7 @@ public class GameManager :MonoBehaviour
     }
 
     public void SetGameState(GameState newState)
-    {
-        Debug.Log("     Current ->   " + currentState);
-
-        Debug.Log("     New ->   " + newState);
-
+    {  
         if (this.currentState != newState)
         {
             this.currentState = newState;

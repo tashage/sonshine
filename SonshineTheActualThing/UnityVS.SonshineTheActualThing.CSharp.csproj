@@ -57,6 +57,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MusicHandler.cs" />
+    <Compile Include="Assets\ONOFF.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -84,6 +86,7 @@
     <Compile Include="Assets\Scripts\WatsonAnimation.cs" />
     <Compile Include="Assets\Scripts\WatsonsLight.cs" />
     <Compile Include="Assets\SpaceTurnOnLight.cs" />
+    <Compile Include="Assets\WatsonIK.cs" />
     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
     <None Include="Assets\Plugins\donotdelete.txt" />

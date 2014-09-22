@@ -29,7 +29,7 @@ AnimatorController:
     m_SyncedLayerIndex: -1
     m_StateMachineMotionSetIndex: 0
     m_DefaultWeight: 0
-    m_IKPass: 0
+    m_IKPass: 1
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
 --- !u!1101 &110100000
@@ -297,7 +297,7 @@ State:
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400006, guid: 7aa874445e0aaf34f81b06e4855a5aad, type: 3}
+  - {fileID: 7400000, guid: 7aa874445e0aaf34f81b06e4855a5aad, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
   m_Position: {x: 552, y: 156, z: 0}
   m_IKOnFeet: 0

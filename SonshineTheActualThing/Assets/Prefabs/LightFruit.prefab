@@ -16,7 +16,7 @@ GameObject:
   - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: LightFruit
-  m_TagString: Untagged
+  m_TagString: LightFruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

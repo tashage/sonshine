@@ -12,8 +12,7 @@ public class SceneManager : MonoBehaviour {
 
         Debug.Log("Current game state when Awakes: " + Manager.currentState);
 
-        Manager.SetGameState(GameState.NULL);
-        Debug.Log("State has been set");
+        Manager.SetGameState(GameState.MAIN_MENU);
     }
 
 	void Start () 
@@ -28,12 +27,7 @@ public class SceneManager : MonoBehaviour {
 
     void LateUpdate()//check for state changes here
     {
-        if (Manager.currentState == GameState.NULL)
-        {
-            Manager.SetGameState(GameState.MAIN_MENU);
-        }
-
-        else if (Input.GetButtonDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space) == true)
         {
             Manager.SetGameState(GameState.LEVEL_ONE);
         }
