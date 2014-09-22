@@ -69,7 +69,9 @@
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
      <Compile Include="Assets\Scripts\States\GameManager.cs" />
+     <Compile Include="Assets\Scripts\States\Menu.cs" />
      <Compile Include="Assets\Scripts\States\SceneManager.cs" />
+     <Compile Include="Assets\Scripts\States\StateTemplate.cs" />
      <Compile Include="Assets\Scripts\Tether.cs" />
      <Compile Include="Assets\Scripts\Watson.cs" />
      <Compile Include="Assets\Scripts\WatsonAnimation.cs" />

@@ -7,5 +7,3 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Menu.unity
-  - enabled: 1
-    path: Assets/FirstScene001.unity
