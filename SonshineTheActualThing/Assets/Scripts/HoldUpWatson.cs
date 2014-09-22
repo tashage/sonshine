@@ -14,10 +14,18 @@ public class HoldUpWatson : MonoBehaviour {
 
 	// Use this for initialization
     public Watson m_TheChild;
+    float fOriginalBaseOffset;
+    float fLiftRate;
+
+    float fMaxOffset;
     bool isPressed;
 
 	void Start () {
         isPressed = false;
+
+        fOriginalBaseOffset = m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset;
+        fMaxOffset = fOriginalBaseOffset + 2;
+        fLiftRate = 1.3f;
 	}
 	
 	// Update is called once per frame
@@ -41,15 +49,15 @@ public class HoldUpWatson : MonoBehaviour {
       
         if (isPressed)
         {
-            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < 3)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset += 1.3f * Time.deltaTime;
+            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fMaxOffset)
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset += fLiftRate * Time.deltaTime;
         }
         else
         {
-            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > 1.1)
+            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
-            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < 1.1)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = 1.1f;
+            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
         }
                
             

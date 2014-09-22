@@ -8,10 +8,9 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 17/9/14
 /// Description: 
-/// This script will be used as the overall actions of the child to the 
-/// player
+/// This script will be used as the controlling and interaction of the child
 /// </summary>
 
 public class Watson : MonoBehaviour
@@ -102,6 +101,7 @@ public class Watson : MonoBehaviour
             // find the distance to the parent
             float distance = Vector3.Distance(transform.position, goParentTether.transform.position);
             m_light.turnOn();
+            
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
             if (distance < 2)
@@ -140,6 +140,7 @@ public class Watson : MonoBehaviour
         }
         else
         {
+
             m_light.turnOff();
             
             //calculate Position
@@ -162,9 +163,10 @@ public class Watson : MonoBehaviour
 
 
         /// this area handles animations 
-        if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE)
+        /// or you can do it within the actual behaviours
+        if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
         {
-             //GetComponent<WatsonAnimation>()
+            
         }
 
       }// update 
