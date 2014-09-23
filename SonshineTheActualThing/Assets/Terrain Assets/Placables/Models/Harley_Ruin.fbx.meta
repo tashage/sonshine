@@ -1,0 +1,108 @@
+fileFormatVersion: 2
+guid: 1bd5408dd503cf94baece3dedebd6333
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Ruin_Arch
+    100004: Ruin_BrokenPole
+    100006: Ruin_Pillar_Fallen
+    100008: Ruin_Pillar_Upright
+    100010: Ruin_Stone01
+    100012: Ruin_Stone02
+    100014: Ruin_Tunnel
+    100016: Ruin_Wall
+    400000: //RootNode
+    400002: Ruin_Arch
+    400004: Ruin_BrokenPole
+    400006: Ruin_Pillar_Fallen
+    400008: Ruin_Pillar_Upright
+    400010: Ruin_Stone01
+    400012: Ruin_Stone02
+    400014: Ruin_Tunnel
+    400016: Ruin_Wall
+    2300000: Ruin_Arch
+    2300002: Ruin_BrokenPole
+    2300004: Ruin_Pillar_Fallen
+    2300006: Ruin_Pillar_Upright
+    2300008: Ruin_Stone01
+    2300010: Ruin_Stone02
+    2300012: Ruin_Tunnel
+    2300014: Ruin_Wall
+    3300000: Ruin_Arch
+    3300002: Ruin_BrokenPole
+    3300004: Ruin_Pillar_Fallen
+    3300006: Ruin_Pillar_Upright
+    3300008: Ruin_Stone01
+    3300010: Ruin_Stone02
+    3300012: Ruin_Tunnel
+    3300014: Ruin_Wall
+    4300000: Ruin_Arch
+    4300002: Ruin_Pillar_Upright
+    4300004: Ruin_Wall
+    4300006: Ruin_Stone01
+    4300008: Ruin_Pillar_Fallen
+    4300010: Ruin_Stone02
+    4300012: Ruin_Tunnel
+    4300014: Ruin_BrokenPole
+    6400000: Ruin_Arch
+    6400002: Ruin_BrokenPole
+    6400004: Ruin_Pillar_Fallen
+    6400006: Ruin_Pillar_Upright
+    6400008: Ruin_Stone01
+    6400010: Ruin_Stone02
+    6400012: Ruin_Tunnel
+    6400014: Ruin_Wall
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 
