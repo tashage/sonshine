@@ -3203,7 +3203,7 @@ Animator:
   m_Avatar: {fileID: 9000000, guid: 7aa874445e0aaf34f81b06e4855a5aad, type: 3}
   m_Controller: {fileID: 9100000, guid: 9dbd39a565e7a864c8e211c8ee83ca0b, type: 2}
   m_CullingMode: 1
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_AnimatePhysics: 0
   m_HasTransformHierarchy: 1
 --- !u!114 &398679524
@@ -3212,13 +3212,13 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 398679520}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c33b72ba8c5b3e4a8ac651501a7237e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 398679523}
-  ikActive: 1
+  ikActive: 0
   rightHandObj: {fileID: 695658414}
   leftHandObj: {fileID: 930069647}
 --- !u!1 &409181138
@@ -4492,6 +4492,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 13700010, guid: 7aa874445e0aaf34f81b06e4855a5aad, type: 3}
       propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 7aa874445e0aaf34f81b06e4855a5aad, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
