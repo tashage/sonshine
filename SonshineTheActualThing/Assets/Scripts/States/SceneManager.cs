@@ -4,6 +4,8 @@ using System.Collections;
 public class SceneManager : MonoBehaviour {
 
     GameManager Manager;
+    public  GameObject Menu, Level1, Level2;//States
+    StateTemplate currentStateScript;
 
     void Awake()
     {
@@ -11,8 +13,9 @@ public class SceneManager : MonoBehaviour {
         Manager.OnStateChange += HandleOnStateChange;
 
         Debug.Log("Current game state when Awakes: " + Manager.currentState);
-
-        Manager.SetGameState(GameState.MAIN_MENU);
+        currentStateScript = Menu.GetComponent<StateTemplate>();
+        Manager.SetGameState(currentStateScript);
+        currentStateScript.stateActive = true;
     }
 
 	void Start () 
@@ -27,9 +30,13 @@ public class SceneManager : MonoBehaviour {
 
     void LateUpdate()//check for state changes here
     {
-        if (Input.GetKeyDown(KeyCode.Space) == true)
+        switch (currentStateScript.Update())//if current state's body is ready
         {
-            Manager.SetGameState(GameState.LEVEL_ONE);
+            case GameState.NULL:    
+                break;
+            case GameState.LEVEL_ONE:
+                Manager.SetGameState(Level1.GetComponent<StateTemplate>());
+                break;
         }
     }
 }

@@ -8,9 +8,10 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 16/9/14
 /// Description:
-/// These classes will serve as the individual actions the ai may use.
+/// These classes will serve as the individual actions the ai may use. 
+/// inherited from the AiBehaviour class
 /// </summary>
 namespace AiBehaviourPlus_ns
 {

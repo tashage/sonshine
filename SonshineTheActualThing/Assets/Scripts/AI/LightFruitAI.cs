@@ -1,6 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+/// <summary>
+/// Author: Jacob Connelly
+/// Date Created: 13/8/14
+/// Last Updated: 17/9/14
+/// Description: 
+/// This script will just serve as the initialisation and values of the light fruit
+/// </summary>
 public class LightFruitAI : ChildInteractable
 {
   
