@@ -1,20 +1,12 @@
 ﻿using UnityEngine;
 
 
-//When creating a new state you must... 
-//      +add the scene to the build settings.
-//      +Make a new statechangemanager.
-//      +add it to the 
-        
-
-
 public delegate void OnStateChangeHandler();
 
-public class GameManager :MonoBehaviour
+public class GameManager
 {
     public Transform ManagerObject;
     private static GameManager Manager = null;
-    public event OnStateChangeHandler OnStateChange;
     public StateTemplate currentState { get; set; }
     protected GameManager() { }
 
@@ -32,17 +24,24 @@ public class GameManager :MonoBehaviour
     }
 
     public void SetGameState(StateTemplate newState)
+    {
+        if (this.currentState != newState)
+        {
+            this.currentState.Deactivate(false);
+
+            this.currentState = newState;
+            newState.stateActive = true;
+        }
+    }
+
+    public void SetGameState(StateTemplate newState,GameObject Old)
     {  
         if (this.currentState != newState)
         {
-            currentState.stateActive = false;
+            this.currentState.Deactivate(false, Old);
+
             this.currentState = newState;
             newState.stateActive = true;
-            if (OnStateChange != null)
-            {
-                OnStateChange();
-            }
-        
         }
     }
     void Awake()

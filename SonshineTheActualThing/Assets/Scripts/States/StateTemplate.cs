@@ -1,36 +1,49 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
-public enum GameState
-{
-    NULL = 0,
-    MAIN_MENU = 1,
-    LEVEL_ONE = MAIN_MENU << 1,
-    PAUSE_MENU = LEVEL_ONE << 1,
-    QUIT_GAME = PAUSE_MENU << 1
-}
+public abstract class StateTemplate : MonoBehaviour {
 
-public class StateTemplate : MonoBehaviour {
-
-    public GameState thisState;
+    public string name;
     public bool stateActive;
-    public GameState[] linkedStates;
+    public StateTemplate[] linkedStates;
 
-    public virtual GameState Update () //if !active return
+
+    public virtual void Start()
     {
-        if (!stateActive)
-        {
-            return GameState.NULL;
-        }
-
-        //any more stuff goes here
-
-        return GameState.NULL;
-	}
-
-    public void onTransition()
-    {
-
+        Deactivate(false);
     }
+
+    public abstract StateTemplate Update();
+
+    public bool Deactivate(bool OnOff)
+    {
+        stateActive = OnOff;
+
+        return stateActive;
+    }
+
+    public bool Deactivate(bool OnOff, GameObject StateObj)
+    {
+        stateActive = OnOff;
+
+        StateObj.SetActive(stateActive);
+        return stateActive;
+       
+    }
+
+    public StateTemplate GetState(string Name)
+    {
+        for (int i = 0; i < linkedStates.Length; i++)
+        {
+            if (linkedStates[i].name == Name)
+            {
+                return linkedStates[i];
+            }
+        }
+        
+        return this;
+    }
+
 }

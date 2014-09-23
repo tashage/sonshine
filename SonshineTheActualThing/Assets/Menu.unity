@@ -114,9 +114,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a939a9f8ab775f24189589cb2a60a7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisState: 0
+  name: MainMenu
   stateActive: 0
-  linkedStates: 01000000
+  linkedStates:
+  - {fileID: 889769501}
+  - {fileID: 1132935255}
 --- !u!65 &638130911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -138,6 +140,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 889769504}
   - 65: {fileID: 889769502}
+  - 114: {fileID: 889769501}
   m_Layer: 0
   m_Name: Group_Level1
   m_TagString: Untagged
@@ -145,6 +148,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &889769501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 889769500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d048832f047d7404595fe748655eb8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Level1
+  stateActive: 0
+  linkedStates:
+  - {fileID: 1132935255}
+  - {fileID: 638130910}
 --- !u!65 &889769502
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -247,6 +266,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1132935253}
   - 65: {fileID: 1132935254}
+  - 114: {fileID: 1132935255}
   m_Layer: 0
   m_Name: Group_Level2
   m_TagString: Untagged
@@ -278,6 +298,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1132935255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1132935252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25dbdf1900abd324f825dc1410cfab8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: Level2
+  stateActive: 0
+  linkedStates:
+  - {fileID: 889769501}
+  - {fileID: 638130910}
 --- !u!1 &1398956741
 GameObject:
   m_ObjectHideFlags: 0

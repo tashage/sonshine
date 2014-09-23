@@ -69,6 +69,8 @@
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
      <Compile Include="Assets\Scripts\States\GameManager.cs" />
+     <Compile Include="Assets\Scripts\States\Level1.cs" />
+     <Compile Include="Assets\Scripts\States\Level2.cs" />
      <Compile Include="Assets\Scripts\States\Menu.cs" />
      <Compile Include="Assets\Scripts\States\SceneManager.cs" />
      <Compile Include="Assets\Scripts\States\StateTemplate.cs" />

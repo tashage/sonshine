@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Menu : StateTemplate
+public class Level2 : StateTemplate
 {
+    //StateTemplate temp;
 
     public override void Start()
     {
@@ -15,16 +16,10 @@ public class Menu : StateTemplate
         {
             return GetState("Level1");
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2) == true)
-        {
-                return GetState("Level2");
-        }
         if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            Application.Quit();
             return GetState("MainMenu");
         }
-        
         return this;
     }
 }

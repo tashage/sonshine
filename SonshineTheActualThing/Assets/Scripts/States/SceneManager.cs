@@ -4,39 +4,35 @@ using System.Collections;
 public class SceneManager : MonoBehaviour {
 
     GameManager Manager;
-    public  GameObject Menu, Level1, Level2;//States
+    public  GameObject Menu, Level1, Level2, Current;//States
     StateTemplate currentStateScript;
 
     void Awake()
     {
         Manager = GameManager.Instance;
-        Manager.OnStateChange += HandleOnStateChange;
-
-        Debug.Log("Current game state when Awakes: " + Manager.currentState);
-        currentStateScript = Menu.GetComponent<StateTemplate>();
-        Manager.SetGameState(currentStateScript);
-        currentStateScript.stateActive = true;
+       
+        Manager.SetGameState(Menu.GetComponent<Menu>() as StateTemplate);
     }
 
-	void Start () 
+    void Update()
     {
-        Debug.Log("Current game state when Starts: " + Manager.currentState);
-	}
+       // switch currentStateScript//switch to work out current stateOBJ then turn on off :D
+      //  {
 
-    public void HandleOnStateChange() 
-    {
-        Debug.Log("Handling state change to: " + Manager.currentState);
-	}
+       // }
+    }
 
     void LateUpdate()//check for state changes here
     {
-        switch (currentStateScript.Update())//if current state's body is ready
+
+        //currentStateScript.Active(
+
+        StateTemplate nextState = currentStateScript.Update();
+
+        if( nextState != Manager.currentState)
         {
-            case GameState.NULL:    
-                break;
-            case GameState.LEVEL_ONE:
-                Manager.SetGameState(Level1.GetComponent<StateTemplate>());
-                break;
+
+            Manager.SetGameState(nextState, );
         }
     }
 }
