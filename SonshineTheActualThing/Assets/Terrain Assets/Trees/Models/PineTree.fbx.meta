@@ -1,13 +1,15 @@
 fileFormatVersion: 2
 guid: 2198fbdb648927e4ba97970eaa8a8901
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 15
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
     4300000: PineTree01
+    4300002: SpruceTree
+    4300004: PineTree
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -27,7 +29,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .0350000001
+    globalScale: .0299999993
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -60,5 +62,4 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  additionalBone: 0
   userData: 

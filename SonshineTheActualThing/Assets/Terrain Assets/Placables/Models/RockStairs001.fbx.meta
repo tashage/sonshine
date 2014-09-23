@@ -1,0 +1,114 @@
+fileFormatVersion: 2
+guid: f19da2be337869b489fa887e2d5e5f9e
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: RockStair001_Rock01
+    100002: RockStair001_Rock02
+    100004: RockStair001_Rock03
+    100006: RockStair001_Rock04
+    100008: RockStair001_Rock05
+    100010: RockStair001_Rock06
+    100012: RockStair001_Rock07
+    100014: RockStair001_Rock08
+    100016: RockStair001_Rock09
+    100018: //RootNode
+    400000: RockStair001_Rock01
+    400002: RockStair001_Rock02
+    400004: RockStair001_Rock03
+    400006: RockStair001_Rock04
+    400008: RockStair001_Rock05
+    400010: RockStair001_Rock06
+    400012: RockStair001_Rock07
+    400014: RockStair001_Rock08
+    400016: RockStair001_Rock09
+    400018: //RootNode
+    2300000: RockStair001_Rock01
+    2300002: RockStair001_Rock02
+    2300004: RockStair001_Rock03
+    2300006: RockStair001_Rock04
+    2300008: RockStair001_Rock05
+    2300010: RockStair001_Rock06
+    2300012: RockStair001_Rock07
+    2300014: RockStair001_Rock08
+    2300016: RockStair001_Rock09
+    3300000: RockStair001_Rock01
+    3300002: RockStair001_Rock02
+    3300004: RockStair001_Rock03
+    3300006: RockStair001_Rock04
+    3300008: RockStair001_Rock05
+    3300010: RockStair001_Rock06
+    3300012: RockStair001_Rock07
+    3300014: RockStair001_Rock08
+    3300016: RockStair001_Rock09
+    4300000: RockStair001_Rock01
+    4300002: RockStair001_Rock02
+    4300004: RockStair001_Rock03
+    4300006: RockStair001_Rock04
+    4300008: RockStair001_Rock05
+    4300010: RockStair001_Rock06
+    4300012: RockStair001_Rock07
+    4300014: RockStair001_Rock08
+    4300016: RockStair001_Rock09
+    6400000: RockStair001_Rock01
+    6400002: RockStair001_Rock02
+    6400004: RockStair001_Rock03
+    6400006: RockStair001_Rock04
+    6400008: RockStair001_Rock05
+    6400010: RockStair001_Rock06
+    6400012: RockStair001_Rock07
+    6400014: RockStair001_Rock08
+    6400016: RockStair001_Rock09
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 2
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  userData: 

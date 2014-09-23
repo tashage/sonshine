@@ -17,7 +17,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 0}
+          m_Texture: {fileID: 2800000, guid: 353ae13b25d51c641ae03157b5f3fb61, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -28,7 +28,7 @@ Material:
       data:
         first:
           name: _AO
-        second: .435714394
+        second: .971428692
       data:
         first:
           name: _SquashAmount
