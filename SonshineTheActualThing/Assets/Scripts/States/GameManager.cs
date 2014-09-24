@@ -7,7 +7,7 @@ public class GameManager
 {
     public Transform ManagerObject;
     private static GameManager Manager = null;
-    public StateTemplate currentState { get; set; }
+    public StateTemplate currentState = null;
     protected GameManager() { }
 
     // Singleton pattern implementation
@@ -25,23 +25,19 @@ public class GameManager
 
     public void SetGameState(StateTemplate newState)
     {
-        if (this.currentState != newState)
+        // failsafe incase some "person" pushes a NULL state
+        if (newState == null)
+            return;
+
+        if (currentState != newState)
         {
-            this.currentState.Deactivate(false);
+            if (currentState != null)
+            {
+                currentState.gameObject.SetActive(false);
+            }
 
-            this.currentState = newState;
-            newState.stateActive = true;
-        }
-    }
-
-    public void SetGameState(StateTemplate newState,GameObject Old)
-    {  
-        if (this.currentState != newState)
-        {
-            this.currentState.Deactivate(false, Old);
-
-            this.currentState = newState;
-            newState.stateActive = true;
+            currentState = newState;
+            newState.gameObject.SetActive(true);
         }
     }
     void Awake()

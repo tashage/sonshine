@@ -3,23 +3,20 @@ using System.Collections;
 
 public class Level2 : StateTemplate
 {
-    //StateTemplate temp;
-
-    public override void Start()
+    public void Start()
     {
-        base.Start();
+        gameObject.SetActive(false);
     }
 
-    public override StateTemplate Update()
+    public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) == true)
-        {
-            return GetState("Level1");
-        }
         if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            return GetState("MainMenu");
+            GameManager.Instance.SetGameState(GetState(0));
+        } 
+        if (Input.GetKeyDown(KeyCode.Alpha1) == true)
+        {
+            GameManager.Instance.SetGameState(GetState(1));
         }
-        return this;
     }
 }

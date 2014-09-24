@@ -4,21 +4,20 @@ using System.Collections;
 public class Level1 : StateTemplate
 {
 
-    public override void Start()
+    public void Start()
     {
-        base.Start();
+        gameObject.SetActive(false);
     }
 
-    public override StateTemplate Update()
+    public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            return GetState("MainMenu");
+            GameManager.Instance.SetGameState(GetState(0));
         }
         if (Input.GetKeyDown(KeyCode.Alpha2) == true)
         {
-            return GetState("Level2");
+            GameManager.Instance.SetGameState(GetState(1));
         }
-        return this;
     }
 }
