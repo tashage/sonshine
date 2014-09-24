@@ -12,10 +12,10 @@ SceneSettings:
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
-  m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: .0941176489, g: .0941176489, b: .0941176489, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0
+  m_FogDensity: .00499999989
   m_LinearFogStart: 0
   m_LinearFogEnd: 0
   m_AmbientLight: {r: 0, g: 0, b: 0, a: 0}
@@ -3599,9 +3599,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogMode: 2
-  startDistance: 0
-  globalDensity: .00999999978
+  fogMode: 0
+  startDistance: 50
+  globalDensity: 1
   heightScale: 2
   height: 60
   globalFogColor: {r: .125490203, g: .125490203, b: .125490203, a: 1}
@@ -5500,15 +5500,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: startDistance
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: globalDensity
-      value: .00999999978
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: startDistance
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: globalDensity
@@ -5516,11 +5516,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: fogMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
       propertyPath: fogMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
@@ -17087,8 +17087,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogMode: 2
-  startDistance: 0
+  fogMode: 0
+  startDistance: 50
   globalDensity: 1
   heightScale: 2
   height: 60
