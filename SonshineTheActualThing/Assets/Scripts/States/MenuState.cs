@@ -11,7 +11,7 @@ public class MenuState : StateTemplate
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space))
         {
             GameManager.Instance.SetGameState(GetState(0));
         }

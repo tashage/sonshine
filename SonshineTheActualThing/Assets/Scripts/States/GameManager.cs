@@ -37,7 +37,7 @@ public class GameManager
             }
 
             currentState = newState;
-            newState.gameObject.SetActive(true);
+            currentState.gameObject.SetActive(true);
         }
     }
     void Awake()
