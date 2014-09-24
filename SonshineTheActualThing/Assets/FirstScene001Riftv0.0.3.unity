@@ -3594,14 +3594,14 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 367068349}
   m_GameObject: {fileID: 264761495}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogMode: 0
-  startDistance: 50
-  globalDensity: 1
+  fogMode: 2
+  startDistance: 0
+  globalDensity: .00999999978
   heightScale: 2
   height: 60
   globalFogColor: {r: .125490203, g: .125490203, b: .125490203, a: 1}
@@ -5486,6 +5486,42 @@ Prefab:
       propertyPath: m_TheChild
       value: 
       objectReference: {fileID: 1256479779}
+    - target: {fileID: 11400036, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: m_TheChild
+      value: 
+      objectReference: {fileID: 1256479779}
+    - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: startDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: globalDensity
+      value: .00999999978
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: startDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: globalDensity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: fogMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
+      propertyPath: fogMode
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8747bb2c6b2fef4da580f18d202dba8, type: 2}
   m_RootGameObject: {fileID: 1053297717}
@@ -14759,6 +14795,7 @@ GameObject:
   - 114: {fileID: 1053297720}
   - 114: {fileID: 1053297719}
   - 208: {fileID: 1053297718}
+  - 114: {fileID: 1053297725}
   m_Layer: 0
   m_Name: RiftPlayerPrefab
   m_TagString: Untagged
@@ -14882,6 +14919,19 @@ Transform:
   - {fileID: 115783043}
   - {fileID: 248848539}
   m_Father: {fileID: 0}
+--- !u!114 &1053297725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400036, guid: c8747bb2c6b2fef4da580f18d202dba8,
+    type: 2}
+  m_PrefabInternal: {fileID: 367068349}
+  m_GameObject: {fileID: 1053297717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a22b9b1df00f97479f7b39ccab3cc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TheChild: {fileID: 1256479779}
 --- !u!1 &1054206507
 GameObject:
   m_ObjectHideFlags: 0
@@ -17032,13 +17082,13 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 367068349}
   m_GameObject: {fileID: 1220835313}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fogMode: 0
-  startDistance: 50
+  fogMode: 2
+  startDistance: 0
   globalDensity: 1
   heightScale: 2
   height: 60

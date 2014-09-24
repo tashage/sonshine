@@ -163,6 +163,7 @@ GameObject:
   - 114: {fileID: 11400030}
   - 114: {fileID: 11400020}
   - 208: {fileID: 20800000}
+  - 114: {fileID: 11400036}
   m_Layer: 0
   m_Name: RiftPlayerPrefab
   m_TagString: Untagged
@@ -778,6 +779,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bf170db1c6a44a44941f0cfb6048fd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a22b9b1df00f97479f7b39ccab3cc4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TheChild: {fileID: 0}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
