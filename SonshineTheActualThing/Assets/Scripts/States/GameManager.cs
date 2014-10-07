@@ -42,6 +42,6 @@ public class GameManager
     }
     void Awake()
     {
-        Object.DontDestroyOnLoad(ManagerObject);
+        Object.DontDestroyOnLoad(ManagerObject.gameObject);
     }
 }
