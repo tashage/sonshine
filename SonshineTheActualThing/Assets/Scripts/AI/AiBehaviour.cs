@@ -7,7 +7,7 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 17/9/14
 /// Description: This class contains and uses the building blocks of
 /// the ai behaviour and behaviour trees.
 /// Fleshed out proper behaviours are past the basics
@@ -17,10 +17,22 @@ namespace AiBehaviour_ns
 {
     /// <summary>
     /// These behaviours are the basic nodes etc. 
-    /// Fleshed out proper behaviours are underneath
+    /// Fleshed out proper behaviours are in the AiBehaviourPlus file
     /// </summary>
     public class AiBehaviour 
     {
+
+
+        public enum BehaviourType
+        {
+            NONE,
+            WITHINRANGE,
+            CREATETARGET,
+            SEEK,
+            ISCLOSE,
+            ISBONDSTRONG,
+            AVOID
+        } public BehaviourType m_BehaviourType;
 
         public AiBehaviour() { }
 

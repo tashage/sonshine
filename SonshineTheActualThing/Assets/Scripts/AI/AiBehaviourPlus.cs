@@ -8,9 +8,10 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 16/9/14
 /// Description:
-/// These classes will serve as the individual actions the ai may use.
+/// These classes will serve as the individual actions the ai may use. 
+/// inherited from the AiBehaviour class
 /// </summary>
 namespace AiBehaviourPlus_ns
 {
@@ -20,13 +21,14 @@ namespace AiBehaviourPlus_ns
     public class WithinRange : AiBehaviour
     {
         private float m_range2;
-
-        public WithinRange(float a_range) { m_range2 = a_range * a_range; }
+        
+        public WithinRange(float a_range) { m_range2 = a_range * a_range; m_BehaviourType = BehaviourType.WITHINRANGE; }
 
         public override bool execute(Agent a_agent)
         {
+            
             float dist2 = Vector3.Distance(a_agent.getPosition(), a_agent.getTarget());
-            // Debug.Log("within range");
+           // Debug.Log("within range");
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
                 //Debug.Log("executing within range as true");
@@ -44,8 +46,8 @@ namespace AiBehaviourPlus_ns
     public class CreateTarget : AiBehaviour
     {
         public List<ChildInteractable> PossibleDistractions;
-
-        public CreateTarget() { }
+        
+        public CreateTarget() { m_BehaviourType = BehaviourType.CREATETARGET; }
 
         public ChildInteractable CalculateBestOption(Vector3 a_pos)
         {
@@ -124,16 +126,14 @@ namespace AiBehaviourPlus_ns
     // seek target : move towards current set target 
     public class SeekTarget : AiBehaviour
     {
-
-        //public Animator anim;
-        // if the distance is greater than the pre defined threshold move towards the parent
+       
+        public SeekTarget() { m_BehaviourType = BehaviourType.SEEK; }
+         // if the distance is greater than the pre defined threshold move towards the parent
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");
            // Debug.Log("seek target");
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
-            //HERE send the walk bool to the animator controller
-            //anim.SetBool("IsWalking", true);
             return true;
         }
 
@@ -141,6 +141,10 @@ namespace AiBehaviourPlus_ns
 
     public class IsClose : AiBehaviour
     {
+       
+
+        public IsClose() { m_BehaviourType = BehaviourType.ISCLOSE;}
+
         public override bool execute(Agent a_agent)
         {
             // if the agent is within below amount of distance
@@ -155,9 +159,10 @@ namespace AiBehaviourPlus_ns
 
     public class IsBondStrong : AiBehaviour
     {
+       
         private float BondNeeded; // the bond needed to determine if its strong enough
 
-        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; }
+        public IsBondStrong(float a_BondNeeded) { BondNeeded = a_BondNeeded; m_BehaviourType = BehaviourType.ISBONDSTRONG; }
 
         public override bool execute(Agent a_agent)
         {
@@ -172,8 +177,8 @@ namespace AiBehaviourPlus_ns
     public class Avoid : AiBehaviour
     {
         private Vector3 WhatIsAvoided;
-
-        public Avoid() { }
+       
+        public Avoid() { m_BehaviourType = BehaviourType.AVOID; }
 
         public void SetAvoid(Vector3 a_WhatIsAvoided) { WhatIsAvoided = a_WhatIsAvoided; }
 
@@ -190,6 +195,8 @@ namespace AiBehaviourPlus_ns
 
 
     }
+
+    
 
     
 }

@@ -57,6 +57,10 @@ namespace Agent_ns
                 
             }
         }
+        public AiBehaviour GetBehaviour()
+        {
+            return m_behaviour;
+        }
 
     }
 }
