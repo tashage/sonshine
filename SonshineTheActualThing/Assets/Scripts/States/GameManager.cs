@@ -1,21 +1,13 @@
 ﻿using UnityEngine;
 
 
-//When creating a new state you must... 
-//      +add the scene to the build settings.
-//      +Make a new statechangemanager.
-//      +add it to the 
-        
-
-
 public delegate void OnStateChangeHandler();
 
-public class GameManager :MonoBehaviour
+public class GameManager
 {
     public Transform ManagerObject;
     private static GameManager Manager = null;
-    public event OnStateChangeHandler OnStateChange;
-    public StateTemplate currentState { get; set; }
+    public StateTemplate currentState = null;
     protected GameManager() { }
 
     // Singleton pattern implementation
@@ -32,17 +24,20 @@ public class GameManager :MonoBehaviour
     }
 
     public void SetGameState(StateTemplate newState)
-    {  
-        if (this.currentState != newState)
+    {
+        // failsafe incase some "person" pushes a NULL state
+        if (newState == null)
+            return;
+
+        if (currentState != newState)
         {
-            currentState.stateActive = false;
-            this.currentState = newState;
-            newState.stateActive = true;
-            if (OnStateChange != null)
+            if (currentState != null)
             {
-                OnStateChange();
+                currentState.gameObject.SetActive(false);
             }
-        
+
+            currentState = newState;
+            currentState.gameObject.SetActive(true);
         }
     }
     void Awake()
