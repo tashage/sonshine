@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 46e51fb2fce12444b80459d2ab44f0dd
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: EarForChild:polySurface4_EarForChild:polySurface14 EarForChild:polySurface28
       EarForChild:polySurface35 polySurface99
@@ -39,6 +39,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -82,4 +83,5 @@ ModelImporter:
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
+  additionalBone: 0
   userData: 
