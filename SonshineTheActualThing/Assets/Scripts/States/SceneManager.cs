@@ -7,7 +7,6 @@ public class SceneManager : MonoBehaviour {
     
     void Start()
     {
-        Debug.Log("lol");
         DontDestroyOnLoad(transform.gameObject);
         GameManager.Instance.SetGameState(FirstState.GetComponent<MenuState>() as StateTemplate);
     }

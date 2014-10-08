@@ -3,28 +3,37 @@ using System.Collections;
 
 public class MenuState : StateTemplate
 {
-
-    /*public void Start()
+    SceneFade Fade;
+    bool changeLv1 = false;
+    bool changeLv2 = false;
+    void Awake()
     {
-        gameObject.SetActive(false);
-    }*/
+        Fade = GameObject.FindObjectOfType<SceneFade>();
+    }
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space))
+        if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space)) || (changeLv1))
         {
-            //GameManager.Instance.SetGameState(GetState(0));
-            Application.LoadLevel(1);
+            if (!changeLv1)
+            {
+                changeLv1 = true;
+            }
+            
+            Fade.EndScene(1);
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if ((Input.GetKeyDown(KeyCode.Alpha2)) || (changeLv2))
         {
-            //GameManager.Instance.SetGameState(GetState(1));
-            Application.LoadLevel(2);
+            if (!changeLv2)
+            {
+                changeLv2 = true;
+            }
+            
+            Fade.EndScene(2);
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
-            //GameManager.Instance.currentState = GetState("MainMenu");
         }
     }
 }
