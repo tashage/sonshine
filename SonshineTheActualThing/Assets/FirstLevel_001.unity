@@ -2401,7 +2401,7 @@ Prefab:
       objectReference: {fileID: 1256479779}
     - target: {fileID: 11400012, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: blurIterations
-      value: 7
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2474,6 +2474,10 @@ Prefab:
     - target: {fileID: 13600000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_Height
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: glowIntensity
+      value: .150000006
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
@@ -21249,8 +21253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glowIntensity: .200000003
-  blurIterations: 7
+  glowIntensity: .150000006
+  blurIterations: 15
   blurSpread: 1
   glowTint: {r: 1, g: 1, b: 1, a: 0}
   compositeShader: {fileID: 4800000, guid: 96ca71e39c7b6fb4f9bec2c5bf331349, type: 3}
