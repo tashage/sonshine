@@ -31,8 +31,23 @@ public class HoldUpWatson : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-         if(m_TheChild.bTethered)
+        if (m_TheChild.bTethered)
+        {
             Lift();
+                  }
+        else // fix when holdingthe child then letting go causes him to float
+        {
+            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
+            if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
+
+           
+            if (Input.GetKeyUp(KeyCode.E))
+            {
+                isPressed = false;
+            }
+        }
 	}
     public void Lift()
     {
@@ -40,7 +55,7 @@ public class HoldUpWatson : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E))
         {
             isPressed = true;
-            
+           
         }
         else if ( Input.GetKeyUp(KeyCode.E))
         {
@@ -59,7 +74,7 @@ public class HoldUpWatson : MonoBehaviour {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
         }
-               
+       
             
     }
 
