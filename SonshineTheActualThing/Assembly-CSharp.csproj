@@ -68,11 +68,11 @@
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
-     <Compile Include="Assets\Scripts\SceneFade.cs" />
-     <Compile Include="Assets\Scripts\States\GameManager.cs" />
      <Compile Include="Assets\Scripts\States\Level1.cs" />
      <Compile Include="Assets\Scripts\States\Level2.cs" />
      <Compile Include="Assets\Scripts\States\MenuState.cs" />
+     <Compile Include="Assets\Scripts\States\QuitState.cs" />
+     <Compile Include="Assets\Scripts\States\SceneFade.cs" />
      <Compile Include="Assets\Scripts\States\SceneManager.cs" />
      <Compile Include="Assets\Scripts\States\StateTemplate.cs" />
      <Compile Include="Assets\Scripts\Tether.cs" />

@@ -33,7 +33,8 @@ public class MenuState : StateTemplate
         }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            
+            menuManager.SetState(GetState(menuManager.allStates.Length -1));
         }
     }
 }

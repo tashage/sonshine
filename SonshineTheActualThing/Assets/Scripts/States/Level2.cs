@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level2 : StateTemplate
+public class Level2 : MonoBehaviour
 {
     /*public void Start()
     {
