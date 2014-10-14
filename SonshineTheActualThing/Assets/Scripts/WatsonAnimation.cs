@@ -35,7 +35,7 @@ public class WatsonAnimation : MonoBehaviour {
         }
 
         //update the animator variables
-        //WatsonAnimator.SetBool("LMBDown", LMBDown);
-        //WatsonAnimator.SetBool("RMBDown", RMBDown);
+        WatsonAnimator.SetBool("LMBDown", LMBDown);
+        WatsonAnimator.SetBool("RMBDown", RMBDown);
 	}
 }
