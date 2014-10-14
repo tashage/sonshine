@@ -2326,7 +2326,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 1
+  m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
@@ -5041,6 +5041,10 @@ Prefab:
     - target: {fileID: 400000, guid: 51baa54471cf0cd479532ae4097d39a5, type: 2}
       propertyPath: m_LocalScale.z
       value: .0265337471
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+      propertyPath: m_HDR
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
@@ -21362,7 +21366,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1256479774}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 102.102112, y: 1.90790319, z: 82.7071533}
+  m_LocalPosition: {x: 102.099998, y: 4.61870003, z: 82.7070007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 398679521}
@@ -21379,7 +21383,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1256479774}
   m_Enabled: 1
   m_Radius: .699999988
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 4
   avoidancePriority: 50
   m_AngularSpeed: 120

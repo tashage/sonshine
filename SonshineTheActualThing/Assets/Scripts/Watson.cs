@@ -57,9 +57,10 @@ public class Watson : MonoBehaviour
         m_agent.fVisionRange = 45.0f;
         fStepThreshold = 0.2f;
         
-        m_agent.fRotationSpeed = 1.4f;
+        m_agent.fRotationSpeed = 1.6f;
         m_agent.fPlayerBond = 0;
         fRotationalTwitchThreshold = 0.5f;
+
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
         seek = new SeekTarget();
@@ -82,9 +83,6 @@ public class Watson : MonoBehaviour
         
         m_behaviour = root;
 
-        // check
-        //print(random.PossibleDistractions[0].DistractionValues.fWeighting);
-       // print(random.PossibleDistractions[1].DistractionValues.fWeighting);
         m_agent.setBehaviour(m_behaviour);
        
         m_agent.setPosition(transform.position);
@@ -104,7 +102,7 @@ public class Watson : MonoBehaviour
             
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
-            if (distance < 2)
+            if (distance < 1)
                 GetComponent<NavMeshAgent>().speed = distance;
             else
                 GetComponent<NavMeshAgent>().speed = fMovementSpeed;
@@ -114,7 +112,12 @@ public class Watson : MonoBehaviour
             m_agent.setTarget(goParentTether.transform.position);
 
             // use nav mesh to move infront of the player
-            GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2 ;
+                    // yes this is a quick and terrible fix but i need it to work
+                    // this is so if the player is moving forward watson is infront
+            if(Input.GetKey(KeyCode.W))
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*4f ;
+            else
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2;
 
             // and rotate towards target/player
             Vector3 targetDir = goParentTether.transform.position - transform.position;
@@ -175,7 +178,8 @@ public class Watson : MonoBehaviour
         // Debug.Log("coliding");
         if (other.gameObject.tag == "LightFruit")
         {
-            Destroy(other.gameObject);
+            other.gameObject.SetActive( false);
+           // Destroy(other.gameObject);
             m_light.StartWorldLight();
         }
     }
