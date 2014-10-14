@@ -133,7 +133,7 @@ namespace AiBehaviourPlus_ns
        
         public SeekTarget() { m_BehaviourType = BehaviourType.SEEK; }
          // if the distance is greater than the pre defined threshold move towards the parent
->>>>>>> ab3b91d0249f45e6d48652702052e9c0f0822eee
+>>>>>>> c86cc08ae59b05f9730cd45057c6428161004c8e
         public override bool execute(Agent a_agent)
         {
            // Debug.Log("executing seek target");

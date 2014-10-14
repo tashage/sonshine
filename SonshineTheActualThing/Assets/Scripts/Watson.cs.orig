@@ -182,7 +182,7 @@ public class Watson : MonoBehaviour
         }
 
       }// update 
->>>>>>> ab3b91d0249f45e6d48652702052e9c0f0822eee
+>>>>>>> c86cc08ae59b05f9730cd45057c6428161004c8e
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log("coliding");
