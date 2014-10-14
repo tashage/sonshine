@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 42910104}
   - 114: {fileID: 42910103}
   m_Layer: 0
-  m_Name: Quit_Menu
+  m_Name: State_Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e92b4c20faa668f45a98d0f440804977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuManager: {fileID: 0}
+  menuManager: {fileID: 2057101330}
 --- !u!4 &42910104
 Transform:
   m_ObjectHideFlags: 0
@@ -115,7 +115,7 @@ Transform:
   m_Children:
   - {fileID: 60745110}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1001 &43463425
 Prefab:
   m_ObjectHideFlags: 0
@@ -153,8 +153,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4876e8dd7d8a1f145825b35ea395003e, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4876e8dd7d8a1f145825b35ea395003e, type: 2}
+      propertyPath: m_Name
+      value: State_Quit
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4876e8dd7d8a1f145825b35ea395003e, type: 2}
+      propertyPath: menuManager
+      value: 
+      objectReference: {fileID: 2057101330}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4876e8dd7d8a1f145825b35ea395003e, type: 2}
   m_RootGameObject: {fileID: 42910102}
@@ -258,7 +266,7 @@ Transform:
   m_Children:
   - {fileID: 1398956745}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 4
 --- !u!114 &638130910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a939a9f8ab775f24189589cb2a60a7ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuManager: {fileID: 0}
+  menuManager: {fileID: 2057101330}
 --- !u!65 &638130911
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -318,6 +326,7 @@ MonoBehaviour:
   inMargin: .00999999978
   outSpeed: 3
   outMargin: .99000001
+  menuManager: {fileID: 2057101330}
 --- !u!131 &899615262
 GUITexture:
   m_ObjectHideFlags: 0
@@ -349,7 +358,7 @@ Transform:
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!1001 &985161764
 Prefab:
   m_ObjectHideFlags: 0
@@ -387,7 +396,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a4c396b83a1e2ee42b42491708a2db0a, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 13100000, guid: a4c396b83a1e2ee42b42491708a2db0a, type: 2}
       propertyPath: m_Color.r
@@ -433,6 +442,10 @@ Prefab:
       propertyPath: outSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a4c396b83a1e2ee42b42491708a2db0a, type: 2}
+      propertyPath: menuManager
+      value: 
+      objectReference: {fileID: 2057101330}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4c396b83a1e2ee42b42491708a2db0a, type: 2}
   m_RootGameObject: {fileID: 899615260}
@@ -487,8 +500,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 83e60dec2aadf804aa8c3db68b85ec2b, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 83e60dec2aadf804aa8c3db68b85ec2b, type: 2}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 2057101329}
+    - target: {fileID: 11400000, guid: 83e60dec2aadf804aa8c3db68b85ec2b, type: 2}
+      propertyPath: menuManager
+      value: 
+      objectReference: {fileID: 2057101330}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83e60dec2aadf804aa8c3db68b85ec2b, type: 2}
   m_RootGameObject: {fileID: 638130908}
@@ -726,7 +747,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &2057101329
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,4 +791,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5

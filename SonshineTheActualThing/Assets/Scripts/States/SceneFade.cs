@@ -4,20 +4,20 @@ using System.Collections;
 public class SceneFade : MonoBehaviour 
 {
    
-    private bool sceneStarting; 
+    private bool sceneStarting = true; 
     public float inSpeed = 1.5f;
     public float inMargin = 0.05f;
 
     public float outSpeed = 1.5f;
     public float outMargin = 0.05f;
 
-    SceneManager menuManager;
+    public SceneManager menuManager;
 
     void Awake()
     {
         menuManager = GetComponent<SceneManager>();
 
-        DontDestroyOnLoad(transform.gameObject);
+        //DontDestroyOnLoad(transform.gameObject);
         guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
         sceneStarting = true;
     }

@@ -21,8 +21,13 @@ public class Tether : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		if (Input.GetButtonDown("Left_Trigger"))// || Input.GetButtonDown("RightTrigger"))
+		{
+			Debug.Log("Tether");
+		}
+
         // if the space key is pressed tether or un tether the child
-        if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetKeyDown(KeyCode.Space) || (Input.GetButtonDown("Left_Trigger") && Input.GetButtonDown("RightTrigger")))
         {
             // if the child is NOT tethered 
             if(m_TheChild !=null)

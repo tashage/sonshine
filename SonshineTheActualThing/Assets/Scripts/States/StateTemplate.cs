@@ -5,11 +5,11 @@ using System.Collections.Generic;
 
 public abstract class StateTemplate : MonoBehaviour
 {
+	public SceneManager menuManager;
 
-    public SceneManager menuManager;
     void Start()
     {
-        menuManager = GetComponent<SceneManager>();
+		//menuManager = GameObject.FindWithTag("Manager");
         gameObject.SetActive(false);
     }
 

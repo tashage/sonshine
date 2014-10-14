@@ -3,27 +3,35 @@ using System.Collections;
 
 public class Level1 : MonoBehaviour
 {
-    SceneFade Fade;
+    GameObject Fade;
+	SceneFade fade = null;
     public Collider player;
-    GameObject[] fruit;
+    public GameObject[] fruit;
 
     public void OnTriggerEnter(Collider playerCol)
     {
-        if (Fade == null)
-            Fade = GetComponent<SceneFade>();
+        if (fade == null)
+		{
+            Fade = GameObject.FindWithTag("Fader");
+			fade = Fade.GetComponent<SceneFade>();
+		}
 
-        Debug.Log("get a mullet up ya");
-        fruit = GameObject.FindGameObjectsWithTag("LightFruit");
-        Debug.Log(fruit.Length);
-        if ((playerCol.name == "First Person Controller") && (fruit.Length == 0))
+        Debug.Log("Level 1 End Reached");
+        //fruit = GameObject.FindGameObjectsWithTag("LightFruit");
+        //Debug.Log(fruit.Length);
+		if ((playerCol.name == "First Person Controller") && (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false))
         {
-            Fade.EndScene(2);
+			Debug.Log("Level 1 Complete");
+            fade.EndScene(2);
         }
     }
 
     void Start()
     {
-        Fade = GetComponent<SceneFade>();
+		//Fade = GameObject.FindWithTag("Fader");
+		fade = GameObject.FindWithTag("Fader").GetComponent<SceneFade>();
+		Debug.Log(Fade);
+		Debug.Log(fade);
     }
 
     public void Update()
