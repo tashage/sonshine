@@ -4,8 +4,12 @@ using System.Collections;
 public class SceneFade : MonoBehaviour 
 {
    
-    private bool sceneStarting = true; 
-    public float inSpeed = 1.5f;
+    private bool sceneStarting = true;
+	public float quitSpeed = 1.5f;
+	public float quitMargin = 0.05f;
+
+
+	public float inSpeed = 1.5f;
     public float inMargin = 0.05f;
 
     public float outSpeed = 1.5f;
@@ -19,6 +23,7 @@ public class SceneFade : MonoBehaviour
 
         //DontDestroyOnLoad(transform.gameObject);
         guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
+		guiTexture.color.a.Equals(1.0f);
         sceneStarting = true;
     }
 
@@ -39,6 +44,10 @@ public class SceneFade : MonoBehaviour
     {
         guiTexture.color = Color.Lerp(guiTexture.color, Color.black, outSpeed * Time.deltaTime);
     }
+	void QuitToDark()
+	{
+		guiTexture.color = Color.Lerp(guiTexture.color, Color.black, quitSpeed * Time.deltaTime);
+	}
 
     void StartScene()
     {
@@ -78,4 +87,16 @@ public class SceneFade : MonoBehaviour
             }
         }
     }
+	public void QuitScene()
+	{
+		if (!sceneStarting)
+		{
+			guiTexture.enabled = true;
+			QuitToDark();
+			if (guiTexture.color.a >= quitMargin)
+			{
+				Application.Quit();
+			}
+		}
+	}
 }

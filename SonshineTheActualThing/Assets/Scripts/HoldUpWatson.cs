@@ -37,12 +37,12 @@ public class HoldUpWatson : MonoBehaviour {
     public void Lift()
     {
         // if the e key is pressed increase the base offset
-        if (Input.GetKeyDown(KeyCode.E))
+		if (Input.GetKeyDown(KeyCode.E) || ((Input.GetButtonDown("Left_Bumper")) && (Input.GetButtonDown("Right_Bumper"))))
         {
             isPressed = true;
             
         }
-        else if ( Input.GetKeyUp(KeyCode.E))
+		else if (Input.GetKeyUp(KeyCode.E) || ((Input.GetButtonUp("Left_Bumper")) && (Input.GetButtonUp("Right_Bumper"))))
         {
             isPressed = false;
         }

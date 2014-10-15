@@ -9,6 +9,11 @@ public class SceneManager : MonoBehaviour
     public StateTemplate currentState = null;
     public StateTemplate[] allStates;
 
+	public StateTemplate GetState(int id)
+	{
+		return allStates[id];
+	}
+
     public void SetState(StateTemplate newState)
     {
         // failsafe incase some "person" pushes a NULL state

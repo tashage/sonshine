@@ -4,19 +4,23 @@ using System.Collections;
 public class MenuState : StateTemplate
 {
     SceneFade Fade;
-	
+	public SceneManager menuManager;
+
+	public float Quit = 1000;
+	protected float quit;
+
 	bool changeLv1 = false;
     bool changeLv2 = false;
     
 	void Start()
     {
+		quit = Quit;
 		Fade = GameObject.FindObjectOfType<SceneFade>();
-		
     }
 	
     public void Update()
     {
-		if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space)) || (Input.GetButtonUp("Jump")) || (changeLv1))
+		if ((Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Space)) || (Input.GetButtonUp("A_Button")) || (changeLv1))
         {
 			
 			if (!changeLv1)
@@ -36,9 +40,16 @@ public class MenuState : StateTemplate
             
             Fade.EndScene(2);
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) || (Input.GetButton("Start_Button")))
         {
-            menuManager.SetState(GetState(menuManager.allStates.Length -1));
+			//menuManager.SetState(menuManager.GetState(menuManager.allStates.Length - 1));
+			quit --;
+			if(quit == 0)
+			{
+				Fade.QuitScene();
+			}
         }
+		else {quit = Quit;}
     }
+	
 }
