@@ -22,9 +22,10 @@ public class Tether : MonoBehaviour {
 	void Update () {
 
         // if the space key is pressed tether or un tether the child
-		if (Input.GetKeyDown(KeyCode.Space) || ((Input.GetAxis("Left_Trigger") > 0.00f )&&( Input.GetAxis("Right_Trigger") > 0.00f)))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // if the child is NOT tethered 
+            if(m_TheChild !=null)
             if (m_TheChild.bTethered == false)
             {
                 if (Vector3.Distance(m_TheChild.transform.position, transform.position) < fMinDistanceToTether)
@@ -34,17 +35,13 @@ public class Tether : MonoBehaviour {
                     m_TheChild.m_light.SetRange(75.0f);
                 }
             }
-            
-                
-        }
-		else if ((Input.GetKeyDown(KeyCode.Space) || (Input.GetButtonUp("B_Button"))) && (m_TheChild.bTethered == true))//if tethered untether here
-		{
-			if(m_TheChild !=null)
+            else // if the child is tethered
             {
-				m_TheChild.bTethered = false;
                 m_TheChild.m_light.setIntensity(0.1f);
+                m_TheChild.bTethered = false;
                 m_TheChild.m_light.SetRange(35.0f);
             }
-		}
+                
+        }
 	}
 }

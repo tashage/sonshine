@@ -27,7 +27,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -40,10 +39,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FirstState: {fileID: 100000, guid: 0a895239871726e4083bb742c6c0e0c6, type: 2}
-  currentState: {fileID: 0}
-  allStates:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: 4876e8dd7d8a1f145825b35ea395003e, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

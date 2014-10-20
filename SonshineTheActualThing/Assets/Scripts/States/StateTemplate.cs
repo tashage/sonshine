@@ -5,9 +5,10 @@ using System.Collections.Generic;
 
 public abstract class StateTemplate : MonoBehaviour
 {
-	void Start()
-    {
-        gameObject.SetActive(false);
-    }
+    public StateTemplate[] linkedStates;
 
+    public StateTemplate GetState(int id)
+    {
+        return linkedStates[id];
+    }
 }

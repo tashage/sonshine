@@ -3330,8 +3330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TheChild: {fileID: 814503582}
-  holdDuration: 200
-  bumperMax: 75
 --- !u!123 &285043665
 LensFlare:
   m_ObjectHideFlags: 0
@@ -3629,7 +3627,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293169299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
@@ -3647,7 +3645,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293169299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dad87ba4f1e04d6eb7f287e1f2e08fe, type: 3}
   m_Name: 
@@ -3670,7 +3668,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 293169299}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
   m_Name: 
@@ -10109,7 +10107,7 @@ MonoBehaviour:
   m_Script: {fileID: 12000, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TerrainData: {fileID: 0}
+  m_TerrainData: {fileID: 15600000, guid: 88823568baf760d4c8b5e8191a9f3c1f, type: 2}
   m_TreeDistance: 140
   m_TreeBillboardDistance: 100
   m_TreeCrossFadeLength: 100
@@ -20012,7 +20010,7 @@ GameObject:
   - 114: {fileID: 1750022268}
   - 54: {fileID: 1750022267}
   m_Layer: 0
-  m_Name: LightFruit old
+  m_Name: LightFruit
   m_TagString: LightFruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20467,7 +20465,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777152598}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
@@ -20485,7 +20483,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777152598}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dad87ba4f1e04d6eb7f287e1f2e08fe, type: 3}
   m_Name: 
@@ -20508,7 +20506,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777152598}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
   m_Name: 
@@ -22566,7 +22564,7 @@ GameObject:
   - 114: {fileID: 1964286257}
   - 54: {fileID: 1964286262}
   m_Layer: 0
-  m_Name: LightFruit old
+  m_Name: LightFruit
   m_TagString: LightFruit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

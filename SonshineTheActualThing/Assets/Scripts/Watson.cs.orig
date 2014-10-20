@@ -29,6 +29,9 @@ public class Watson : MonoBehaviour
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
     private float fRotationalTwitchThreshold;
 
+
+    public Animator anim;
+
     public WatsonsLight m_light;
 
     // behaviours 
@@ -57,10 +60,9 @@ public class Watson : MonoBehaviour
         m_agent.fVisionRange = 45.0f;
         fStepThreshold = 0.2f;
         
-        m_agent.fRotationSpeed = 1.6f;
+        m_agent.fRotationSpeed = 1.4f;
         m_agent.fPlayerBond = 0;
         fRotationalTwitchThreshold = 0.5f;
-
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
         seek = new SeekTarget();
@@ -83,6 +85,9 @@ public class Watson : MonoBehaviour
         
         m_behaviour = root;
 
+        // check
+        //print(random.PossibleDistractions[0].DistractionValues.fWeighting);
+       // print(random.PossibleDistractions[1].DistractionValues.fWeighting);
         m_agent.setBehaviour(m_behaviour);
        
         m_agent.setPosition(transform.position);
@@ -102,7 +107,7 @@ public class Watson : MonoBehaviour
             
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
-            if (distance < 1)
+            if (distance < 2)
                 GetComponent<NavMeshAgent>().speed = distance;
             else
                 GetComponent<NavMeshAgent>().speed = fMovementSpeed;
@@ -112,12 +117,7 @@ public class Watson : MonoBehaviour
             m_agent.setTarget(goParentTether.transform.position);
 
             // use nav mesh to move infront of the player
-                    // yes this is a quick and terrible fix but i need it to work
-                    // this is so if the player is moving forward watson is infront
-            if(Input.GetKey(KeyCode.W))
-                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*4f ;
-            else
-                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2;
+            GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*2 ;
 
             // and rotate towards target/player
             Vector3 targetDir = goParentTether.transform.position - transform.position;
@@ -164,6 +164,15 @@ public class Watson : MonoBehaviour
             
         }
 
+<<<<<<< HEAD
+        //send the animation booleans to the animation controller
+        Debug.Log("speed = " + fMovementSpeed);
+        anim.SetBool("IsWalking", (GetComponent<NavMeshAgent>().speed > 0));
+        anim.SetBool("IsHoldingHands", bTethered);
+    }// update 
+
+
+=======
 
         /// this area handles animations 
         /// or you can do it within the actual behaviours
@@ -173,13 +182,13 @@ public class Watson : MonoBehaviour
         }
 
       }// update 
+>>>>>>> c86cc08ae59b05f9730cd45057c6428161004c8e
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log("coliding");
         if (other.gameObject.tag == "LightFruit")
         {
-            other.gameObject.SetActive( false);
-           // Destroy(other.gameObject);
+            Destroy(other.gameObject);
             m_light.StartWorldLight();
         }
     }
