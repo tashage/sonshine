@@ -41,7 +41,13 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+<<<<<<< HEAD
 																															GlobalSection(MonoDevelopProperties) = preSolution
+=======
+								GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																														GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 9f71e9ab0ce4c2c18bb46e79553e31324b8bf457
 =======
 									GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> JacobsBranch
@@ -57,6 +63,7 @@ Global
 																																																																										GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> JacobsBranch
 >>>>>>> JacobsBranch
+>>>>>>> 53820641fe009a3792e6038ca572f39f436cbade
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
