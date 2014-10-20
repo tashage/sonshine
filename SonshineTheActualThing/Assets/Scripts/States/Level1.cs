@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Level1 : MonoBehaviour
 {
-    SceneFade Fade;
-    public MeshCollider player;
+    public SceneFade Fade;
+    public Collider player;
     public GameObject[] fruit;
 
-    public void OnTriggerEnter(MeshCollider playerCol)
+    public void OnTriggerEnter(Collider playerCol)
     {
         Debug.Log("Level 1 End Reached");
 		if ((playerCol.name == "First Person Controller") && (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false))
