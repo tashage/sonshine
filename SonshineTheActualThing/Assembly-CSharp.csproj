@@ -46,8 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MusicHandler.cs" />
-     <Compile Include="Assets\ONOFF.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraController.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCrosshair.cs" />
@@ -68,6 +66,13 @@
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
+<<<<<<< HEAD
+=======
+     <Compile Include="Assets\Scripts\MusicHandler.cs" />
+     <Compile Include="Assets\Scripts\ONOFF.cs" />
+     <Compile Include="Assets\Scripts\SpaceTurnOnLight.cs" />
+     <Compile Include="Assets\Scripts\States\GameManager.cs" />
+>>>>>>> 53820641fe009a3792e6038ca572f39f436cbade
      <Compile Include="Assets\Scripts\States\Level1.cs" />
      <Compile Include="Assets\Scripts\States\Level2.cs" />
      <Compile Include="Assets\Scripts\States\MenuState.cs" />
@@ -78,9 +83,8 @@
      <Compile Include="Assets\Scripts\Tether.cs" />
      <Compile Include="Assets\Scripts\Watson.cs" />
      <Compile Include="Assets\Scripts\WatsonAnimation.cs" />
+     <Compile Include="Assets\Scripts\WatsonIK.cs" />
      <Compile Include="Assets\Scripts\WatsonsLight.cs" />
-     <Compile Include="Assets\SpaceTurnOnLight.cs" />
-     <Compile Include="Assets\WatsonIK.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
