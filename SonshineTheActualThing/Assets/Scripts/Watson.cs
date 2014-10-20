@@ -167,10 +167,8 @@ public class Watson : MonoBehaviour
 
         /// this area handles animations 
         /// or you can do it within the actual behaviours
-        if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
-        {
-            
-        }
+       // if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
+      
 
       }// update 
     void OnTriggerEnter(Collider other)

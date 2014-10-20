@@ -4,18 +4,20 @@ using System.Collections;
 public class Level1 : MonoBehaviour
 {
     public SceneFade Fade;
-    public MeshCollider player;
+    public Collider player;
     public GameObject[] fruit;
 
-    public void OnTriggerEnter(MeshCollider playerCol)
+    public void OnTriggerEnter(Collider playerCol)
     {
         Debug.Log("Level 1 End Reached");
-		if ((playerCol.name == "First Person Controller") && (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false))
-        {
+		
+		Debug.Log("Player collided");
+		if(fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false)
+		{
 			Debug.Log("Level 1 Complete");
-            Fade.EndScene(2);
-        }
-    }
+			Fade.EndScene(2);
+		}
+     }
 
     public void Update()
     {
@@ -30,6 +32,6 @@ public class Level1 : MonoBehaviour
             //GameManager.Instance.SetGameState(GetState(1));
             Application.LoadLevel(2);
         }
-        OnTriggerEnter(player);
+        //OnTriggerEnter(player);
     }
 }

@@ -56,7 +56,7 @@ public class HoldUpWatson : MonoBehaviour {
         else if (rBumper > 0){ rBumper -= 1; }
         if((lBumper > 0)&&(rBumper > 0))
         {
-            Debug.Log("Bumpers True");
+           // Debug.Log("Bumpers True");
             return true;
         }
         return false;
