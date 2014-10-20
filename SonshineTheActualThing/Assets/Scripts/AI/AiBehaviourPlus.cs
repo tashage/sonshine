@@ -55,7 +55,7 @@ namespace AiBehaviourPlus_ns
             ChildInteractable tempInteracatable = null;
             for (int i = 0; i < PossibleDistractions.Count; i++)
             {
-                if (PossibleDistractions[i] == null)
+                if (PossibleDistractions[i] == null || PossibleDistractions[i].gameObject.activeInHierarchy == false)
                 {
                     PossibleDistractions.Remove(PossibleDistractions[i]);
                 }
