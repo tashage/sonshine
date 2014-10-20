@@ -20,3 +20,14 @@ C:\Users\anton.kurtz\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\ICSh
 C:\Users\anton.kurtz\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
 C:\Users\anton.kurtz\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\anton.kurtz\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\Johno\Desktop\sonshine\SonshineTheActualThing\obj\Debug\Assembly-CSharp-firstpass.pdb
