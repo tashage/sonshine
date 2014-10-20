@@ -66,13 +66,9 @@
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
-<<<<<<< HEAD
-=======
      <Compile Include="Assets\Scripts\MusicHandler.cs" />
      <Compile Include="Assets\Scripts\ONOFF.cs" />
      <Compile Include="Assets\Scripts\SpaceTurnOnLight.cs" />
-     <Compile Include="Assets\Scripts\States\GameManager.cs" />
->>>>>>> 53820641fe009a3792e6038ca572f39f436cbade
      <Compile Include="Assets\Scripts\States\Level1.cs" />
      <Compile Include="Assets\Scripts\States\Level2.cs" />
      <Compile Include="Assets\Scripts\States\MenuState.cs" />
