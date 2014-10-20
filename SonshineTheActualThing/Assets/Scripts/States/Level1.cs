@@ -1,23 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Level1 : StateTemplate
+public class Level1 : MonoBehaviour
 {
+    SceneFade Fade;
+    public MeshCollider player;
+    public GameObject[] fruit;
 
-    public void Start()
+    public void OnTriggerEnter(MeshCollider playerCol)
     {
-        gameObject.SetActive(false);
+        Debug.Log("Level 1 End Reached");
+		if ((playerCol.name == "First Person Controller") && (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false))
+        {
+			Debug.Log("Level 1 Complete");
+            Fade.EndScene(2);
+        }
     }
 
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
-            GameManager.Instance.SetGameState(GetState(0));
+            //GameManager.Instance.SetGameState(GetState(0));
+            Application.LoadLevel(0);
         }
+        //debug use only
         if (Input.GetKeyDown(KeyCode.Alpha2) == true)
         {
-            GameManager.Instance.SetGameState(GetState(1));
+            //GameManager.Instance.SetGameState(GetState(1));
+            Application.LoadLevel(2);
         }
+        OnTriggerEnter(player);
     }
 }
