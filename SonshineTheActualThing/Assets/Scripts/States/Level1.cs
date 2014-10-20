@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Level1 : MonoBehaviour
 {
-    SceneFade Fade;
+    public SceneFade Fade;
     public MeshCollider player;
     public GameObject[] fruit;
 
