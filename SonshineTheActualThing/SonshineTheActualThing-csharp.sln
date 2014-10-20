@@ -30,7 +30,11 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 <<<<<<< HEAD
+<<<<<<< HEAD
 																																GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																																		GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> JacobsBranch
 =======
 									GlobalSection(MonoDevelopProperties) = preSolution
 =======
