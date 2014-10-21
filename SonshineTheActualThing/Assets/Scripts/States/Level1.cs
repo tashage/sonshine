@@ -7,21 +7,22 @@ public class Level1 : MonoBehaviour
     public Collider player;
     public GameObject[] fruit;
 
+	bool endScene = false;
+
     public void OnTriggerEnter(Collider playerCol)
     {
-
         Debug.Log("Level 1 End Reached");
 		if (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false)
         {
 			Debug.Log("Level 1 Complete");
-            Fade.EndScene(2);
+            //Fade.EndScene(2);
+			endScene = true;
         }
     }
     public void Update()
     {
         if (Input.GetKey(KeyCode.Escape) == true)
         {
-            //Application.LoadLevel(0);
 			Fade.QuitScene(0);
         }
 		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButton("Start_Button")))
@@ -33,5 +34,9 @@ public class Level1 : MonoBehaviour
         {
             Application.LoadLevel(2);
         }
+		if(endScene)
+		{
+			Fade.EndScene(2);
+		}
     }
 }
