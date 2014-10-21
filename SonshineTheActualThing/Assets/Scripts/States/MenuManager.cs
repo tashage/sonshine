@@ -34,6 +34,9 @@ public class MenuManager : MonoBehaviour
     
     void Start()
     {
+        // turn the mouse off
+        Screen.showCursor = false;
+
         SetState(FirstState.GetComponent<MenuState>() as StateTemplate);
     }
 }

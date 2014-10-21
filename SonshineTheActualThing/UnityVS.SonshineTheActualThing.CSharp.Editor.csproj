@@ -73,6 +73,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\Water (Pro Only)\Water4\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\Editor\Water (Pro Only)\Water4\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\Editor\Water (Pro Only)\Water4\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\Editor\Water (Pro Only)\Water4\WaterBaseEditor.cs" />
+    <Compile Include="Assets\Editor\Water (Pro Only)\Water4\WaterEditorUtility.cs" />
     <Compile Include="Assets\OVR\Editor\OVRBuild.cs" />
     <Compile Include="Assets\OVR\Editor\OVRCameraControllerEditor.cs" />
     <Compile Include="Assets\OVR\Editor\OVRDeviceEditor.cs" />
@@ -153,6 +158,10 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll" />
     <None Include="Assets\UnityVS\Editor\SyntaxTree.VisualStudio.Unity.Messaging.dll" />
     <None Include="Assets\UnityVS\Editor\UnityVS.VersionSpecific.dll" />

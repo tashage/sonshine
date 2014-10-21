@@ -79,7 +79,6 @@
     <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
     <Compile Include="Assets\Scripts\MusicHandler.cs" />
     <Compile Include="Assets\Scripts\ONOFF.cs" />
-    <Compile Include="Assets\Scripts\SpaceTurnOnLight.cs" />
     <Compile Include="Assets\Scripts\States\Level1.cs" />
     <Compile Include="Assets\Scripts\States\Level2.cs" />
     <Compile Include="Assets\Scripts\States\MenuManager.cs" />
@@ -164,6 +163,10 @@
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\TwirlEffect.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VignettingShader.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\VortexEffect.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Sources\Shaders\FX-Water.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-Water4.shader" />
+    <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\WaterInclude.cginc" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2012\UnityVS.CSharp.targets" />
 </Project>
