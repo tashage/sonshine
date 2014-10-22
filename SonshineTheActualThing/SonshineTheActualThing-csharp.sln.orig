@@ -31,12 +31,12 @@ Global
 	EndGlobalSection
 <<<<<<< HEAD
 																																														GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
 =======
-																																												GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																																									GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> master
->>>>>>> 215b4f7896a0556c50fd56d569557548f36dee68
+>>>>>>> JacobsBranch
 =======
 									GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> JacobsBranch
@@ -52,6 +52,9 @@ Global
 																																																																										GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> JacobsBranch
 >>>>>>> JacobsBranch
+=======
+								GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> anton
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
