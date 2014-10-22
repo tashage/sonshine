@@ -16,6 +16,7 @@ public class HoldUpWatson : MonoBehaviour {
     public Watson m_TheChild;
     float fOriginalBaseOffset;
     float fLiftRate;
+    float fDropRate;
 
     float fMaxOffset;
     bool isPressed;
@@ -26,6 +27,7 @@ public class HoldUpWatson : MonoBehaviour {
         fOriginalBaseOffset = m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset;
         fMaxOffset = fOriginalBaseOffset + 2;
         fLiftRate = 1.3f;
+        fDropRate = 5.0f;
 	}
 	
 	// Update is called once per frame
@@ -38,15 +40,18 @@ public class HoldUpWatson : MonoBehaviour {
         else // fix when holdingthe child then letting go causes him to float
         {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= fDropRate * Time.deltaTime;
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
 
            
-            if (Input.GetKeyUp(KeyCode.E))
-            {
-                isPressed = false;
-            }
+           
+        }
+        // clear the hold
+        if (Input.GetKeyUp(KeyCode.E))
+        {
+            isPressed = false;
+            m_TheChild.bLifted = false;
         }
 	}
     public void Lift()
@@ -55,13 +60,10 @@ public class HoldUpWatson : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E))
         {
             isPressed = true;
+            m_TheChild.bLifted = true;
            
         }
-        else if ( Input.GetKeyUp(KeyCode.E))
-        {
-            isPressed = false;
-        }
-      
+       
         if (isPressed)
         {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fMaxOffset)
@@ -70,11 +72,11 @@ public class HoldUpWatson : MonoBehaviour {
         else
         {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= fDropRate * Time.deltaTime;
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
         }
-       
+
             
     }
 

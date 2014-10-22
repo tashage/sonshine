@@ -8,7 +8,7 @@ using Agent_ns;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 13/8/14
-/// Last Updated: 17/9/14
+/// Last Updated: 22/10/14
 /// Description: 
 /// This script will be used as the controlling and interaction of the child
 /// </summary>
@@ -24,7 +24,14 @@ public class Watson : MonoBehaviour
 
 
     public bool bTethered;          // whether or not this object the child is tethered
+    public bool bLifted;          // whether or not this object the child is being lifted
+    private float fStoppingDistance;
+    private float fStoppingDistanceHeld;
     private float fMovementSpeed;     //double check this
+    private float fMovementSpeedHeld;     //double check this
+    private float fNavAngularSpeed;
+    private float fNavAngularSpeedHeld;
+
     private float fTetherThreshold;
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
     private float fRotationalTwitchThreshold;
@@ -52,14 +59,18 @@ public class Watson : MonoBehaviour
     {
         fMovementSpeed = GetComponent<NavMeshAgent>().speed;
         m_agent.fMovementSpeed = fMovementSpeed;
+        fMovementSpeedHeld = fMovementSpeed * 2;
         fTetherThreshold = 1.0f;
         m_agent.fBoredem = -1.0f;
         m_agent.fVisionRange = 45.0f;
         fStepThreshold = 0.2f;
-        
-        m_agent.fRotationSpeed = 1.6f;
+
+       m_agent.fRotationSpeed = 1.6f;
         m_agent.fPlayerBond = 0;
         fRotationalTwitchThreshold = 0.5f;
+
+        fStoppingDistance = 1;
+        fStoppingDistance = 0.5f;
 
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
@@ -68,7 +79,7 @@ public class Watson : MonoBehaviour
         within = new WithinRange(m_agent.fVisionRange);
 
         target.PossibleDistractions = Distractions;
-
+        bLifted = false;
         // build the behaviour tree
         ifCloseToPoint.addChild(seek);
         ifCloseToPoint.addChild(isclose);
@@ -102,27 +113,71 @@ public class Watson : MonoBehaviour
             
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
-            if (distance < 1)
-                GetComponent<NavMeshAgent>().speed = distance;
+            NavMeshAgent tempNavAgent =GetComponent<NavMeshAgent>() ;
+            if (distance < 1 && !bLifted)
+            {
+                tempNavAgent.speed = distance;
+                tempNavAgent.stoppingDistance = fStoppingDistance;
+                tempNavAgent.acceleration = fMovementSpeed;
+                
+            }
+            else if (bLifted)
+            {
+                tempNavAgent.speed = fMovementSpeedHeld;
+                tempNavAgent.stoppingDistance = fStoppingDistanceHeld;
+                tempNavAgent.acceleration = fMovementSpeedHeld;
+                
+            }
             else
-                GetComponent<NavMeshAgent>().speed = fMovementSpeed;
+            {
+                tempNavAgent.speed = fMovementSpeed;
+                tempNavAgent.stoppingDistance = fStoppingDistance;
+                tempNavAgent.acceleration = fMovementSpeed;
+                
+            }
           
             // reset the agent position so there is no jitter
             m_agent.setPosition(transform.position);
-            m_agent.setTarget(goParentTether.transform.position);
-
+           
             // use nav mesh to move infront of the player
                     // yes this is a quick and terrible fix but i need it to work
                     // this is so if the player is moving forward watson is infront
-            if(Input.GetKey(KeyCode.W))
-                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*4f ;
+            if (Input.GetKey(KeyCode.W) && !bLifted)
+            {
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 4f;
+                m_agent.setTarget(goParentTether.transform.position + goParentTether.transform.forward * 4f);
+            }
+            else if (bLifted)
+            {
+                
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2f;
+                m_agent.setTarget(goParentTether.transform.position + goParentTether.transform.forward * 2f);
+
+                Vector3 original = (Vector3) transform.position;
+                transform.position = new Vector3(goParentTether.transform.position.x + goParentTether.transform.forward.x * 2f, original.y,
+                                                    goParentTether.transform.position.z + goParentTether.transform.forward.z * 2f);
+            }
             else
-                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2;
+            {
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2f;
+                m_agent.setTarget(goParentTether.transform.position + goParentTether.transform.forward * 2f);
+            }
 
             // and rotate towards target/player
-            Vector3 targetDir = goParentTether.transform.position - transform.position;
+            Vector3 targetDir;
+             float step;
+            if (bLifted)
+            {
+                targetDir = -goParentTether.transform.position -(- transform.position);
+                step = m_agent.fRotationSpeed * 5 * Time.deltaTime; // times 5 to feel more like you are holding him
+            }
+            else
+            {
+                targetDir = goParentTether.transform.position - transform.position;
+                step = m_agent.fRotationSpeed * Time.deltaTime;
+            }
            
-            float step = m_agent.fRotationSpeed * Time.deltaTime;
+          
            
             Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
             // we only need to rotate on the y axis
