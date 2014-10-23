@@ -3,22 +3,34 @@ using System.Collections;
 
 public class Level2 : MonoBehaviour
 {
-    /*public void Start()
-    {
-        gameObject.SetActive(false);
-    }*/
+	public SceneFade Fade;
+	public Collider player;
+	bool endScene = false;
+
+	public void OnTriggerEnter(Collider playerCol)
+	{
+			Debug.Log("Level 2 Complete");
+			endScene = true;
+	}
 
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) == true)
+		if (Input.GetKey(KeyCode.Escape) == true)
+		{
+			Fade.QuitScene(0);
+		}
+		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButton("Start_Button")))
+		{
+			Fade.ResetAlpha();
+		}
+        //debug use only
+		if (Input.GetKeyDown(KeyCode.Alpha1) == true)
         {
-            //GameManager.Instance.SetGameState(GetState(0));
-            Application.LoadLevel(0);
-        } 
-        if (Input.GetKeyDown(KeyCode.Alpha1) == true)
-        {
-            //GameManager.Instance.SetGameState(GetState(1));
             Application.LoadLevel(1);
         }
+		if (endScene)
+		{
+			Fade.EndScene(2);
+		}
     }
 }

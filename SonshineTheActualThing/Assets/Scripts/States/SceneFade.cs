@@ -10,18 +10,14 @@ public class SceneFade : MonoBehaviour
 
 
 	public float inSpeed = 1.5f;
-    public float inMargin = 0.05f;
+    public float inMargin = 0.1f;
 
     public float outSpeed = 1.5f;
     public float outMargin = 0.05f;
 
-    public SceneManager menuManager;
 
     void Awake()
     {
-        menuManager = GetComponent<SceneManager>();
-
-        //DontDestroyOnLoad(transform.gameObject);
         guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 		guiTexture.color.a.Equals(1.0f);
         sceneStarting = true;
@@ -35,24 +31,16 @@ public class SceneFade : MonoBehaviour
         }
     }
 
-    void FadeToClear()
+    void FadeTo(Color colour, float speed)
     {
-        guiTexture.color = Color.Lerp(guiTexture.color, Color.clear, inSpeed * Time.deltaTime);
-    }
-
-    void FadeToDark()
-    {
-        guiTexture.color = Color.Lerp(guiTexture.color, Color.black, outSpeed * Time.deltaTime);
-    }
-	void QuitToDark()
-	{
-		guiTexture.color = Color.Lerp(guiTexture.color, Color.black, quitSpeed * Time.deltaTime);
+        guiTexture.color = Color.Lerp(guiTexture.color, colour, speed * Time.deltaTime);
 	}
 
     void StartScene()
     {
-        FadeToClear();
-
+		Debug.Log("SceneStarting");
+        FadeTo(Color.clear, inSpeed);
+		inSpeed += 0.001f;
         if (guiTexture.color.a <= (0f + inMargin))
         {
             guiTexture.color = Color.clear;
@@ -66,37 +54,49 @@ public class SceneFade : MonoBehaviour
         if (!sceneStarting)
         {
             guiTexture.enabled = true;
-            FadeToDark();
-            if (guiTexture.color.a >= outMargin)
+            FadeTo(Color.black, outSpeed);
+            if (guiTexture.color.a >= (1.0f - outMargin))
             {
                 Application.LoadLevel(sceneNumber);
                 sceneStarting = true;
             }
         }
     }
-    public void EndScene(StateTemplate newState)
-    {
-        if (!sceneStarting)
-        {
-            guiTexture.enabled = true;
-            FadeToDark();
-            if (guiTexture.color.a >= outMargin)
-            {
-                menuManager.SetState(newState);
-                sceneStarting = true;
-            }
-        }
-    }
+
 	public void QuitScene()
 	{
 		if (!sceneStarting)
 		{
 			guiTexture.enabled = true;
-			QuitToDark();
-			if (guiTexture.color.a >= quitMargin)
+			FadeTo(Color.black, quitSpeed);
+			if (guiTexture.color.a >= (1.0f - quitMargin))
 			{
 				Application.Quit();
+				Debug.Log("you just quit");
 			}
 		}
+	}
+	public void QuitScene(int SceneNumber)
+	{
+		if (!sceneStarting)
+		{
+			guiTexture.enabled = true;
+			FadeTo(Color.black, quitSpeed);
+
+			if (guiTexture.color.a >= (1.0f - quitMargin))
+			{
+				Application.LoadLevel(SceneNumber);
+				sceneStarting = true;
+			}
+		}
+	}
+	public void ResetAlpha()
+	{
+		while (guiTexture.color.a > 0.0f)
+		{
+			guiTexture.color = Color.Lerp(guiTexture.color, Color.clear, 100 * Time.deltaTime);
+		}
+
+		guiTexture.enabled = false;
 	}
 }

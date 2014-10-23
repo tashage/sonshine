@@ -71,7 +71,11 @@
     <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\PlayerSoundManager.cs" />
+=======
+    <Compile Include="Assets\RotateAroundParent.cs" />
+>>>>>>> master
     <Compile Include="Assets\Scripts\AI\Agent.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
@@ -82,10 +86,10 @@
     <Compile Include="Assets\Scripts\ONOFF.cs" />
     <Compile Include="Assets\Scripts\States\Level1.cs" />
     <Compile Include="Assets\Scripts\States\Level2.cs" />
+    <Compile Include="Assets\Scripts\States\MenuManager.cs" />
     <Compile Include="Assets\Scripts\States\MenuState.cs" />
     <Compile Include="Assets\Scripts\States\QuitState.cs" />
     <Compile Include="Assets\Scripts\States\SceneFade.cs" />
-    <Compile Include="Assets\Scripts\States\SceneManager.cs" />
     <Compile Include="Assets\Scripts\States\StateTemplate.cs" />
     <Compile Include="Assets\Scripts\Tether.cs" />
     <Compile Include="Assets\Scripts\Watson.cs" />
