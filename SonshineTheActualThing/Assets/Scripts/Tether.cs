@@ -22,7 +22,7 @@ public class Tether : MonoBehaviour {
 	void Update () {
 
         // if the space key is pressed tether or un tether the child
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             // if the child is NOT tethered 
             if(m_TheChild !=null)
