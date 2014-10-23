@@ -71,6 +71,7 @@
     <Compile Include="Assets\OVR\Scripts\OVRUGUI.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
+    <Compile Include="Assets\RotateAroundParent.cs" />
     <Compile Include="Assets\Scripts\AI\Agent.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
