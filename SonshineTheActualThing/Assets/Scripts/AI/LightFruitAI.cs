@@ -9,7 +9,7 @@ using System.Collections;
 /// </summary>
 public class LightFruitAI : ChildInteractable
 {
-  
+    public GameObject pathFireflies;
      void Start()
         {
             DistractionValues.fDistanceWeightingFalloff = 0.5f;
@@ -29,6 +29,13 @@ public class LightFruitAI : ChildInteractable
         // Update is called once per frame
         void Update()
         {
+            if (pathFireflies != null)
+            {
+                if(!this.gameObject.activeInHierarchy)
+                {
+                    pathFireflies.SetActive(true);
+                }
+            }
             
         }
         
