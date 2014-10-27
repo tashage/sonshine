@@ -24,10 +24,14 @@ public class Watson : MonoBehaviour
 
 
     public bool bTethered;          // whether or not this object the child is tethered
+    public bool bHeldUp;          // whether or not this object the child is tethered
+
     private float fMovementSpeed;     //double check this
+    private float fOriginalRotationalSpeed;
     private float fTetherThreshold;
     private float fStepThreshold;    // this is to do with rotation towards the target, the step must be higher than this to calculate
     private float fRotationalTwitchThreshold;
+    private Vector3 targetDir;
 
     public WatsonsLight m_light;
 
@@ -58,8 +62,11 @@ public class Watson : MonoBehaviour
         fStepThreshold = 0.2f;
         
         m_agent.fRotationSpeed = 1.6f;
+        fOriginalRotationalSpeed = m_agent.fRotationSpeed;
         m_agent.fPlayerBond = 0;
         fRotationalTwitchThreshold = 0.5f;
+
+        bHeldUp = false;
 
         // initialise the behaviours
         m_behaviour = new AiBehaviour();
@@ -98,33 +105,52 @@ public class Watson : MonoBehaviour
         {
             // find the distance to the parent
             float distance = Vector3.Distance(transform.position, goParentTether.transform.position);
+            
             m_light.turnOn();
             
 
             // this is so the child slowly moves infront of the player , not rushing to wards it, shits creepy
             if (distance < 1)
+            {
                 GetComponent<NavMeshAgent>().speed = distance;
+               
+            }
             else
+            {
                 GetComponent<NavMeshAgent>().speed = fMovementSpeed;
+                m_agent.fRotationSpeed = fOriginalRotationalSpeed;
+            }
           
             // reset the agent position so there is no jitter
             m_agent.setPosition(transform.position);
-            m_agent.setTarget(goParentTether.transform.position);
+            m_agent.setTarget(goParentTether.transform.position + goParentTether.transform.forward *2);
 
             // use nav mesh to move infront of the player
                     // yes this is a quick and terrible fix but i need it to work
                     // this is so if the player is moving forward watson is infront
-            if(Input.GetKey(KeyCode.W))
-                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward*4f ;
+            if (Input.GetKey(KeyCode.W) && !bHeldUp)
+            {
+                GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 4f;
+                m_agent.fRotationSpeed = fOriginalRotationalSpeed * 4;
+                targetDir = -goParentTether.transform.position - (-transform.position);
+            }
+            else if (bHeldUp)
+            {
+                this.transform.position = new Vector3(goParentTether.transform.position.x, this.transform.position.y, goParentTether.transform.position.z) + goParentTether.transform.forward * 2;
+                GetComponent<NavMeshAgent>().destination = this.transform.position;
+                targetDir = -goParentTether.transform.position - (-transform.position);
+            }
             else
+            {
                 GetComponent<NavMeshAgent>().destination = goParentTether.transform.position + goParentTether.transform.forward * 2;
+                targetDir = goParentTether.transform.position - transform.position;
+            }
 
-            // and rotate towards target/player
-            Vector3 targetDir = goParentTether.transform.position - transform.position;
-           
+                      
+                       
             float step = m_agent.fRotationSpeed * Time.deltaTime;
-           
             Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, step, 0.0f);
+
             // we only need to rotate on the y axis
             Quaternion q = new Quaternion(0, Quaternion.LookRotation(newDir).y, 0, Quaternion.LookRotation(newDir).w);
             transform.rotation = q;
