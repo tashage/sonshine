@@ -4,7 +4,7 @@ using System.Collections;
 /// <summary>
 /// Author: Jacob Connelly
 /// Date Created: 19/8/14
-/// Last Updated: 26/8/14
+/// Last Updated: 27/10/14
 /// Description:
 /// This class serves as the action of the parent lifting up the child
 /// It Does this by increasing the base offset of the childs nav mesh 
@@ -16,6 +16,7 @@ public class HoldUpWatson : MonoBehaviour {
     public Watson m_TheChild;
     float fOriginalBaseOffset;
     float fLiftRate;
+    float fDropRate;
 
     float fMaxOffset;
     bool isPressed;
@@ -25,12 +26,25 @@ public class HoldUpWatson : MonoBehaviour {
 
         fOriginalBaseOffset = m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset;
         fMaxOffset = fOriginalBaseOffset + 2;
-        fLiftRate = 1.3f;
+        fLiftRate = 1.5f;
+        fDropRate = 4.0f;
 	}
 	
 	// Update is called once per frame
 	void Update () 
     {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            isPressed = true;
+            m_TheChild.bHeldUp = true;
+
+        }
+        else if (Input.GetKeyUp(KeyCode.E))
+        {
+            isPressed = false;
+            m_TheChild.bHeldUp = false;
+        }
+
         if (m_TheChild.bTethered)
         {
             Lift();
@@ -38,29 +52,15 @@ public class HoldUpWatson : MonoBehaviour {
         else // fix when holdingthe child then letting go causes him to float
         {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= fDropRate * Time.deltaTime;
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
-
-           
-            if (Input.GetKeyUp(KeyCode.E))
-            {
-                isPressed = false;
-            }
-        }
+         }
 	}
     public void Lift()
     {
         // if the e key is pressed increase the base offset
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isPressed = true;
-           
-        }
-        else if ( Input.GetKeyUp(KeyCode.E))
-        {
-            isPressed = false;
-        }
+       
       
         if (isPressed)
         {
@@ -70,7 +70,7 @@ public class HoldUpWatson : MonoBehaviour {
         else
         {
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset > fOriginalBaseOffset)
-                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= 1.3f * Time.deltaTime;
+                m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset -= fDropRate * Time.deltaTime;
             if (m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset < fOriginalBaseOffset)
                 m_TheChild.gameObject.GetComponent<NavMeshAgent>().baseOffset = fOriginalBaseOffset;
         }
