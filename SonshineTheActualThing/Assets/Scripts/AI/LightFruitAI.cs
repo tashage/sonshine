@@ -29,15 +29,18 @@ public class LightFruitAI : ChildInteractable
         // Update is called once per frame
         void Update()
         {
-            if (pathFireflies != null)
-            {
-                if(!this.gameObject.activeInHierarchy)
-                {
-                    pathFireflies.SetActive(true);
-                }
-            }
+          
             
         }
-        
+
+        public void Eat()
+        {
+            if (pathFireflies != null)
+            {
+              
+                pathFireflies.SetActive(true);
+              
+            }
+        }
        
 }
