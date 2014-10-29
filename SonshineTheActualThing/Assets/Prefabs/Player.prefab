@@ -5082,7 +5082,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .19166474, g: .301966369, b: .474509805, a: 1}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -5203,7 +5203,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .790000021
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5472,18 +5472,13 @@ MonoBehaviour:
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
-      - time: -90
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
       - time: 0
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 90
-        value: 0
+      - time: 1
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -5491,7 +5486,7 @@ MonoBehaviour:
       m_PostInfinity: 2
     maxGroundAcceleration: 20
     maxAirAcceleration: 15
-    gravity: 0
+    gravity: 2
     maxFallSpeed: 20
   jumping:
     enabled: 0
@@ -5504,7 +5499,7 @@ MonoBehaviour:
     movementTransfer: 2
   sliding:
     enabled: 0
-    slidingSpeed: 10
+    slidingSpeed: 0
     sidewaysControl: 1
     speedControl: .400000006
 --- !u!114 &11400020
@@ -5715,9 +5710,9 @@ CharacterController:
   serializedVersion: 2
   m_Height: 2
   m_Radius: .400000006
-  m_SlopeLimit: 45
-  m_StepOffset: .400000006
-  m_SkinWidth: .0500000007
+  m_SlopeLimit: 90
+  m_StepOffset: .5
+  m_SkinWidth: .100000001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!169 &16900000
