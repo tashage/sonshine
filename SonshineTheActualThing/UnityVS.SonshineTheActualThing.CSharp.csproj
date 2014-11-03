@@ -95,6 +95,7 @@
     <Compile Include="Assets\Scripts\WatsonAnimation.cs" />
     <Compile Include="Assets\Scripts\WatsonIK.cs" />
     <Compile Include="Assets\Scripts\WatsonsLight.cs" />
+    <Compile Include="Assets\SpaceTurnOnLight.cs" />
     <Compile Include="Assets\WatsonSoundManager.cs" />
     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
