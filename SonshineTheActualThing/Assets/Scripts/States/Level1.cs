@@ -4,6 +4,7 @@ using System.Collections;
 public class Level1 : MonoBehaviour
 {
     public SceneFade Fade;
+    public Collider player;
     public GameObject[] fruit;
 
 	bool endScene = false;
