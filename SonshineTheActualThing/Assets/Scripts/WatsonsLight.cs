@@ -51,8 +51,8 @@ public class WatsonsLight : MonoBehaviour {
         fCurrentLost = 0;
 
         fRateOfChange = 0.2f;
-        fRateOfLoss = 0.003f;
-        fFlickerRange = 0.04f;
+        fRateOfLoss = 0.002f;
+        fFlickerRange = 0.03f;
 
         fWorldLightRateOfLoss = 0.2f;
         m_WorldLight.intensity = 0.02f;

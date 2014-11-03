@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
     <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
     <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
+    <Compile Include="Assets\Scripts\LevelTransitionsActions\Boat.cs" />
     <Compile Include="Assets\Scripts\LevelTransitionsActions\InlightHouseTrigger.cs" />
     <Compile Include="Assets\Scripts\MusicHandler.cs" />
     <Compile Include="Assets\Scripts\ONOFF.cs" />
