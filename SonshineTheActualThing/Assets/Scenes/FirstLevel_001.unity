@@ -7218,7 +7218,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Priority: 128
   DopplerLevel: 1
@@ -14815,11 +14815,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d048832f047d7404595fe748655eb8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fade: {fileID: 1613791365}
-  player: {fileID: 771731064}
-  fruit:
-  - {fileID: 1008626436}
-  - {fileID: 1499944753}
+  Fade: {fileID: 0}
+  player: {fileID: 0}
+  fruit: []
 --- !u!4 &957596170
 Transform:
   m_ObjectHideFlags: 0
@@ -21438,6 +21436,30 @@ Prefab:
       propertyPath: goPlayer
       value: 
       objectReference: {fileID: 1354466213}
+    - target: {fileID: 11400002, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400008, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200002, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400026, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
+      propertyPath: goEndPoint
+      value: 
+      objectReference: {fileID: 2128489386}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
   m_RootGameObject: {fileID: 1354466213}
@@ -21815,7 +21837,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1214394398}
   m_GameObject: {fileID: 1255987299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c3946ab5378473cb34bedd1c8194ba, type: 3}
   m_Name: 
@@ -21834,7 +21856,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1214394398}
   m_GameObject: {fileID: 1255987299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
   m_Name: 
@@ -21855,7 +21877,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1214394398}
   m_GameObject: {fileID: 1255987299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dad87ba4f1e04d6eb7f287e1f2e08fe, type: 3}
   m_Name: 
@@ -21879,7 +21901,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1214394398}
   m_GameObject: {fileID: 1255987299}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d1352984e3c6465088f6cc7c4ce6e22, type: 3}
   m_Name: 
@@ -27577,6 +27599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   goPlayer: {fileID: 1354466213}
   goChild: {fileID: 1256479774}
+  goEndPoint: {fileID: 2128489386}
   acIntro: {fileID: 8300000, guid: 56c1ccae81c186e4b8aa8dbaafa1c186, type: 3}
   acLoop1: {fileID: 8300000, guid: 363749e059ff53945a6f2cafa6a9de7d, type: 3}
   acLoop2: {fileID: 8300000, guid: daa4b826cafe10f4bbcee1bd47a44f23, type: 3}
@@ -27860,11 +27883,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80c436a25b4b73945a32d3da711af86d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quitSpeed: .5
+  quitSpeed: 1.5
   quitMargin: .0500000007
-  inSpeed: .180000007
-  inMargin: .0500000007
-  outSpeed: .189999998
+  inSpeed: 1.5
+  inMargin: .100000001
+  outSpeed: 1.5
   outMargin: .0500000007
 --- !u!4 &1613791366
 Transform:
@@ -34612,6 +34635,7 @@ MonoBehaviour:
   m_LightmapIndex: -1
   m_LightmapSize: 1024
   m_DrawTreesAndFoliage: 1
+  m_CollectDetailPatches: 1
   m_MaterialTemplate: {fileID: 0}
 --- !u!4 &1973286716
 Transform:
