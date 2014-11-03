@@ -72,6 +72,7 @@
     <Compile Include="Assets\OVR\Scripts\OVRUtils.cs" />
     <Compile Include="Assets\OVR\Scripts\OVRVisionGuide.cs" />
     <Compile Include="Assets\PlayerSoundManager.cs" />
+    <Compile Include="Assets\RotateAroundParent.cs" />
     <Compile Include="Assets\Scripts\AI\Agent.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviour.cs" />
     <Compile Include="Assets\Scripts\AI\AiBehaviourPlus.cs" />
@@ -80,9 +81,13 @@
     <Compile Include="Assets\Scripts\Environment\Leaves.cs" />
     <Compile Include="Assets\Scripts\Environment\Teleportation.cs" />
     <Compile Include="Assets\Scripts\Environment\Teleporter.cs" />
+    <Compile Include="Assets\Scripts\FootstepSound.cs" />
     <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
+    <Compile Include="Assets\Scripts\LevelTransitionsActions\Boat.cs" />
+    <Compile Include="Assets\Scripts\LevelTransitionsActions\InlightHouseTrigger.cs" />
     <Compile Include="Assets\Scripts\MusicHandler.cs" />
     <Compile Include="Assets\Scripts\ONOFF.cs" />
+    <Compile Include="Assets\Scripts\PathToPathFF.cs" />
     <Compile Include="Assets\Scripts\States\Level1.cs" />
     <Compile Include="Assets\Scripts\States\Level2.cs" />
     <Compile Include="Assets\Scripts\States\MenuManager.cs" />
@@ -99,6 +104,7 @@
     <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
     <None Include="Assets\OVR\Shaders\TextShader3D.shader" />
     <None Include="Assets\Plugins\donotdelete.txt" />
+    <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\DLAA.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_Antialiasing\FXAA3Console.shader" />

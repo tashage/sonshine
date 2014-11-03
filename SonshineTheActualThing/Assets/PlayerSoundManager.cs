@@ -1,7 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-
+/// <summary>
+/// Author: Jacob Connelly
+/// Date Created: 14/8/14
+/// Last Updated: 17/9/14
+/// Description: 
+/// This script will be used to tether the child to the parent
+/// </summary>
 public class PlayerSoundManager : MonoBehaviour {
 
     // Use this for initialization
