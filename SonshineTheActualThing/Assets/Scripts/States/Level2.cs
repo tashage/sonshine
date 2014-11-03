@@ -29,7 +29,7 @@ public class Level2 : MonoBehaviour
         }
 		if (endScene)
 		{
-			Fade.EndScene(2);
+			Fade.EndScene(0);
 		}
     }
 }
