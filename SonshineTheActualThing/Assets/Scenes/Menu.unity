@@ -1487,6 +1487,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1108419840
 Renderer:
   m_ObjectHideFlags: 0
@@ -1778,6 +1779,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!23 &1400719212
 Renderer:
   m_ObjectHideFlags: 0

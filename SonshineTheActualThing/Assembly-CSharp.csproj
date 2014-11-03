@@ -67,8 +67,11 @@
      <Compile Include="Assets\Scripts\AI\ChildInteractable.cs" />
      <Compile Include="Assets\Scripts\AI\LightFruitAI.cs" />
      <Compile Include="Assets\Scripts\HoldUpWatson.cs" />
+     <Compile Include="Assets\Scripts\LevelTransitionsActions\Boat.cs" />
+     <Compile Include="Assets\Scripts\LevelTransitionsActions\InlightHouseTrigger.cs" />
      <Compile Include="Assets\Scripts\MusicHandler.cs" />
      <Compile Include="Assets\Scripts\ONOFF.cs" />
+     <Compile Include="Assets\Scripts\PathToPathFF.cs" />
      <Compile Include="Assets\Scripts\States\Level1.cs" />
      <Compile Include="Assets\Scripts\States\Level2.cs" />
      <Compile Include="Assets\Scripts\States\MenuManager.cs" />
@@ -82,6 +85,7 @@
      <Compile Include="Assets\Scripts\WatsonIK.cs" />
      <Compile Include="Assets\Scripts\WatsonsLight.cs" />
      <Compile Include="Assets\WatsonSoundManager.cs" />
+     <None Include="Assets\Standard Assets\Glass Refraction (Pro Only)\Sources\Shaders\Glass-Stained-BumpDistort.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Plugins\donotdelete.txt" />
