@@ -207,9 +207,11 @@ public class Watson : MonoBehaviour
         // Debug.Log("coliding");
         if (other.gameObject.tag == "LightFruit")
         {
+            other.GetComponent<LightFruitAI>().Eat();
             other.gameObject.SetActive( false);
            // Destroy(other.gameObject);
             m_light.StartWorldLight();
+            m_light.RefreshLight();
         }
     }
 }
