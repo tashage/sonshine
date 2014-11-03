@@ -38,7 +38,6 @@ public class SceneFade : MonoBehaviour
 
     void StartScene()
     {
-		Debug.Log("SceneStarting");
         FadeTo(Color.clear, inSpeed);
 		inSpeed += 0.001f;
         if (guiTexture.color.a <= (0f + inMargin))
