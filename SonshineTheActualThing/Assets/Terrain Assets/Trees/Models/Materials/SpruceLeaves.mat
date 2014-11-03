@@ -55,10 +55,6 @@ Material:
         second: .25
       data:
         first:
-          name: _Shininess
-        second: .078125
-      data:
-        first:
           name: _BaseLight
         second: .18928571
       data:
@@ -69,6 +65,10 @@ Material:
         first:
           name: _SquashAmount
         second: 1
+      data:
+        first:
+          name: _Shininess
+        second: .078125
       data:
         first:
           name: _Occlusion
