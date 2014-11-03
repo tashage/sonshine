@@ -5,6 +5,7 @@ public class Boat : MonoBehaviour {
 
     public GameObject ShorePoint;
     public GameObject SeaPoint;
+    
 
     bool bLightHouseOn = false;
     bool bPlayerInBoat = false;
@@ -38,6 +39,7 @@ public class Boat : MonoBehaviour {
     }
     public void MoveTowardsSea()
     {
+        // no longer moves out to see, just fade out
         transform.position = Vector3.MoveTowards(this.transform.position, SeaPoint.transform.position, Time.deltaTime * 10);
         Debug.Log("moving to sea");
     }
