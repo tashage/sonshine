@@ -195,7 +195,10 @@ public class Watson : MonoBehaviour
         /// or you can do it within the actual behaviours
         if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
         {
-            return;//bitchs on empty function
+            int i = 1;
+			int a = 1;
+			a = a+i;
+			return;//bitchs on empty function
         }
 
       }// update 
@@ -204,9 +207,11 @@ public class Watson : MonoBehaviour
         // Debug.Log("coliding");
         if (other.gameObject.tag == "LightFruit")
         {
+            other.GetComponent<LightFruitAI>().Eat();
             other.gameObject.SetActive( false);
            // Destroy(other.gameObject);
             m_light.StartWorldLight();
+            m_light.RefreshLight();
         }
     }
 }

@@ -4,7 +4,6 @@ using System.Collections;
 public class Level2 : MonoBehaviour
 {
 	public SceneFade Fade;
-	public Collider player;
 	bool endScene = false;
 
 	public void OnTriggerEnter(Collider playerCol)
