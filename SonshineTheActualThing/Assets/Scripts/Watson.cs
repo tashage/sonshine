@@ -195,10 +195,7 @@ public class Watson : MonoBehaviour
         /// or you can do it within the actual behaviours
         if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
         {
-            int i = 1;
-			int a = 1;
-			a = a+i;
-			return;//bitchs on empty function
+            return;//bitchs on empty function
         }
 
       }// update 
