@@ -1179,7 +1179,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83051266}
   m_LocalRotation: {x: 0, y: .174214095, z: 0, w: .984707832}
-  m_LocalPosition: {x: -14.7487659, y: -5.24520874e-06, z: -35.7730255}
+  m_LocalPosition: {x: -14.7487659, y: 4.23255444, z: -35.7730255}
   m_LocalScale: {x: 1.78000021, y: 2.07500005, z: 12.7299995}
   m_Children: []
   m_Father: {fileID: 433882669}
@@ -7398,6 +7398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd8d0e31252b830479b4920b95c36882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherDest: {fileID: 1258176772}
 --- !u!1 &441147500
 GameObject:
   m_ObjectHideFlags: 0
@@ -11780,7 +11781,7 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 4
+    maxForwardSpeed: 3.9000001
     maxSidewaysSpeed: 3.5
     maxBackwardsSpeed: 3.5
     slopeSpeedMultiplier:
@@ -12701,6 +12702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd8d0e31252b830479b4920b95c36882, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  otherDest: {fileID: 83051267}
 --- !u!1001 &685871406
 Prefab:
   m_ObjectHideFlags: 0
@@ -15355,7 +15357,7 @@ Prefab:
     - target: {fileID: 11400004, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
       propertyPath: player
       value: 
-      objectReference: {fileID: 609435205}
+      objectReference: {fileID: 609435196}
     - target: {fileID: 11400004, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
       propertyPath: fader
       value: 
@@ -15388,6 +15390,18 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: .00785546098
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
+      propertyPath: child
+      value: 
+      objectReference: {fileID: 1307168673}
+    - target: {fileID: 11400002, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
+      propertyPath: otherDest
+      value: 
+      objectReference: {fileID: 1258176772}
+    - target: {fileID: 11400000, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
+      propertyPath: otherDest
+      value: 
+      objectReference: {fileID: 83051267}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e31d7a2b5a6850345b30e832948e1dd7, type: 2}
   m_RootGameObject: {fileID: 2071086116}
@@ -20615,7 +20629,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1258176771}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.62627029, y: 3.05175781e-05, z: -25.9165039}
+  m_LocalPosition: {x: 6.62627029, y: 4.19999981, z: -25.9165039}
   m_LocalScale: {x: 1.78000009, y: 2.07500005, z: 12.7299995}
   m_Children: []
   m_Father: {fileID: 685180446}
@@ -24468,11 +24482,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ea26e0f6bf5a749aa4c3c10de54ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quitSpeed: 1.5
+  quitSpeed: .5
   quitMargin: .0500000007
   inSpeed: 1.5
   inMargin: .100000001
-  outSpeed: 1.5
+  outSpeed: .5
   outMargin: .0500000007
 --- !u!4 &1473700328
 Transform:
@@ -31859,7 +31873,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400018, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
       propertyPath: movement.maxForwardSpeed
-      value: 4
+      value: 3.9000001
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: e11a6bb3bc64afa49ba228d39a14815a, type: 2}
       propertyPath: far clip plane
@@ -32374,8 +32388,8 @@ MonoBehaviour:
   fadeOutMargin: .0500000007
   tele1: {fileID: 685180445}
   tele2: {fileID: 433882668}
-  player: {fileID: 609435205}
-  child: {fileID: 0}
+  player: {fileID: 609435196}
+  child: {fileID: 1307168673}
   fader: {fileID: 1473700325}
   teleporting: 0
   coolDown: 0

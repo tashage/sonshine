@@ -15590,8 +15590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d048832f047d7404595fe748655eb8b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fade: {fileID: 0}
-  player: {fileID: 0}
+  Fade: {fileID: 1613791365}
+  player: {fileID: 1354466222}
   fruit: []
 --- !u!4 &957596170
 Transform:
@@ -24884,6 +24884,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TheChild: {fileID: 1256479779}
+  holdDuration: 200
+  bumperMax: 75
 --- !u!123 &1354466217
 LensFlare:
   m_ObjectHideFlags: 0

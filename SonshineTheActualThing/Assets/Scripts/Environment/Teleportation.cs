@@ -5,7 +5,8 @@ public class Teleportation : MonoBehaviour
 {
 
 	public float fadeInMargin, speed, fadeOutMargin;
-	public Collider tele1, tele2, player, child;
+	public Collider tele1, tele2;
+	public GameObject player, child;
 	Vector3 locOther, childDest;
 	CharacterController playerController;
 	public GameObject fader;
@@ -32,12 +33,14 @@ public class Teleportation : MonoBehaviour
 		}
 	}
 
-	void TeleTrigger()
+void TeleTrigger(Vector3 childdest)
 	{
 		if(coolDown == 0)//if its safe (DR ABC)
 		{
 			teleporting = true;//safe guard on
 			coolDown = coolMax + pauseLength;//another safeguard
+			
+			childDest = childdest;//where watson will go
 
 			fader.guiTexture.enabled.Equals(true);//turn it on to be used
 			playerController.enabled.Equals(false);
@@ -45,15 +48,12 @@ public class Teleportation : MonoBehaviour
 			if ((Vector3.Distance(player.transform.position, tele1.transform.position)) > (Vector3.Distance(player.transform.position, tele2.transform.position)))//which is closer
 			{
 				locOther = tele1.transform.position;//you are at 2. 1 is where you will go
-				childDest = tele1.GetComponentInChildren<Transform>().position;
 			}
 			else
 			{
 				locOther = tele2.transform.position;//you are at 1. 2 is where you will go
-				childDest = tele2.GetComponentInChildren<Transform>().position;
-
-
 			}
+			
 
 		}
 	}
@@ -82,7 +82,13 @@ public class Teleportation : MonoBehaviour
 					SetAlpha(false);//make it totally black because it pretty much alreaady is.
 					destColour = Color.clear; //we know its black as. now we set its dest to clear for phase 2
 					player.transform.position = locOther;//move player
-					child.transform.position = childDest;
+					if(child.GetComponent<Watson>().bTethered)
+					{
+						child.SetActive(false);//turn that sucka down
+						child.transform.position = childDest;//move child
+						child.SetActive(true);//boot up time motha fucka
+
+					}
 				}
 			}
 			else

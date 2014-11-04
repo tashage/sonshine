@@ -15,25 +15,19 @@ public class Level1 : MonoBehaviour
 		if (fruit[0].activeInHierarchy == false && fruit[1].activeInHierarchy == false)
         {
 			Debug.Log("Level 1 Complete");
-            //Fade.EndScene(2);
 			endScene = true;
         }
     }
     public void Update()
     {
-        if (Input.GetKey(KeyCode.Escape) == true)
+		if (Input.GetKey(KeyCode.Escape) == true || (Input.GetButton("Start_Button")))
         {
 			Fade.QuitScene(0);
         }
-		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButton("Start_Button")))
+		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButtonUp("Start_Button")))
 		{
 			Fade.ResetAlpha();
 		}
-        //debug use only
-        if (Input.GetKeyDown(KeyCode.Alpha2) == true)
-        {
-            Application.LoadLevel(2);
-        }
 		if(endScene)
 		{
 			Fade.EndScene(2);
