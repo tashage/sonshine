@@ -45,6 +45,8 @@ public class Watson : MonoBehaviour
 
     public List<ChildInteractable> Distractions;
 
+    public Animator WatsonAnimator;
+
     // remember sequence will 
     Sequence seq = new Sequence();
     Selector ifCloseToPoint = new Selector();
@@ -193,12 +195,35 @@ public class Watson : MonoBehaviour
 
         /// this area handles animations 
         /// or you can do it within the actual behaviours
-        if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
+        //Debug.Log(m_agent.GetBehaviour().m_BehaviourType.ToString());
+        /*
+         * if(m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.ISCLOSE) //example
         {
+            Debug.Log("IsClose. Shouldn't be moving");
+            WatsonAnimator.SetBool("Moving", false);
             return;//bitchs on empty function
         }
+        if (m_agent.GetBehaviour().m_BehaviourType == AiBehaviour.BehaviourType.SEEK)
+        {
+            Debug.Log("Seek. Should be moving");
+            WatsonAnimator.SetBool("Moving", true);
+        }
+         */
+        float Dist = Vector3.Distance(transform.position, GetComponent<NavMeshAgent>().destination);
+        if (Dist <= 1.5)
+        {
+            Debug.Log("Set Moving to False");
+            WatsonAnimator.SetBool("Moving", false);
+        }
+        if (Dist > 1.5)
+        {
+            WatsonAnimator.SetBool("Moving", true);
+        }
+        Debug.Log(Dist);
+        WatsonAnimator.SetBool("HeldUp", bHeldUp);
 
       }// update 
+
     void OnTriggerEnter(Collider other)
     {
         // Debug.Log("coliding");

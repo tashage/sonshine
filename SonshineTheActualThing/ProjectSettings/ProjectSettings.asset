@@ -149,8 +149,7 @@ PlayerSettings:
   psp2PackagedResourcesPath: 
   flashStrippingLevel: 2
   spritePackerPolicy: 
-  scriptingDefineSymbols:
-    1: 
+  scriptingDefineSymbols: {}
   metroPackageName: SonshineTheActualThing
   metroPackageLogo: 
   metroPackageLogo140: 

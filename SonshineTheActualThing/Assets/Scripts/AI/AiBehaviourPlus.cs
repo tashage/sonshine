@@ -32,13 +32,16 @@ namespace AiBehaviourPlus_ns
             if (dist2 < m_range2 && m_range2 != 0 && dist2 !=0)
             {
                 //Debug.Log("executing within range as true");
+                m_BehaviourType = BehaviourType.WITHINRANGE;
                 return true;
             }
             else
             {
                // Debug.Log("executing within range as false");
+                m_BehaviourType = BehaviourType.WITHINRANGE;
                 return false;
             }
+
         }
     }
 
@@ -113,11 +116,13 @@ namespace AiBehaviourPlus_ns
             if (tempInteractable!=null && tempInteractable.DistractionValues.fPostCheckValue > a_agent.fBoredem)//
             {
                 a_agent.setTarget(tempInteractable.gameObject.transform.position);
+                m_BehaviourType = BehaviourType.CREATETARGET;
                 return true;
             }
             else
             {
                 a_agent.setTarget(a_agent.getPosition());
+                m_BehaviourType = BehaviourType.CREATETARGET;
                 return false;
             }
         }
@@ -133,6 +138,7 @@ namespace AiBehaviourPlus_ns
         {
            // Debug.Log("executing seek target");
            // Debug.Log("seek target");
+            m_BehaviourType = BehaviourType.SEEK;
             a_agent.setPosition(Vector3.MoveTowards(a_agent.getPosition(), a_agent.getTarget(), a_agent.fMovementSpeed * Time.deltaTime));
             return true;
         }
@@ -150,6 +156,7 @@ namespace AiBehaviourPlus_ns
             // if the agent is within below amount of distance
             if (Vector3.Distance(a_agent.getTarget(), a_agent.getPosition()) < 1.0f)
             {
+                m_BehaviourType = BehaviourType.ISCLOSE;
                 return true;
             }
             else return false;
@@ -169,7 +176,9 @@ namespace AiBehaviourPlus_ns
             //if the bond with the player is strong enough
             if (a_agent.fPlayerBond > BondNeeded)
             {
+                m_BehaviourType = BehaviourType.ISBONDSTRONG;
                 return true;
+
             }
             else return false;
         }
@@ -187,7 +196,7 @@ namespace AiBehaviourPlus_ns
             Vector3 heading = a_agent.getPosition() - WhatIsAvoided;
             float distance = heading.magnitude;
             Vector3 direction = heading / distance; // This is now the normalized direction.
-
+            m_BehaviourType = BehaviourType.AVOID;
             a_agent.setPosition(direction * distance * 1.2f);
 
             return true;

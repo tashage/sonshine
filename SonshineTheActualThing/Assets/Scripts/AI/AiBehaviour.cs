@@ -34,6 +34,7 @@ namespace AiBehaviour_ns
             AVOID
         } public BehaviourType m_BehaviourType;
 
+
         public AiBehaviour() { }
 
         virtual public bool execute(Agent a_agent) { return false; }
@@ -43,8 +44,6 @@ namespace AiBehaviour_ns
     {
         protected List<AiBehaviour> m_children;
         public Composite() { m_children = new List<AiBehaviour>(); }
-
-        
 
         public void addChild(AiBehaviour a_behavior) { m_children.Add(a_behavior); }
 

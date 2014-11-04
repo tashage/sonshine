@@ -54,6 +54,7 @@ namespace Agent_ns
             {
                
                 m_behaviour.execute(this);
+                //Debug.Log(m_behaviour.m_BehaviourType.ToString());
                 
             }
         }
