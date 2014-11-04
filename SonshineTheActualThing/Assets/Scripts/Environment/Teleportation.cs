@@ -5,8 +5,8 @@ public class Teleportation : MonoBehaviour
 {
 
 	public float fadeInMargin, speed, fadeOutMargin;
-	public Collider tele1, tele2, player;
-	Vector3 locOther;
+	public Collider tele1, tele2, player, child;
+	Vector3 locOther, childDest;
 	CharacterController playerController;
 	public GameObject fader;
 	Color destColour;
@@ -45,10 +45,13 @@ public class Teleportation : MonoBehaviour
 			if ((Vector3.Distance(player.transform.position, tele1.transform.position)) > (Vector3.Distance(player.transform.position, tele2.transform.position)))//which is closer
 			{
 				locOther = tele1.transform.position;//you are at 2. 1 is where you will go
+				childDest = tele1.GetComponentInChildren<Transform>().position;
 			}
 			else
 			{
 				locOther = tele2.transform.position;//you are at 1. 2 is where you will go
+				childDest = tele2.GetComponentInChildren<Transform>().position;
+
 
 			}
 
@@ -64,7 +67,6 @@ public class Teleportation : MonoBehaviour
 		fader.guiTexture.pixelInset = new Rect(0f, 0f, Screen.width, Screen.height);
 		playerController = player.GetComponent<CharacterController>();
 		destColour = Color.black;
-
 	}
 
 	void Update()
@@ -80,6 +82,7 @@ public class Teleportation : MonoBehaviour
 					SetAlpha(false);//make it totally black because it pretty much alreaady is.
 					destColour = Color.clear; //we know its black as. now we set its dest to clear for phase 2
 					player.transform.position = locOther;//move player
+					child.transform.position = childDest;
 				}
 			}
 			else
