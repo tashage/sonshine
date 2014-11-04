@@ -98,11 +98,11 @@ Material:
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
-          name: _ReflectionTex_ST
+          name: _BumpMap_ST
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
-          name: _BumpMap_ST
+          name: _ReflectionTex_ST
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:

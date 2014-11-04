@@ -7,12 +7,7 @@ public class MenuState : StateTemplate
 	public MenuManager menuManager;
 
 	bool changeLv1 = false;
-    bool changeLv2 = false;
-    
-	void Start()
-    {
-		//Fade = GameObject.FindObjectOfType<SceneFade>();
-    }
+	bool changeLv2 = false;
 	
     public void Update()
     {
@@ -26,23 +21,22 @@ public class MenuState : StateTemplate
             
             Fade.EndScene(1);
         }
-		if ((Input.GetKeyDown(KeyCode.Alpha2)) || (changeLv2))
-        {
-			
-			if (!changeLv2)
-            {
-                changeLv2 = true;
-            }
-            
-            Fade.EndScene(2);
-        }
-		if (Input.GetKey(KeyCode.Escape) || (Input.GetButton("Start_Button")))
+		if (Input.GetKey(KeyCode.Escape) || (Input.GetButton("B_Button")))
         {
 			Fade.QuitScene();
         }
-		else if (Input.GetKeyUp(KeyCode.Escape) || (Input.GetButtonUp("Start_Button")))
+		else if (Input.GetKeyUp(KeyCode.Escape) || (Input.GetButtonUp("B_Button")))
 		{
 			Fade.ResetAlpha();
+		}
+		else if (Input.GetButton("Y_Button"))
+		{
+			menuManager.SetState(1);
+		}
+		else if (Input.GetButton("Back_Button"))
+		{
+			menuManager.SetState(2);
+			
 		}
     }
 	

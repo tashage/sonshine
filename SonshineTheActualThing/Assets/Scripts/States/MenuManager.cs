@@ -6,29 +6,34 @@ public class MenuManager : MonoBehaviour
 
     public  GameObject FirstState;//States
 
-    public StateTemplate currentState = null;
-    public StateTemplate[] allStates;
+    public GameObject currentState = null;
+    public GameObject[] allStates;
 
-	public StateTemplate GetState(int id)
+	public GameObject GetState(int id)
 	{
 		return allStates[id];
 	}
 
-    public void SetState(StateTemplate newState)
+    public void SetState(int newState)
     {
         // failsafe incase some "person" pushes a NULL state
-        if (newState == null)
-            return;
+        //if (newState == null)
+        //    return;
 
-        if (currentState != newState)
+		if (currentState != allStates[newState])
         {
             if (currentState != null)
             {
-                currentState.gameObject.SetActive(false);
+                currentState.SetActive(false);
             }
-
-            currentState = newState;
-            currentState.gameObject.SetActive(true);
+			else
+			{
+				
+			}
+				currentState = allStates[newState];
+				currentState.SetActive(true);
+            
+            
         }
     }
     
@@ -36,7 +41,8 @@ public class MenuManager : MonoBehaviour
     {
         // turn the mouse off
         Screen.showCursor = false;
+		this.gameObject.SetActive(true);
 
-        SetState(FirstState.GetComponent<MenuState>() as StateTemplate);
+        SetState(0);
     }
 }

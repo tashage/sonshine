@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c13798e5c9145be4382a9c811a6b046c
+=======
+guid: dfdd1c720d95cb542b2bc426294b9aca
+>>>>>>> anton
 MonoImporter:
   serializedVersion: 2
   defaultReferences: []

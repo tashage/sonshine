@@ -15,11 +15,11 @@ public class Level2 : MonoBehaviour
 
     public void Update()
     {
-		if (Input.GetKey(KeyCode.Escape) == true)
+		if ((Input.GetKey(KeyCode.Escape) == true) || (Input.GetButton("Start_Button")))
 		{
 			Fade.QuitScene(0);
 		}
-		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButton("Start_Button")))
+		else if ((Input.GetKeyUp(KeyCode.Escape)) || (Input.GetButtonUp("Start_Button")))
 		{
 			Fade.ResetAlpha();
 		}
@@ -30,7 +30,7 @@ public class Level2 : MonoBehaviour
         }
 		if (endScene)
 		{
-			Fade.EndScene(2);
+			Fade.EndScene(0);
 		}
     }
 }
