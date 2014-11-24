@@ -213,14 +213,17 @@ public class Watson : MonoBehaviour
         if (Dist <= 1.5)
         {
             Debug.Log("Set Moving to False");
-            WatsonAnimator.SetBool("Moving", false);
+            if (WatsonAnimator != null)
+                WatsonAnimator.SetBool("Moving", false);
         }
         if (Dist > 1.5)
         {
-            WatsonAnimator.SetBool("Moving", true);
+            if(WatsonAnimator!=null)
+                WatsonAnimator.SetBool("Moving", true);
         }
-        Debug.Log(Dist);
-        WatsonAnimator.SetBool("HeldUp", bHeldUp);
+        // Debug.Log(Dist);
+        if (WatsonAnimator != null)
+            WatsonAnimator.SetBool("HeldUp", bHeldUp);
 
       }// update 
 

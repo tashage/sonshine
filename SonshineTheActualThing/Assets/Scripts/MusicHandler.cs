@@ -13,7 +13,7 @@ public class MusicHandler : MonoBehaviour {
 
     bool bFade = false;
     bool bFadeFinisehd = false;
-
+     float fSetVolume;
     public GameObject goPlayer;
 
     public GameObject goChild;
@@ -43,6 +43,7 @@ public class MusicHandler : MonoBehaviour {
         acNextToPlay = acLoop1;
         thisAudioSource.Play();
         iLoopPoint = 1;
+        fSetVolume = thisAudioSource.volume;
 	}
 	
 	// Update is called once per frame
@@ -143,14 +144,14 @@ public class MusicHandler : MonoBehaviour {
         }
         else 
         {
-            if (thisAudioSource.volume < 0.5)
+            if (thisAudioSource.volume < fSetVolume)
             {
                 thisAudioSource.volume += Time.deltaTime;
                
             }
-            if (thisAudioSource.volume > 0.5)
+            if (thisAudioSource.volume > fSetVolume)
             {
-                thisAudioSource.volume = 0.5f;
+                thisAudioSource.volume = fSetVolume;
             }
         }
 
